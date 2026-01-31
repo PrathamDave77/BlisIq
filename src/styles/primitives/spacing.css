@@ -1,0 +1,35 @@
+:root {
+    --space-0: 0px;
+    --space-0-5: 2px;
+    --space-1: 4px;
+    --space-1-5: 6px;
+    --space-2: 8px;
+    --space-3: 12px;
+    --space-4: 16px;
+    --space-5: 20px;
+    --space-6: 24px;
+    --space-8: 32px;
+    --space-10: 40px;
+    --space-12: 48px;
+    --space-16: 64px;
+    --space-20: 80px;
+    --space-24: 96px;
+    --space-32: 128px;
+    --space-40: 160px;
+    --space-48: 192px;
+    --space-56: 224px;
+    --space-64: 256px;
+    --space-80: 320px;
+    --space-96: 384px;
+    --space-128: 480px;
+    --space-140: 560px;
+    --space-160: 640px;
+    --space-180: 720px;
+    --space-192: 768px;
+    --space-256: 1024px;
+    --space-320: 1280px;
+    --space-360:1440px;
+    --space-400:1600px;
+    --space-480:1920px;
+    
+}

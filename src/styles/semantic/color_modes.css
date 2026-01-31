@@ -1,0 +1,402 @@
+/* =========================================================
+   COLOR MODES – SEMANTIC TOKENS
+   ========================================================= */
+
+/* -------------------------
+   LIGHT MODE (default)
+   ------------------------- */
+:root {
+
+  /* Primary text */
+  --text-primary: var(--light-gray-900);
+  --text-primary-on-brand: var(--color-white);
+
+  /* Secondary text */
+  --text-secondary: var(--light-gray-700);
+  --text-secondary-hover: var(--light-gray-800);
+  --text-secondary-on-brand: var(--brand-blue-200);
+
+  /* Tertiary text */
+  --text-tertiary: var(--light-gray-600);
+  --text-tertiary-hover: var(--light-gray-700);
+  --text-tertiary-on-brand: var(--brand-blue-200);
+
+  /* Quaternary text */
+  --text-quaternary: var(--light-gray-500);
+  --text-quaternary-on-brand: var(--brand-blue-300);
+
+  /* Utility text */
+  --text-white: var(--color-white);
+  --text-disabled: var(--light-gray-500);
+  --text-placeholder: var(--light-gray-500);
+  --text-placeholder-subtle: var(--light-gray-300);
+
+  /* Brand text */
+  --text-brand-primary: var(--brand-blue-900);
+  --text-brand-secondary: var(--brand-blue-700);
+  --text-brand-secondary-hover: var(--brand-blue-800);
+  --text-brand-tertiary: var(--brand-blue-600);
+  --text-brand-tertiary-alt: var(--brand-blue-600);
+
+  /* Status text */
+  --text-error-primary: var(--color-heading-600);
+  --text-error-primary-hover: var(--color-heading-700);
+
+  --text-warning-primary: var(--color-warning-600);
+  --text-warning-primary-hover: var(--color-warning-700);
+
+  --text-success-primary: var(--color-success-600);
+  --text-success-primary_hover:var(--color-success-700);
+
+    /* Primary borders */
+  --border-primary: var(--light-gray-300);
+  --border-secondary: var(--light-gray-200);
+  --border-tertiary: var(--light-gray-100);
+
+  /* Secondary alt (black @ 8%) */
+  --border-secondary-alt: color-mix(
+    in srgb,
+    var(--color-black) 8%,
+    transparent
+  );
+
+  /* Disabled borders */
+  --border-disabled: var(--light-gray-300);
+  --border-disabled-subtle: var(--light-gray-200);
+
+  /* Brand borders */
+  --border-brand: var(--brand-blue-500);
+  --border-brand-alt: var(--brand-blue-600);
+
+  /* Error borders */
+  --border-error: var(--color-heading-500);
+  --border-error-subtle: var(--color-heading-300);
+
+    /* Neutral foregrounds */
+  --fg-primary: var(--light-gray-900);
+  --fg-secondary: var(--light-gray-700);
+  --fg-secondary-hover: var(--light-gray-800);
+  --fg-tertiary: var(--light-gray-600);
+  --fg-tertiary-hover: var(--light-gray-700);
+  --fg-quaternary: var(--light-gray-400);
+  --fg-quaternary-hover: var(--light-gray-500);
+
+  /* Fixed */
+  --fg-white: var(--color-white);
+
+  /* Disabled */
+  --fg-disabled: var(--light-gray-400);
+  --fg-disabled-subtle: var(--light-gray-300);
+
+  /* Brand */
+  --fg-brand-primary: var(--brand-blue-600);
+  --fg-brand-primary-alt: var(--brand-blue-600);
+  --fg-brand-secondary: var(--brand-blue-500);
+  --fg-brand-secondary-hover: var(--brand-blue-600);
+  --fg-brand-secondary-alt: var(--brand-blue-500);
+
+  /* Error */
+  --fg-error-primary: var(--color-error-600);
+  --fg-error-secondary: var(--color-error-500);
+
+  /* Warning */
+  --fg-warning-primary: var(--color-warning-600);
+    --fg-warning-secondary:var(--color-warning-500);
+    --fg-success-primary:var(--color-success-600);
+--fg-success-secondary:var(--color-success-500);
+
+
+/* Primary surfaces */
+  --bg-primary: var(--color-white);
+  --bg-primary-alt: var(--color-white);
+  --bg-primary-hover: var(--light-gray-50);
+  --bg-primary-solid: var(--light-gray-950);
+
+  /* Secondary surfaces */
+  --bg-secondary: var(--light-gray-50);
+  --bg-secondary-alt: var(--light-gray-50);
+  --bg-secondary-hover: var(--light-gray-100);
+  --bg-secondary-subtle: var(--light-gray-25);
+  --bg-secondary-solid: var(--light-gray-600);
+
+  /* Tertiary & quaternary */
+  --bg-tertiary: var(--light-gray-100);
+  --bg-quaternary: var(--light-gray-200);
+
+  /* States */
+  --bg-active: var(--light-gray-50);
+  --bg-disabled: var(--light-gray-100);
+  --bg-disabled-subtle: var(--light-gray-50);
+  --bg-overlay: var(--light-gray-950);
+
+  /* Brand */
+  --bg-brand-primary: var(--brand-blue-50);
+  --bg-brand-primary-alt: var(--brand-blue-50);
+  --bg-brand-secondary: var(--brand-blue-100);
+  --bg-brand-solid: var(--brand-blue-600);
+  --bg-brand-solid-hover: var(--brand-blue-700);
+  --bg-brand-section: var(--brand-blue-800);
+  --bg-brand-section-subtle: var(--brand-blue-700);
+
+  /* Error */
+  --bg-error-primary: var(--error-50);
+  --bg-error-secondary: var(--error-100);
+  --bg-error-solid: var(--error-600);
+  --bg-error-solid-hover: var(--error-700);
+
+  /* Warning */
+  --bg-warning-primary: var(--warning-50);
+  --bg-warning-secondary: var(--warning-100);
+  --bg-warning-solid: var(--warning-600);
+
+  /* Success */
+  --bg-success-primary: var(--success-50);
+  --bg-success-secondary: var(--success-100);
+  --bg-success-solid: var(--success-600);
+
+    /* Primary Focus Rings */
+    --focus-ring-01: var(--color-white);
+    --focus-ring-02: var(--brand-blue-500);
+    
+    /* Error Focus Rings */
+    --focus-ring-error-01: var(--color-white);
+    --focus-ring-error-02: var(--color-heading-500);
+    
+    
+    /* ============================================
+       FOCUS RING SHADOWS - EXTRA SMALL (xs)
+       ============================================ */
+    
+    /* Primary Focus Ring Shadows - XS */
+    --focus-ring-shadow-xs-01: rgba(10, 13, 18, 0.05);      /* --light-gray-950 at 5% */
+    --focus-ring-shadow-xs-02: var(--color-white);
+    --focus-ring-shadow-xs-03: var(--brand-blue-500);
+    
+    /* Small Shadows - XS */
+    --focus-ring-shadow-sm-01: rgba(10, 13, 18, 0.10);      /* --light-gray-950 at 10% */
+    --focus-ring-shadow-sm-02: rgba(10, 13, 18, 0.10);      /* --light-gray-950 at 10% */
+    --focus-ring-shadow-sm-03: var(--color-white);
+    --focus-ring-shadow-sm-04: var(--brand-blue-500);
+    
+    /* Error Shadows - XS */
+    --focus-ring-error-shadow-xs-01: rgba(10, 13, 18, 0.05);  /* --light-gray-950 at 5% */
+    --focus-ring-error-shadow-xs-02: var(--color-white);
+    --focus-ring-error-shadow-xs-03: var(--color-heading-500);
+    
+    /* Primary Focus Ring Shadows - XS Skeumorphic */
+    --focus-ring-shadow-xs-skeumorphic-01: rgba(10, 13, 18, 0.18);   /* --light-gray-950 at 18% */
+    --focus-ring-shadow-xs-skeumorphic-02: rgba(10, 13, 18, 0.05);   /* --light-gray-950 at 5% */
+    --focus-ring-shadow-xs-skeumorphic-03: rgba(10, 13, 18, 0.05);   /* --light-gray-950 at 5% */
+    --focus-ring-shadow-xs-skeumorphic-04: var(--color-white);
+    --focus-ring-shadow-xs-skeumorphic-05: var(--brand-blue-500);
+    
+    /* Error Focus Ring Shadows - XS Skeumorphic */
+    --focus-ring-error-shadow-xs-skeumorphic-01: rgba(10, 13, 18, 0.18);  /* --light-gray-950 at 18% */
+    --focus-ring-error-shadow-xs-skeumorphic-02: rgba(10, 13, 18, 0.05);  /* --light-gray-950 at 5% */
+    --focus-ring-error-shadow-xs-skeumorphic-03: rgba(10, 13, 18, 0.05);  /* --light-gray-950 at 5% */
+    --focus-ring-error-shadow-xs-skeumorphic-04: var(--color-white);
+    --focus-ring-error-shadow-xs-skeumorphic-05: var(--color-heading-500);
+    
+
+    /*Shadows*/
+    --shadow-xs:rgba(10, 13, 18, 0.05);
+    --shadow-sm_01:rgba(10, 13, 18, 0.10);
+    --shadow-sm_02:rgba(10, 13, 18, 0.10);
+    --shadow-md_01:rgba(10, 13, 18, 0.10);
+    --shadow-md_02:rgba(10, 13, 18, 0.06);
+    --shadow-lg_01:rgba(10, 13, 18, 0.08);
+    --shadow-lg_02:rgba(10, 13, 18, 0.03);
+    --shadow-lg_03:rgba(10, 13, 18, 0.04);
+    
+
+}
+
+
+/* -------------------------
+   DARK MODE
+   ------------------------- */
+.theme-dark {
+
+  /* Primary text */
+  --text-primary: var(--dark-gray-50);
+  --text-primary-on-brand: var(--dark-gray-50);
+
+  /* Secondary text */
+  --text-secondary: var(--dark-gray-300);
+  --text-secondary-hover: var(--dark-gray-200);
+  --text-secondary-on-brand: var(--dark-gray-300);
+
+  /* Tertiary text */
+  --text-tertiary: var(--dark-gray-400);
+  --text-tertiary-hover: var(--dark-gray-300);
+  --text-tertiary-on-brand: var(--dark-gray-300);
+
+  /* Quaternary text */
+  --text-quaternary: var(--dark-gray-400);
+  --text-quaternary-on-brand: var(--dark-gray-300);
+
+  /* Utility text */
+  --text-white: var(--color-white);
+  --text-disabled: var(--dark-gray-500);
+  --text-placeholder: var(--dark-gray-500);
+  --text-placeholder-subtle: var(--dark-gray-400);
+
+  /* Brand text */
+  --text-brand-primary: var(--brand-blue-300);
+  --text-brand-secondary: var(--brand-blue-200);
+  --text-brand-secondary-hover: var(--brand-blue-100);
+  --text-brand-tertiary: var(--brand-blue-200);
+  --text-brand-tertiary-alt: var(--brand-blue-300);
+
+  /* Status text */
+  --text-error-primary: var(--color-heading-400);
+  --text-error-primary-hover: var(--color-heading-300);
+
+  --text-warning-primary: var(--color-warning-400);
+  --text-warning-primary-hover: var(--color-warning-300);
+
+  --text-success-primary: var(--color-success-400);
+  --text-success-primary_hover:var(--color-success-300);
+
+    /* Primary borders */
+  --border-primary: var(--dark-gray-700);
+  --border-secondary: var(--dark-gray-800);
+  --border-tertiary: var(--dark-gray-800);
+
+  /* Secondary alt */
+  --border-secondary-alt: var(--dark-gray-800);
+
+  /* Disabled borders */
+  --border-disabled: var(--dark-gray-700);
+  --border-disabled-subtle: var(--dark-gray-800);
+
+  /* Brand borders */
+  --border-brand: var(--brand-blue-400);
+  --border-brand-alt: var(--dark-gray-700);
+
+  /* Error borders */
+  --border-error: var(--color-heading-400);
+  --border-error-subtle: var(--color-heading-500);
+
+    /* Neutral foregrounds */
+  --fg-primary: var(--color-white);
+  --fg-secondary: var(--dark-gray-300);
+  --fg-secondary-hover: var(--dark-gray-200);
+  --fg-tertiary: var(--dark-gray-400);
+  --fg-tertiary-hover: var(--dark-gray-300);
+  --fg-quaternary: var(--dark-gray-600);
+  --fg-quaternary-hover: var(--dark-gray-500);
+
+  /* Fixed */
+  --fg-white: var(--color-white);
+
+  /* Disabled */
+  --fg-disabled: var(--dark-gray-500);
+  --fg-disabled-subtle: var(--dark-gray-600);
+
+  /* Brand */
+  --fg-brand-primary: var(--brand-blue-500);
+  --fg-brand-primary-alt: var(--dark-gray-300);
+  --fg-brand-secondary: var(--brand-blue-500);
+  --fg-brand-secondary-hover: var(--brand-blue-600);
+  --fg-brand-secondary-alt: var(--dark-gray-600);
+
+  /* Error */
+  --fg-error-primary: var(--color-error-500);
+  --fg-error-secondary: var(--color-error-400);
+
+  /* Warning */
+  --fg-warning-primary: var(--color-warning-500);
+--fg-warning-secondary:var(--color-warning-400);
+    --fg-success-primary:var(--color-success-500);
+--fg-success-secondary:var(--color-success-400);
+
+/* Primary surfaces */
+  --bg-primary: var(--dark-gray-950);
+  --bg-primary-alt: var(--dark-gray-900);
+  --bg-primary-hover: var(--dark-gray-800);
+  --bg-primary-solid: var(--dark-gray-900);
+
+  /* Secondary surfaces */
+  --bg-secondary: var(--dark-gray-900);
+  --bg-secondary-alt: var(--dark-gray-950);
+  --bg-secondary-hover: var(--dark-gray-800);
+  --bg-secondary-subtle: var(--dark-gray-900);
+  --bg-secondary-solid: var(--dark-gray-600);
+
+  /* Tertiary & quaternary */
+  --bg-tertiary: var(--dark-gray-800);
+  --bg-quaternary: var(--dark-gray-700);
+
+  /* States */
+  --bg-active: var(--dark-gray-800);
+  --bg-disabled: var(--dark-gray-800);
+  --bg-disabled-subtle: var(--dark-gray-900);
+  --bg-overlay: var(--dark-gray-800);
+
+  /* Brand */
+  --bg-brand-primary: var(--brand-blue-500);
+  --bg-brand-primary-alt: var(--dark-gray-800);
+  --bg-brand-secondary: var(--brand-blue-600);
+  --bg-brand-solid: var(--brand-blue-600);
+  --bg-brand-solid-hover: var(--brand-blue-500);
+  --bg-brand-section: var(--dark-gray-800);
+  --bg-brand-section-subtle: var(--dark-gray-950);
+
+  /* Error */
+  --bg-error-primary: var(--error-950);
+  --bg-error-secondary: var(--error-600);
+  --bg-error-solid: var(--error-600);
+  --bg-error-solid-hover: var(--error-500);
+
+  /* Warning */
+  --bg-warning-primary: var(--warning-950);
+  --bg-warning-secondary: var(--warning-600);
+  --bg-warning-solid: var(--warning-600);
+
+  /* Success */
+  --bg-success-primary: var(--success-950);
+  --bg-success-secondary: var(--success-600);
+  --bg-success-solid: var(--success-600);
+
+
+    /* Primary Focus Rings - Dark Mode */
+    --focus-ring-01-dark: var(--dark-gray-950);
+    --focus-ring-02-dark: var(--brand-blue-500);
+    
+    /* Error Focus Rings - Dark Mode */
+    --focus-ring-error-01-dark: var(--dark-gray-950);
+    --focus-ring-error-02-dark: var(--color-heading-500);
+    
+    /* Primary Shadows - Dark Mode */
+    --focus-ring-shadow-xs-01-dark: rgba(249, 249, 249, 0.10);  /* --dark-gray-50 at 10% */
+    --focus-ring-shadow-xs-02-dark: rgba(249, 249, 249, 0.10);  /* --dark-gray-50 at 10% */
+    --focus-ring-shadow-xs-03-dark: var(--dark-gray-950);
+    --focus-ring-shadow-xs-04-dark: var(--brand-blue-500);
+    
+    /* Error Shadows - Dark Mode */
+    --focus-ring-error-shadow-xs-01-dark: rgba(249, 249, 249, 0);   /* --dark-gray-50 at 0% */
+    --focus-ring-error-shadow-xs-02-dark: var(--dark-gray-950);
+    --focus-ring-error-shadow-xs-03-dark: var(--color-heading-500);
+    
+    /* Error Shadow Sizes - Dark Mode */
+    --focus-ring-shadow-xs-size-01-dark: rgba(249, 249, 249, 0);    /* --dark-gray-50 at 0% */
+    --focus-ring-shadow-xs-size-02-dark: rgba(249, 249, 249, 0.05); /* --dark-gray-50 at 5% */
+    --focus-ring-shadow-xs-size-03-dark: rgba(249, 249, 249, 0.05); /* --dark-gray-50 at 5% */
+    --focus-ring-shadow-xs-size-04-dark: var(--dark-gray-950);
+    --focus-ring-shadow-xs-size-05-dark: var(--brand-blue-500);
+
+/* Primary Focus Ring Shadows - XS Skeumorphic Dark */
+    --focus-ring-shadow-xs-skeumorphic-01-dark: rgba(249, 249, 249, 0);     /* --dark-gray-50 at 0% */
+    --focus-ring-shadow-xs-skeumorphic-02-dark: rgba(249, 249, 249, 0.05);  /* --dark-gray-50 at 5% */
+    --focus-ring-shadow-xs-skeumorphic-03-dark: rgba(249, 249, 249, 0.05);  /* --dark-gray-50 at 5% */
+    --focus-ring-shadow-xs-skeumorphic-04-dark: var(--dark-gray-950);
+    --focus-ring-shadow-xs-skeumorphic-05-dark: var(--brand-blue-500);
+    
+    /* Error Focus Ring Shadows - XS Skeumorphic Dark */
+    --focus-ring-error-shadow-xs-skeumorphic-01-dark: rgba(249, 249, 249, 0.18);  /* --dark-gray-50 at 18% */
+    --focus-ring-error-shadow-xs-skeumorphic-02-dark: rgba(249, 249, 249, 0.05);  /* --dark-gray-50 at 5% */
+    --focus-ring-error-shadow-xs-skeumorphic-03-dark: rgba(249, 249, 249, 0.05);  /* --dark-gray-50 at 5% */
+    --focus-ring-error-shadow-xs-skeumorphic-04-dark: var(--dark-gray-950);
+    --focus-ring-error-shadow-xs-skeumorphic-05-dark: var(--color-heading-500);
+}
