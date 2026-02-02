@@ -1,4 +1,8 @@
 @import "tailwindcss";
-@import './styles/semantic/color_modes.css';
+
+/* 1️⃣ Primitives FIRST */
 @import './styles/primitives/colors.css';
 @import './styles/primitives/spacing.css';
+
+/* 2️⃣ Semantic tokens AFTER */
+@import './styles/semantic/color_modes.css';

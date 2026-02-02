@@ -1,9 +1,8 @@
 import './App.css'
 
-
 function App() {
   return (
-    <div className="bg-(--bg-error-solid)">asdasds</div>
+    <div className="bg-light-gray-900">asdasds</div>
   );
 
   
