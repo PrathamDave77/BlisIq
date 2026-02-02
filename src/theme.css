@@ -1,0 +1,4 @@
+@import "tailwindcss";
+@import './styles/semantic/color_modes.css';
+@import './styles/primitives/colors.css';
+@import './styles/primitives/spacing.css';

@@ -3,7 +3,7 @@ import './App.css'
 
 function App() {
   return (
-    <div className="bg-[var(--bg-brand-solid)]">asdasds</div>
+    <div className="bg-(--bg-error-solid)">asdasds</div>
   );
 
   
