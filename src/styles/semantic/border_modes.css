@@ -1,0 +1,52 @@
+@import "../primitives/colors.css";
+
+
+@layer base {
+  :root {
+    /* Primary borders */
+    --border-primary: var(--color-light-gray-300);
+    --border-secondary: var(--color-light-gray-200);
+    --border-tertiary: var(--color-light-gray-100);
+
+    /* Secondary alt (black @ 8%) */
+    --border-secondary-alt: color-mix(
+      in srgb,
+      var(--color-black) 8%,
+      transparent
+    );
+
+    /* Disabled borders */
+    --border-disabled: var(--color-light-gray-300);
+    --border-disabled-subtle: var(--color-light-gray-200);
+
+    /* Brand borders */
+    --border-brand: var(--color-brand-blue-500);
+    --border-brand-alt: var(--color-brand-blue-600);
+
+    /* Error borders */
+    --border-error: var(--color-heading-500);
+    --border-error-subtle: var(--color-heading-300);
+  }
+
+  .theme-dark {
+    /* Primary borders */
+    --border-primary: var(--color-dark-gray-700);
+    --border-secondary: var(--color-dark-gray-800);
+    --border-tertiary: var(--color-dark-gray-800);
+
+    /* Secondary alt */
+    --border-secondary-alt: var(--color-dark-gray-800);
+
+    /* Disabled borders */
+    --border-disabled: var(--color-dark-gray-700);
+    --border-disabled-subtle: var(--color-dark-gray-800);
+
+    /* Brand borders */
+    --border-brand: var(--color-brand-blue-400);
+    --border-brand-alt: var(--color-dark-gray-700);
+
+    /* Error borders */
+    --border-error: var(--color-heading-400);
+    --border-error-subtle: var(--color-heading-500);
+  }
+}

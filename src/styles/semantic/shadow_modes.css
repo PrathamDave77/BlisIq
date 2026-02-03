@@ -1,0 +1,42 @@
+@import "../primitives/colors.css";
+
+@layer base {
+  :root {
+    --shadow-xs: rgba(10, 13, 18, 0.05);
+    --shadow-sm_01: rgba(10, 13, 18, 0.1);
+    --shadow-sm_02: rgba(10, 13, 18, 0.1);
+    --shadow-md_01: rgba(10, 13, 18, 0.1);
+    --shadow-md_02: rgba(10, 13, 18, 0.06);
+    --shadow-lg_01: rgba(10, 13, 18, 0.08);
+    --shadow-lg_02: rgba(10, 13, 18, 0.03);
+    --shadow-lg_03: rgba(10, 13, 18, 0.04);
+    --shadow-xl_01: rgba(10, 13, 18, 0.08);
+    --shadow-xl-02: rgba(10, 13, 18, 0.03);
+    --shadow-xl-03: rgba(10, 13, 18, 0.04);
+    --shadow-2xl-01: rgba(10, 13, 18, 0.18);
+    --shadow-2xl-02: rgba(10, 13, 18, 0.04);
+    --shadow-2xl-03: rgba(10, 13, 18, 0.08);
+    --shadow-3xl-01: rgba(10, 13, 18, 0.14);
+    --shadow-3xl-02: rgba(10, 13, 18, 0.04);
+  }
+
+  .theme-dark{
+     /*Shadows - Dark Mode*/
+    --shadow-xs: rgba(249, 249, 249, 0.05);
+    --shadow-sm-01: rgba(249, 249, 249, 0.1);
+    --shadow-sm-02: rgba(249, 249, 249, 0.1);
+    --shadow-md-01: rgba(249, 249, 249, 0.1);
+    --shadow-md-02: rgba(249, 249, 249, 0.06);
+    --shadow-lg-01: rgba(249, 249, 249, 0.08);
+    --shadow-lg-02: rgba(249, 249, 249, 0.03);
+    --shadow-lg-03: rgba(249, 249, 249, 0.04);
+    --shadow-xl-01: rgba(249, 249, 249, 0.08);
+    --shadow-xl-02: rgba(249, 249, 249, 0.03);
+    --shadow-xl-03: rgba(249, 249, 249, 0.04);
+    --shadow-2xl-01: rgba(249, 249, 249, 0.18);
+    --shadow-2xl-02: rgba(249, 249, 249, 0.04);
+    --shadow-2xl-03: rgba(249, 249, 249, 0.08);
+    --shadow-3xl-01: rgba(249, 249, 249, 0.14);
+    --shadow-3xl-02: rgba(249, 249, 249, 0.04);
+  }
+}

@@ -1,0 +1,73 @@
+@import "../primitives/colors.css";
+
+@layer base {
+  :root {
+    /* Neutral foregrounds */
+    --fg-primary: var(--color-light-gray-900);
+    --fg-secondary: var(--color-light-gray-700);
+    --fg-secondary-hover: var(--color-light-gray-800);
+    --fg-tertiary: var(--color-light-gray-600);
+    --fg-tertiary-hover: var(--color-light-gray-700);
+    --fg-quaternary: var(--color-light-gray-400);
+    --fg-quaternary-hover: var(--color-light-gray-500);
+
+    /* Fixed */
+    --fg-white: var(--color-white);
+
+    /* Disabled */
+    --fg-disabled: var(--color-light-gray-400);
+    --fg-disabled-subtle: var(--color-light-gray-300);
+
+    /* Brand */
+    --fg-brand-primary: var(--color-brand-blue-600);
+    --fg-brand-primary-alt: var(--color-brand-blue-600);
+    --fg-brand-secondary: var(--color-brand-blue-500);
+    --fg-brand-secondary-hover: var(--color-brand-blue-600);
+    --fg-brand-secondary-alt: var(--color-brand-blue-500);
+
+    /* Error */
+    --fg-error-primary: var(--color-error-600);
+    --fg-error-secondary: var(--color-error-500);
+
+    /* Warning */
+    --fg-warning-primary: var(--color-warning-600);
+    --fg-warning-secondary: var(--color-warning-500);
+    --fg-success-primary: var(--color-success-600);
+    --fg-success-secondary: var(--color-success-500);
+  }
+
+  .theme-dark{
+     /* Neutral foregrounds */
+    --fg-primary: var(--color-white);
+    --fg-secondary: var(--color-dark-gray-300);
+    --fg-secondary-hover: var(--color-dark-gray-200);
+    --fg-tertiary: var(--color-dark-gray-400);
+    --fg-tertiary-hover: var(--color-dark-gray-300);
+    --fg-quaternary: var(--color-dark-gray-600);
+    --fg-quaternary-hover: var(--color-dark-gray-500);
+
+    /* Fixed */
+    --fg-white: var(--color-white);
+
+    /* Disabled */
+    --fg-disabled: var(--color-dark-gray-500);
+    --fg-disabled-subtle: var(--color-dark-gray-600);
+
+    /* Brand */
+    --fg-brand-primary: var(--color-brand-blue-500);
+    --fg-brand-primary-alt: var(--color-dark-gray-300);
+    --fg-brand-secondary: var(--color-brand-blue-500);
+    --fg-brand-secondary-hover: var(--color-brand-blue-600);
+    --fg-brand-secondary-alt: var(--color-dark-gray-600);
+
+    /* Error */
+    --fg-error-primary: var(--color-error-500);
+    --fg-error-secondary: var(--color-error-400);
+
+    /* Warning */
+    --fg-warning-primary: var(--color-warning-500);
+    --fg-warning-secondary: var(--color-warning-400);
+    --fg-success-primary: var(--color-success-500);
+    --fg-success-secondary: var(--color-success-400);
+  }
+}
