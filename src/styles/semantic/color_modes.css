@@ -533,7 +533,7 @@
 --fg-success-secondary:var(--color-success-400);
 
 /* Primary surfaces */
-  /*--bg-primary: var(--color-dark-gray-950);*/
+  --bg-primary: var(--color-dark-gray-950);
   --bg-primary-alt: var(--color-dark-gray-900);
   --bg-primary-hover: var(--color-dark-gray-800);
   --bg-primary-solid: var(--color-dark-gray-900);
@@ -993,6 +993,8 @@
   .slider-handle-bg{
     background-color:var(--color-white);
   }
+
+  
 
 }
 

@@ -6,3 +6,7 @@
 
 /* 2️⃣ Semantic tokens AFTER */
 @import './styles/semantic/color_modes.css';
+
+@import './styles/semantic/typography.css';
+
+@import './styles/semantic/Effect_styles.css';
