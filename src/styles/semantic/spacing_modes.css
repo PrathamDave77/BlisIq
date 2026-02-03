@@ -1,0 +1,100 @@
+
+
+
+@layer base{
+    :root{
+         /*Radius*/
+  --radius-non:0px;
+
+  --radius-xxs:2px;
+
+  --radius-xxs:4px;
+  
+  --radius-sm:6px;
+  
+  --radius-md:8px;
+
+  --radius-lg:10px;
+
+  --radius-xl:12px;
+
+  --radius-2xl:16px;
+  
+  --radius-3xl:20px;
+
+  --radius-4xl:24px;
+
+  --radius-full:9999px;
+
+  /*Spacing*/
+  --spacing-none: var(--space-0);       /* Spacing/0 */
+  --spacing-xxs:  var(--space-0-5);     /* Spacing/0.5 (2px) */
+  --spacing-xs:   var(--space-1);       /* Spacing/1 (4px) */
+  --spacing-sm:   var(--space-1-5);     /* Spacing/1.5 (6px) */
+  --spacing-md:   var(--space-2);       /* Spacing/2 (8px) */
+  --spacing-lg:   var(--space-3);       /* Spacing/3 (12px) */
+  --spacing-xl:   var(--space-4);       /* Spacing/4 (16px) */
+  --spacing-2xl:  var(--space-5);       /* Spacing/5 (20px) */
+  --spacing-3xl:  var(--space-6);       /* Spacing/6 (24px) */
+  --spacing-4xl:  var(--space-8);       /* Spacing/8 (32px) */
+  --spacing-5xl:  var(--space-10);      /* Spacing/10 (40px) */
+  --spacing-6xl:  var(--space-12);      /* Spacing/12 (48px) */
+  --spacing-7xl:  var(--space-16);      /* Spacing/16 (64px) */
+  --spacing-8xl:  var(--space-20);      /* Spacing/20 (80px) */
+  --spacing-9xl:  var(--space-24);      /* Spacing/24 (96px) */
+  --spacing-10xl: var(--space-32);      /* Spacing/32 (128px) */
+  --spacing-11xl: var(--space-40);      /* Spacing/40 (160px) */
+
+/*Widths*/
+/* Width XXS - Spacing/80 (320px) */
+    --widths-xxs: var(--space-80);  /* 320px */
+    
+    /* Width XS - Spacing/96 (384px) */
+    --widths-xs: var(--space-96);   /* 384px */
+    
+    /* Width SM - Spacing/120 (480px) */
+    --widths-sm: var(--space-128);  /* 480px */
+    
+    /* Width MD - Spacing/140 (560px) */
+    --widths-md: var(--space-140);  /* 560px */
+    
+    /* Width LG - Spacing/160 (640px) */
+    --widths-lg: var(--space-160);  /* 640px */
+    
+    /* Width XL - Spacing/192 (768px) */
+    --widths-xl: var(--space-192);  /* 768px */
+    
+    /* Width 2XL - Spacing/256 (1024px) */
+    --widths-2xl: var(--space-256); /* 1024px */
+    
+    /* Width 3XL - Spacing/320 (1280px) */
+    --widths-3xl: var(--space-320); /* 1280px */
+    
+    /* Width 4XL - Spacing/360 (1440px) */
+    --widths-4xl: var(--space-360); /* 1440px */
+    
+    /* Width 5XL - Spacing/400 (1600px) */
+    --widths-5xl: var(--space-400); /* 1600px */
+    
+    /* Width 6XL - Spacing/480 (1920px) */
+    --widths-6xl: var(--space-480); /* 1920px */
+
+      
+    /*Container*/
+    /* Container Padding Mobile - Spacing/4 (16px) */
+    --container-padding-mobile: var(--space-4);  /* 16px */
+    
+    /* Container Padding Desktop - Spacing/8 (32px) */
+    --container-padding-desktop: var(--space-8);  /* 32px */
+    
+    /* Container Max Width Desktop - Spacing/320 (1280px) */
+    --container-max-width-desktop: var(--space-320);  /* 1280px */
+
+    /*Paragraph*/
+    --paragraph-max-widths:var(--space-180);
+
+    
+  
+
+    }
+}

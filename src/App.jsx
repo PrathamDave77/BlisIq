@@ -2,7 +2,7 @@ import './App.css'
 
 function App() {
   return (
-    <div className="shadow-xs">asdasds</div>
+    <div className="featured-icon-light-fg-success">asdasds</div>
   );
 
   
