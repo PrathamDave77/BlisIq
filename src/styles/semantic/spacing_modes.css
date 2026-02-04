@@ -102,4 +102,19 @@
     .spacing-lg{
         padding:var(--spacing-lg);
     }
+    .spacing-
+    .radius-none {
+        border-radius:var(--radius-none);
+    }
+    .space-none{
+        padding:var(--spacing-none);
+    }
+    .spacing-2xl{
+        padding:var(--spacing-2xl);
+    }
+    .gap-4xl{
+        gap:var(--spacing-4xl);
+    }
+    
+    
 }
