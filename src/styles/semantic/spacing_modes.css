@@ -97,3 +97,9 @@
 
     }
 }
+
+@layer utilities{
+    .spacing-lg{
+        padding:var(--spacing-lg);
+    }
+}

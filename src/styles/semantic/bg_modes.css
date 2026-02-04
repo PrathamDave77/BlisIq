@@ -52,7 +52,7 @@
 
   .theme-dark {
     /* Primary surfaces */
-    /*--bg-primary: var(--color-dark-gray-950);*/
+    --bg-primary: var(--color-dark-gray-950);
     --bg-primary-alt: var(--color-dark-gray-900);
     --bg-primary-hover: var(--color-dark-gray-800);
     --bg-primary-solid: var(--color-dark-gray-900);
