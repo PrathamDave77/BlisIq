@@ -1,62 +1,129 @@
+@import './color_modes.css';
+
 @layer base{
     :root{
-    --font-family-display: 'Inter';
-    --font-family-body: 'Inter';
-    
-    
-    /* FONT WEIGHT (FONT STYLE) */
-    
-    --regular: 400;
-    --medium: 500;
-    --semibold: 600;
-    --bold: 700;
-    
-    
-    /*  FONT SIZE */
-    
-    /* Display Sizes */
-    --display-2xl: 72px;
-    --display-xl: 60px;
-    --display-lg: 48px;
-    --display-md: 36px;
-    --display-sm: 30px;
-    --display-xs: 24px;
-    
-    /* Text Sizes */
-    --text-xl: 20px;
-    --text-lg: 18px;
-    --text-md: 16px;
-    --text-sm: 14px;
-    --text-xs:12px;
+        --font-family-display: 'Inter';
+        --font-family-body: 'Inter';
 
-    /*Line heights*/
-    --lh-display-2xl:90;
-    --display-xl:72;
-    --display-lg:60;
-    --display-md:44;
-    --display-sm:38;
-    --display-xs:32;
-    --text-xl:30;
-    --text-lg:28;
-    --text-md:24;
-    --text-sm:20;
-    --text-xs:18;
-    
+        /* FONT WEIGHT (FONT STYLE) */
+
+        --regular: 400;
+        --medium: 500;
+        --semibold: 600;
+        --bold: 700;
+        
+        
+        /*  FONT SIZE */
+        
+        /* Display Sizes */
+        --display-2xl: 72px;
+        --display-xl: 60px;
+        --display-lg: 48px;
+        --display-md: 36px;
+        --display-sm: 30px;
+        --display-xs: 24px;
+        
+        /* Text Sizes */
+        --text-xl: 20px;
+        --text-lg: 18px;
+        --text-md: 16px;
+        --text-sm: 14px;
+        --text-xs:12px;
+
+        /*Line heights*/
+        --line-2xl:90;
+        --line-xl:72;
+        --line-lg:60;
+        --line-md:44;
+        --line-sm:38;
+        --line-xs:32;
+        --line-xl:30;
+        --line-lg:28;
+        --line-md:24;
+        --line-sm:20;
+        --line-xs:18;
     }   
-
-
 }
 
 
 @layer utilities{
-    .display-2xl-regular{
+
+    .display {
         color: var(--color-text-primary, #181D27);
-        /* Display 2xl/Regular */
-        font-family: var(--font-family, Inter);
-        font-size: var(--font-size-display-2xl, 72px);
-        font-style: normal;
-        font-weight: 400;
-        line-height: var(--Line-height-display-2xl, 90px); /* 125% */
-        letter-spacing: -1.44px;
+        font-family: var(--font-family-display, Inter);
     }
+    
+    .display-2xl {
+        line-height: var(--line-2xl, 90px);
+    }
+
+    .display-xl {
+        line-height: var(--line-xl, 72px); 
+    }
+
+    .display-lg {
+        line-height: var(--line-lg, 60px); 
+    }
+
+    .display-md {
+        line-height: var(--line-md, 44px); 
+    }
+
+    .display-sm {
+        line-height: var(--line-lg, 38px); 
+    }
+
+    .display-xs {
+        line-height: var(--line-lg, 60px); 
+    }
+
+    .text-2xl {
+        font-size: var(--display-2xl, 72px);
+        letter-spacing: -1.44px;  
+    }
+        
+    .text-xl {
+        font-size: var(--display-xl, 60px);
+        letter-spacing: -1.2px;  
+    }
+
+    .text-lg {
+        font-size: var(--display-lg, 48px);
+        letter-spacing: -0.96px;
+    }
+
+    .text-md {
+        font-size: var(--display-md, 36px);
+        letter-spacing: -0.72px;
+    }
+
+    .text-sm {
+        font-size: var(--display-sm, 24px);
+        letter-spacing: 0px;
+    }
+    
+    .text-sm {
+        font-size: var(--display-sm, 60px);
+        letter-spacing: 0px;
+    }
+    
+
+    .font-regular {
+        font-weight: var(--regular,400px);
+    }
+
+    .font-medium {
+        font-weight: var(--medium,500px);
+    }
+
+    .font-semibold {
+        font-weight: var(--semibold,600px);
+    }
+
+    .font-bold {
+        font-weight: var(--bold,700px);
+    }
+    
+    
+    
 }
