@@ -1,8 +1,11 @@
 import './App.css'
+import './admin/Sidebar.jsx';
 
 function App() {
   return (
-    <div className="featured-icon-light-fg-success">asdasds</div>
+    <div className="">
+      <Sidebar />  
+    </div>
   );
 
   

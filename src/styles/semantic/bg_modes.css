@@ -100,3 +100,10 @@
     --bg-success-solid: var(--color-success-600);
   }
 
+
+@layer utilities{
+  .bg-primary{
+    background-color:var(--bg-primary);
+  }
+}
+
