@@ -8,49 +8,8 @@
 /* -------------------------
    LIGHT MODE (default)
    ------------------------- */
-
-@layer base {
-  :root {
-    /* Primary text */
-    --color-text-primary: var(--color-light-gray-900);
-    --color-text-primary-on-brand: var(--color-white);
-
-    /* Secondary text */
-    --color-text-secondary: var(--color-light-gray-700);
-    --color-text-secondary-hover: var(--color-light-gray-800);
-    --color-text-secondary-on-brand: var(--color-brand-blue-200);
-
-    /* Tertiary text */
-    --color-text-tertiary: var(--color-light-gray-600);
-    --color-text-tertiary-hover: var(--color-light-gray-700);
-    --color-text-tertiary-on-brand: var(--color-brand-blue-200);
-
-    /* Quaternary text */
-    --color-text-quaternary: var(--color-light-gray-500);
-    --color-text-quaternary-on-brand: var(--color-brand-blue-300);
-
-    /* Utility text */
-    --color-text-white: var(--color-white);
-    --color-text-disabled: var(--color-light-gray-500);
-    --color-text-placeholder: var(--color-light-gray-500);
-    --color-text-placeholder-subtle: var(--color-light-gray-300);
-
-    /* Brand text */
-    --color-text-brand-primary: var(--color-brand-blue-900);
-    --color-text-brand-secondary: var(--color-brand-blue-700);
-    --color-text-brand-secondary-hover: var(--color-brand-blue-800);
-    --color-text-brand-tertiary: var(--color-brand-blue-600);
-    --color-text-brand-tertiary-alt: var(--color-brand-blue-600);
-
-    /* Status text */
-    --color-text-utility-error-primary: var(--color-heading-600);
-    --color-text-utility-error-primary-hover: var(--color-heading-700);
-
-    --color-text-warning-primary: var(--color-warning-600);
-    --color-text-warning-primary-hover: var(--color-warning-700);
-
-    --color-text-success-primary: var(--color-success-600);
-    --color-text-success-primary_hover: var(--color-success-700);
+:root {
+    
 
     /*Alpha Colors*/
 
@@ -294,52 +253,12 @@
    --color-slider-handle-bg:var(--color-white);
 
   }
-}
 
 /* -------------------------
    DARK MODE
    ------------------------- */
 .theme-dark {
-  /* Primary text */
-  --color-text-primary: var(--color-dark-gray-50);
-  --color-text-primary-on-brand: var(--color-dark-gray-50);
- 
-  /* Secondary text */
-  --color-text-secondary: var(--color-dark-gray-300);
-  --color-text-secondary-hover: var(--color-dark-gray-200);
-  --color-text-secondary-on-brand: var(--color-dark-gray-300);
- 
-  /* Tertiary text */
-  --color-text-tertiary: var(--color-dark-gray-400);
-  --color-text-tertiary-hover: var(--color-dark-gray-300);
-  --color-text-tertiary-on-brand: var(--color-dark-gray-300);
- 
-  /* Quaternary text */
-  --color-text-quaternary: var(--color-dark-gray-400);
-  --color-text-quaternary-on-brand: var(--color-dark-gray-300);
- 
-  /* Utility text */
-  --color-text-white: var(--color-white);
-  --color-text-disabled: var(--color-dark-gray-500);
-  --color-text-placeholder: var(--color-dark-gray-500);
-  --color-text-placeholder-subtle: var(--color-dark-gray-400);
- 
-  /* Brand text */
-  --color-text-brand-primary: var(--color-brand-blue-300);
-  --color-text-brand-secondary: var(--color-brand-blue-200);
-  --color-text-brand-secondary-hover: var(--color-brand-blue-100);
-  --color-text-brand-tertiary: var(--color-brand-blue-200);
-  --color-text-brand-tertiary-alt: var(--color-brand-blue-300);
- 
-  /* Status text */
-  --color-text-utility-error-primary: var(--color-heading-400);
-  --color-text-utility-error-primary-hover: var(--color-heading-300);
- 
-  --color-text-warning-primary: var(--color-warning-400);
-  --color-text-warning-primary-hover: var(--color-warning-300);
- 
-  --color-text-success-primary: var(--color-success-400);
-  --color-text-success-primary_hover:var(--color-success-300);
+  
 
   /* Fully transparent dark overlay */
   --alpha-white-transparent: rgba(12, 14, 18, 0);

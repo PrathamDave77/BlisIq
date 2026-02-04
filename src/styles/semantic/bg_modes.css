@@ -1,7 +1,6 @@
 @import "../primitives/colors.css";
 
-@layer base {
-  :root {
+:root {
     /* Primary surfaces */
     --bg-primary: var(--color-white);
     --bg-primary-alt: var(--color-white);
@@ -100,4 +99,3 @@
     --bg-success-secondary: var(--color-success-600);
     --bg-success-solid: var(--color-success-600);
   }
-}
