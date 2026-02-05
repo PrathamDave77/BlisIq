@@ -17,7 +17,7 @@ const Sidebar = () => {
         <div className='flex w-[284px] justify-between py-none px-2xl items-center self-stetch'>
           <div id="title" className="flex flex-row items-center gap-sm">
             <img src={blisiq_logo} alt="This is an image" className="w-[24px] h-[24px]"/>
-            <span className="font-bold ">BlissIq</span>
+            <span className="font-bold text-lg">BlissIq</span>
           </div>
           <text>
             v3.0
