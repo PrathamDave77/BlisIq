@@ -4,7 +4,8 @@
 @import "./styles/semantic/bg_modes.css";
 @import "./styles/semantic/color_modes.css";
 @import "./styles/semantic/spacing_modes.css";
-@import "./styles/primitives/typography.css";@import './styles/semantic/text.css';
+@import "./styles/primitives/typography.css";
+@import './styles/semantic/text.css';
 
 
 @theme {
@@ -74,11 +75,6 @@
   --text-md: var(--text-md);
   --text-sm: var(--text-sm);
   --text-xs: var(--text-xs);
-
-  --font-weight-regular: var(--font-regular);
-  --font-weight-medium: var(--font-medium);
-  --font-weight-semibold: var(--font-semibold);
-  --font-weight-bold: var(--font-bold);
 
   /* ---------- Line heights ---------- */
 
