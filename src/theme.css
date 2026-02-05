@@ -4,7 +4,8 @@
 @import "./styles/semantic/bg_modes.css";
 @import "./styles/semantic/color_modes.css";
 @import "./styles/semantic/spacing_modes.css";
-@import "./styles/primitives/typography.css";
+@import "./styles/primitives/typography.css";@import './styles/semantic/text.css';
+
 
 @theme {
   /* --- Spacing --- */

@@ -12,10 +12,18 @@ const Sidebar = () => {
   ]
 
   return (
-    <div className="bg-primary radius-none flex space-non flex-col w-[284px] justify-between ">
-      <div id="profile" className="flex flex-row w-lg spacing-2xl gap-4xl">
-        <div className='flex flex-col w-[284px] justify-between '>
-          BlissIq
+    <div className="bg-primary radius-none flex space-non w-[284px] justify-between">
+      <div id="profile" className="flex flex-col gap-4xl pt-2xl text-text-secondary">
+        <div className='flex w-[284px] justify-between py-none px-2xl items-center self-stetch'>
+          <div id="title" className="flex flex-row gap-sm">
+            <div className="">
+              
+            </div>
+            <text>BlissIq</text>
+          </div>
+          <text>
+            v3.0
+          </text>
         </div>
         <div>
           {general.map((item, index) => (
@@ -24,7 +32,6 @@ const Sidebar = () => {
             </div>
           ))}
         </div>
-
         <div className='flex spacing-lg'>
           <button className='cursor-pointer pr-5xl' onClick={() => document.documentElement.classList.remove("theme-dark")}>
             light
@@ -35,7 +42,7 @@ const Sidebar = () => {
         </div>
       </div>
       <div id="settings">
-
+        
       </div>  
       
     </div>
