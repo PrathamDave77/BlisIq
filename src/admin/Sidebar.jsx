@@ -13,7 +13,7 @@ const Sidebar = () => {
 
   return (
     <div className="bg-primary radius-none flex space-non flex-col w-[284px] justify-between ">
-      <div id="profile" className="flex flex-row w-[284px] spacing-2xl gap-4xl">
+      <div id="profile" className="flex flex-row w-lg spacing-2xl gap-4xl">
         <div className='flex flex-col w-[284px] justify-between pr-'>
           BlissIq
         </div>
@@ -25,8 +25,8 @@ const Sidebar = () => {
           ))}
         </div>
 
-        <div className='flex spacing-lg gap-4'>
-          <button className='cursor-pointer' onClick={() => document.documentElement.classList.remove("theme-dark")}>
+        <div className='flex spacing-lg'>
+          <button className='cursor-pointer pr-5xl' onClick={() => document.documentElement.classList.remove("theme-dark")}>
             light
           </button>
           <button className='cursor-pointer' onClick={() => document.documentElement.classList.add('theme-dark')}>
