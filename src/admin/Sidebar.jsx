@@ -1,6 +1,6 @@
 import React from 'react'
 import '../theme.css';
-import blisiq_logo from '../../public/Logo.png';
+import blisiq_logo from '../public/Logo.png';
 
 const Sidebar = () => {
 
