@@ -1,6 +1,6 @@
 import React from 'react'
 import '../theme.css';
-
+import blisiq_logo from '../../public/Logo.png';
 
 const Sidebar = () => {
 
@@ -15,11 +15,9 @@ const Sidebar = () => {
     <div className="bg-primary radius-none flex space-non w-[284px] justify-between">
       <div id="profile" className="flex flex-col gap-4xl pt-2xl text-text-secondary">
         <div className='flex w-[284px] justify-between py-none px-2xl items-center self-stetch'>
-          <div id="title" className="flex flex-row gap-sm">
-            <div className="">
-              
-            </div>
-            <text>BlissIq</text>
+          <div id="title" className="flex flex-row items-center gap-sm">
+            <img src={blisiq_logo} alt="This is an image" className="w-[24px] h-[24px]"/>
+            <span className="font-bold ">BlissIq</span>
           </div>
           <text>
             v3.0

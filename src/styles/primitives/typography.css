@@ -5,15 +5,6 @@
     --font-family-display: "Inter";
     --font-family-body: "Inter";
 
-    /* FONT WEIGHT (FONT STYLE) */
-
-    --regular: 400;
-    --medium: 500;
-    --semibold: 600;
-    --bold: 700;
-
-    /*  FONT SIZE */
-
     /* Display Sizes */
     --display-2xl: 72px;
     --display-xl: 60px;
