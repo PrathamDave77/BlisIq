@@ -78,6 +78,7 @@
 
   /* ---------- Line heights ---------- */
 
+   /*Display is for heading*/
   --leading-display-2xl: var(--leading-display-2xl);
   --leading-display-xl: var(--leading-display-xl);
   --leading-display-lg: var(--leading-display-lg);
@@ -85,6 +86,7 @@
   --leading-display-sm: var(--leading-display-sm);
   --leading-display-xs: var(--leading-display-xs);
 
+   /*For normal texts*/
   --leading-xl: var(--leading-text-xl);
   --leading-lg: var(--leading-text-lg);
   --leading-md: var(--leading-text-md);
@@ -190,5 +192,8 @@
 
   --color-fg-success-primary: var(--fg-success-primary);
   --color-fg-success-secondary: var(--fg-success-secondary);
+
+   /* Secondary surfaces */
+   --color-bg-secondary: var(--bg-secondary);
 
 }
