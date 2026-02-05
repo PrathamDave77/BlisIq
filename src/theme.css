@@ -4,6 +4,7 @@
 @import './styles/semantic/bg_modes.css';
 @import './styles/semantic/color_modes.css';
 @import './styles/semantic/spacing_modes.css';
+@import './styles/semantic/text.css';
 
 
 @theme {
@@ -53,4 +54,9 @@
   --spacing-container-desktop: var(--container-padding-desktop);
   --width-container-max:       var(--container-max-width-desktop);
   --width-paragraph:           var(--paragraph-max-widths);
+
+
+  /* Primary text */
+  --color-text-secondary: var(--color-light-gray-800);
+  --color-text-secondary-on-brand: var(--color-brand-blue-200);
 }
