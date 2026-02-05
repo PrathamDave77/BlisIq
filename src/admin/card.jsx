@@ -15,40 +15,43 @@ const Card = (props) => {
         justify-self-stretch
         overflow-hidden
         font-inter
+        border
+        border-border-secondary
       "
     >
-
-      <div className="w-full aspect-[16/9] overflow-hidden">
-        <img src={image} alt="cover" className="w-full h-full object-cover" />
+      <div className="w-full aspect-[16/9] overflow-hidden p-sm">
+        <img src={image} alt="cover" className="w-full h-full object-cover rounded-xl" />
       </div>
 
-      <div className="p-xl flex flex-col gap-md self-stretch">
-        <div
-          className="
+      <div className="p-xl flex flex-col gap-xl self-stretch">
+        <div className="gap-sm flex flex-col">
+          <div
+            className="
             text-text-brand-tertiary
             text-xs
             font-semibold
-            
+            leading-xs
             flex
             items-center
             gap-xs
           "
-        >
-          <span className="text-text-brand-tertiary">{author}</span>
-          <span>•</span>
-          <span>{date}</span>
-        </div>
+          >
+            <span className="text-text-brand-tertiary">{author}</span>
+            <span>•</span>
+            <span>{date}</span>
+          </div>
 
-        <h3
-          className="
+          <h3
+            className="
             text-md
-            leading-display-sm
+            leading-display-md
             font-semibold
             text-text-primary
           "
-        >
-          {title}
-        </h3>
+          >
+            {title}
+          </h3>
+        </div>
 
         {/* Tags */}
         <div className="flex gap-xs">
@@ -56,13 +59,16 @@ const Card = (props) => {
             <span
               key={index}
               className="
-                px-sm
-                py-xxs
-                radius-full
-                bg-bg-secondary
-                text-text-secondary
+                px-md
+                py-xs
+                rounded-full
+                bg-utility-gray-50
+                text-utility-gray-700
                 text-xs
                 font-medium
+                leading-sm
+                border
+                border-border-secondary
               "
             >
               {tag}

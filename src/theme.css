@@ -5,8 +5,10 @@
 @import "./styles/semantic/color_modes.css";
 @import "./styles/semantic/spacing_modes.css";
 @import "./styles/primitives/typography.css";
-@import './styles/semantic/text.css';
-
+@import "./styles/semantic/text.css";
+@import "./styles/semantic/border_modes.css";
+@import "./styles/semantic/focus_modes.css";
+@import "./styles/semantic/foreground_modes.css";
 
 @theme {
   /* --- Spacing --- */
@@ -92,7 +94,6 @@
   --leading-md: var(--leading-text-md);
   --leading-sm: var(--leading-text-sm);
   --leading-xs: var(--leading-text-xs);
-  
 
   --color-text-primary: var(--color-text-primary);
   --color-text-primary-on-brand: var(--color-text-primary-on-brand);
@@ -139,7 +140,6 @@
 
   --color-text-success: var(--color-text-success-primary);
   --color-text-success-hover: var(--color-text-success-primary-hover);
-
 
   /* ================================
      NEUTRAL FOREGROUNDS
@@ -193,6 +193,30 @@
   --color-fg-success-primary: var(--fg-success-primary);
   --color-fg-success-secondary: var(--fg-success-secondary);
 
+  --color-utility-gray-50: var(--color-utility-gray-50);
+  --color-utility-gray-100: var(--color-utility-gray-100);
+  --color-utility-gray-200: var(--color-utility-gray-200);
+  --color-utility-gray-300: var(--color-utility-gray-300);
+  --color-utility-gray-400: var(--color-utility-gray-400);
+  --color-utility-gray-500: var(--color-utility-gray-500);
+  --color-utility-gray-600: var(--color-utility-gray-600);
+  --color-utility-gray-700: var(--color-utility-gray-700);
+  --color-utility-gray-800: var(--color-utility-gray-800);
+  --color-utility-gray-900: var(--color-utility-gray-900);
+
+  /* ================================
+     PRIMARY BORDERS
+     ================================ */
+
+  --color-border-primary: var(--border-primary);
+  --color-border-secondary: var(--border-secondary);
+  --color-border-tertiary: var(--border-tertiary);
+
+  /* ================================
+     ALT / TRANSLUCENT
+     ================================ */
+
+  --color-border-secondary-alt: var(--border-secondary-alt);
    /* Secondary surfaces */
    --color-bg-secondary: var(--bg-secondary);
 

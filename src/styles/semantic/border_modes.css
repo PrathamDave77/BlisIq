@@ -1,7 +1,6 @@
 @import "../primitives/colors.css";
 
 
-@layer base {
   :root {
     /* Primary borders */
     --border-primary: var(--color-light-gray-300);
@@ -49,4 +48,4 @@
     --border-error: var(--color-heading-400);
     --border-error-subtle: var(--color-heading-500);
   }
-}
+
