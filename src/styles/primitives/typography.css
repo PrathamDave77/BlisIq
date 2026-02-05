@@ -1,52 +1,51 @@
-@import './color_modes.css';
 
-@layer base{
-    :root{
-        --font-family-display: 'Inter';
-        --font-family-body: 'Inter';
 
-        /* FONT WEIGHT (FONT STYLE) */
+@layer base {
+  :root {
+    --font-family-display: "Inter";
+    --font-family-body: "Inter";
 
-        --regular: 400;
-        --medium: 500;
-        --semibold: 600;
-        --bold: 700;
-        
-        
-        /*  FONT SIZE */
-        
-        /* Display Sizes */
-        --display-2xl: 72px;
-        --display-xl: 60px;
-        --display-lg: 48px;
-        --display-md: 36px;
-        --display-sm: 30px;
-        --display-xs: 24px;
-        
-        /* Text Sizes */
-        --text-xl: 20px;
-        --text-lg: 18px;
-        --text-md: 16px;
-        --text-sm: 14px;
-        --text-xs:12px;
+    /* FONT WEIGHT (FONT STYLE) */
 
-        /*Line heights*/
-        --line-2xl:90;
-        --line-xl:72;
-        --line-lg:60;
-        --line-md:44;
-        --line-sm:38;
-        --line-xs:32;
-        --line-xl:30;
-        --line-lg:28;
-        --line-md:24;
-        --line-sm:20;
-        --line-xs:18;
-    }   
+    --regular: 400;
+    --medium: 500;
+    --semibold: 600;
+    --bold: 700;
+
+    /*  FONT SIZE */
+
+    /* Display Sizes */
+    --display-2xl: 72px;
+    --display-xl: 60px;
+    --display-lg: 48px;
+    --display-md: 36px;
+    --display-sm: 30px;
+    --display-xs: 24px;
+
+    /* Text Sizes */
+    --text-xl: 20px;
+    --text-lg: 18px;
+    --text-md: 16px;
+    --text-sm: 14px;
+    --text-xs: 12px;
+    /* Line heights — display */
+    --leading-display-2xl: 90px;
+    --leading-display-xl: 72px;
+    --leading-display-lg: 60px;
+    --leading-display-md: 44px;
+    --leading-display-sm: 38px;
+    --leading-display-xs: 32px;
+
+    /* Line heights — body */
+    --leading-text-xl: 30px;
+    --leading-text-lg: 28px;
+    --leading-text-md: 24px;
+    --leading-text-sm: 20px;
+    --leading-text-xs: 18px;
+  }
 }
 
-
-@layer utilities{
+/* @layer utilities{
 
     .display {
         color: var(--color-text-primary, #181D27);
@@ -126,4 +125,4 @@
     
     
     
-}
+} */

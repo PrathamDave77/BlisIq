@@ -14,7 +14,7 @@ const Sidebar = () => {
   return (
     <div className="bg-primary radius-none flex space-non flex-col w-[284px] justify-between ">
       <div id="profile" className="flex flex-row w-lg spacing-2xl gap-4xl">
-        <div className='flex flex-col w-[284px] justify-between pr-'>
+        <div className='flex flex-col w-[284px] justify-between '>
           BlissIq
         </div>
         <div>
