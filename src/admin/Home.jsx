@@ -23,10 +23,10 @@ const Home = () => {
               <button
                 key={tab}
                 onClick={() => setActiveTab(tab)}
-                className={`pb-4 text-sm font-semibold transition-all relative ${
+                className={`px-xs pb-lg text-sm font-semibold transition-all relative ${
                   isActive
-                    ? "text-blue-600"
-                    : "text-gray-500 hover:text-gray-700"
+                    ? "text-text-brand-secondary"
+                    : "text-text-quaternary hover:text-gray-700"
                 }`}
               >
                 {tab}
