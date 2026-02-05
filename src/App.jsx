@@ -5,8 +5,8 @@ import Home from './admin/Home.jsx';
 function App() {
   return (
     <div className="">
-      <Sidebar />  
-      {/*<Home />*/}
+      {/* <Sidebar />   */}
+      <Home />
     </div>
   );
 
