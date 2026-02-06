@@ -220,4 +220,6 @@
    /* Secondary surfaces */
    --color-bg-secondary: var(--bg-secondary);
 
+   --color-bg-primary:var(--bg-primary);
+
 }

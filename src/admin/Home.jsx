@@ -88,7 +88,7 @@ const Home = () => {
   const [activeTab, setActiveTab] = useState(tabs[0]);
 
   return (
-    <div className="py-4xl px-4xl bg-primary">
+    <div className="py-4xl px-4xl bg-bg-primary">
       <div className="gap-4xl flex flex-col">
         <h1 className="text-3xl font-semibold text-text-primary">Learning</h1>
 

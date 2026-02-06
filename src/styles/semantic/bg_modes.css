@@ -101,9 +101,3 @@
   }
 
 
-@layer utilities{
-  .bg-primary{
-    background-color:var(--bg-primary);
-  }
-}
-
