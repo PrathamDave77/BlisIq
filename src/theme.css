@@ -222,4 +222,9 @@
 
    --color-bg-primary:var(--bg-primary);
 
+   /*Shadows */
+   --color-shadow-xs:var(--shadow-xs);
+
+   --bg-primary-hover:var(--bg-primary-hover);
+
 }

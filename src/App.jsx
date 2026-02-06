@@ -4,7 +4,7 @@ import Home from './admin/Home.jsx';
 
 function App() {
   return (
-    <div className="flex">
+    <div className="flex h-screen w-screen">
       <Sidebar />  
       <Home />
     </div>

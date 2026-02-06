@@ -88,12 +88,12 @@ const Home = () => {
   const [activeTab, setActiveTab] = useState(tabs[0]);
 
   return (
-    <div className="py-4xl px-4xl bg-bg-primary">
+    <div className="flex-1 overflow-y-auto py-4xl px-4xl bg-bg-primary">
       <div className="gap-4xl flex flex-col">
         <h1 className="text-3xl font-semibold text-text-primary">Learning</h1>
 
         <div className="relative border-b border-border-secondary">
-          <div className="flex gap-md items-center">
+          <div className="flex gap-md items-center  ">
             {tabs.map((tab) => {
               const isActive = activeTab === tab;
               return (
@@ -140,17 +140,17 @@ const Home = () => {
             />
           </div>
 
-          <button className="flex items-center gap-md px-lg py-md border border-border-primary rounded-lg text-md font-medium hover:bg-utility-gray-50 transition-all cursor-pointer">
+          <button className="flex items-center gap-md px-lg py-md border border-border-primary rounded-lg text-md  leading-sm text-text-secondary font-medium hover:bg-utility-gray-50 transition-all cursor-pointer ">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="18"
-              height="18"
+              width="20"
+              height="20"
               viewBox="0 0 24 24"
               fill="none"
             >
               <path
                 d="M3 6h18M6 12h12M10 18h4"
-                stroke="#6B7280"
+                stroke="#A4A7AE"
                 strokeWidth="1.8"
                 strokeLinecap="round"
               />

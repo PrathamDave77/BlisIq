@@ -115,8 +115,8 @@ const Sidebar = () => {
 
   return (
     <div className="flex flex-col bg-bg-primary rounded-none space-non w-[284px] justify-between">
-      <div id="profile" className="flex flex-col gap-4xl pt-2xl text-text-secondary">
-        <div className='flex w-[284px] justify-between py-none px-2xl items-center self-stetch'>
+      <div id="profile" className="flex flex-col gap-4xl pt-2xl text-text-secondary w-full">
+        <div className='flex justify-between py-none px-2xl items-center self-stetch'>
           <div id="title" className="flex flex-row items-center gap-sm">
             <img src={blisiq_logo} alt="This is an image" className="w-[24px] h-[24px]" />
             <span className="font-bold text-lg">BlissIq</span>
@@ -125,29 +125,35 @@ const Sidebar = () => {
             v3.0
           </span>
         </div>
-        <div className="flex flex-col items-start self-stretch">
-          <div className="flex w-[284px] pr-2xl pb-xs pl-2xl font-family-body font-semibold text-xs text-text-quaternary">
+        <div className="flex flex-col items-start self-stretch w-full">
+          <div className="flex pr-2xl pb-xs pl-2xl font-family-body font-semibold text-xs text-text-quaternary w-full">
             GENERAL
           </div>
-          <div className="flex flex-col pr-xl pb-2xl pl-xl pt-0">
+          <div className="flex flex-col pr-xl pb-2xl pl-xl w-full">
             {general.map((item, index) => (
-              <div key={index} className="flex pt-xxs pb-xxs gap-2 ">
-                <div className="flex flex-row rounded-sm pt-md pr-lg pb-md pl-lg gap-lg items-center self-stretch">
+              <button
+                key={index}
+                className="flex w-full pt-xxs pb-xxs hover:bg-bg-primary-hover"
+              >
+                <div className="flex w-full flex-row rounded-sm pt-md pr-lg pb-md pl-lg gap-lg items-center">
                   <span>{item.icon}</span>
-                  <span className="text-text-secondary font-family-body font-semibold text-md">{item.description}</span>
+                  <span className="text-text-secondary font-family-body font-semibold text-md">
+                    {item.description}
+                  </span>
                 </div>
-              </div>
+              </button>
             ))}
           </div>
+
           <div className="flex pt-0 pr-2xl pl-2xl pb-xs self-stretch items-start font-family-body font-semibold leading-xs text-xs text-text-quaternary">USERS</div>
           <div className="flex flex-col pt-0 pl-xl pr-xl pb-2xl ">
             {Users.map((item, index) => (
-              <div key={index} className="flex pt-xxs pb-xxs gap-2 items-center">
+              <button key={index} className="flex pt-xxs pb-xxs gap-2 items-center cursor-pointer">
                 <div className="flex flex-row rounded-sm pt-md pr-lg pb-md pl-lg gap-lg items-center self-stretch">
                   <span>{item.icon}</span>
                   <span className="text-text-secondary font-family-body font-semibold text-md">{item.desc}</span>
                 </div>
-              </div>
+              </button>
             ))}
           </div>
         </div>
@@ -155,7 +161,7 @@ const Sidebar = () => {
       <div id="settings" className="flex flex-col pt-0 pl-xl pr-xl pb-xl gap-xl items-start self-stretch">
         <div className="flex flex-col gap-lg">
           <div className="flex flex-col pt-xxs pb-xxs pl-0 pr-0 items-start self-stretch gap-2">
-            <button className="flex pt-md pb-md pl-lg pr-lg items-center gap-sm self-stretch text-text-secondary">
+            <button className="flex pt-md pb-md pl-lg pr-lg items-center gap-sm self-stretch text-text-secondary cursor-pointer">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z"
@@ -176,7 +182,7 @@ const Sidebar = () => {
             </button>
           </div>
           <div className="flex flex-col pt-xxs pb-xxs pl-0 pr-0 items-start self-stretch gap-2">
-            <button className="flex pt-md pb-md pl-lg pr-lg items-center gap-sm self-stretch text-text-secondary">
+            <button className="flex pt-md pb-md pl-lg pr-lg items-center gap-sm self-stretch text-text-secondary cursor-pointer">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M9.09 9C9.3251 8.33167 9.78915 7.76811 10.4 7.40913C11.0108 7.05016 11.7289 6.91894 12.4272 7.03871C13.1255 7.15849 13.7588 7.52152 14.2151 8.06353C14.6713 8.60553 14.9211 9.29152 14.92 10C14.92 12 11.92 13 11.92 13M12 17H12.01M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z"
@@ -190,8 +196,8 @@ const Sidebar = () => {
             </button>
           </div>
         </div>
-        <div className="flex rounded-md gap-xxs bg-bg-secondary items-center text-text-secondary">
-          <button className="flex px-lg py-md items-center cursor-pointer" onClick={() => document.documentElement.classList.remove("theme-dark")}>
+        <div className="flex rounded-md gap-xxs bg-bg-secondary text-text-secondary border border-border-secondary self-stretch">
+          <button className="flex flex-1 px-lg py-md items-center cursor-pointer bg-bg-primary rounded-md gap-md border border-border-secondary shadow-shadow-xs self-stretch" onClick={() => document.documentElement.classList.remove("theme-dark")}>
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
               <g clip-path="url(#clip0_32345_12817)">
                 <path d="M8.00004 1.3335V2.66683M8.00004 13.3335V14.6668M2.66671 8.00016H1.33337M4.20945 4.20957L3.26664 3.26676M11.7906 4.20957L12.7334 3.26676M4.20945 11.7935L3.26664 12.7363M11.7906 11.7935L12.7334 12.7363M14.6667 8.00016H13.3334M11.3334 8.00016C11.3334 9.84111 9.84099 11.3335 8.00004 11.3335C6.15909 11.3335 4.66671 9.84111 4.66671 8.00016C4.66671 6.15921 6.15909 4.66683 8.00004 4.66683C9.84099 4.66683 11.3334 6.15921 11.3334 8.00016Z" stroke="#A4A7AE" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
@@ -204,14 +210,14 @@ const Sidebar = () => {
             </svg>
             Light
           </button>
-          <button className="flex items-center px-lg py-md cursor-pointer" onClick={() => document.documentElement.classList.add('theme-dark')}>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 15 15" fill="none">
+          <button className="flex flex-1 items-center px-lg py-md cursor-pointer rounded-md gap-md radius-md hover:border hover:border-border-secondary hover:shadow-shadow-xs self-stretch" onClick={() => document.documentElement.classList.add('theme-dark')}>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
               <path d="M14.0833 9.97948C13.2077 10.3755 12.2358 10.5959 11.2123 10.5959C7.36019 10.5959 4.23744 7.47314 4.23744 3.62102C4.23744 2.59757 4.45787 1.6256 4.85385 0.75C2.43384 1.84442 0.75 4.2798 0.75 7.10846C0.75 10.9606 3.87276 14.0833 7.72487 14.0833C10.5535 14.0833 12.9889 12.3995 14.0833 9.97948Z" stroke="#A4A7AE" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
             </svg>
             Dark
           </button>
         </div>
-        <div className="flex p-lg gap-xl self-stretch border border-border-secondary bg-bg-primary rounded-xl">
+        <div className="flex p-lg gap-xl self-stretch border border-border-secondary bg-bg-primary rounded-xl justify-between">
           <div className="flex flex-row gap-md">
             <div className="flex justify-center items-center ">
               <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -227,20 +233,18 @@ const Sidebar = () => {
             <div className="flex flex-col justify-between">
               <div className="self-stretch text-text-primary font-family-body text-sm font-semibold leading-sm ">Jacob Jones</div>
               <div className="text-sm font-semibold leading-sm text-text-tertiary">jacob@diacto.com</div>
-              
             </div>
-            <div className="items-center p-sm gap-md">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M7 15L12 20L17 15M7 9L12 4L17 9"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-
-            </div>
+          </div>
+          <div className="items-center p-sm gap-md">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M7 15L12 20L17 15M7 9L12 4L17 9"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
           </div>
         </div>
       </div>
