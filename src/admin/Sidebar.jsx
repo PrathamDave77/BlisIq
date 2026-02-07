@@ -133,7 +133,7 @@ const Sidebar = () => {
             {general.map((item, index) => (
               <button
                 key={index}
-                className="flex w-full pt-xxs pb-xxs hover:bg-bg-primary-hover"
+                className="flex w-full pt-xxs pb-xxs cursor-pointer hover:bg-bg-primary-hover"
               >
                 <div className="flex w-full flex-row rounded-sm pt-md pr-lg pb-md pl-lg gap-lg items-center text-text-secondary  font-semibold text-md leading-md">
                   <span>{item.icon}</span>

@@ -5,12 +5,12 @@ import Home from './admin/Home.jsx';
 function App() {
   const n = 100;
   return (
-    <div className="flex h-screen w-screen">
+    <div className="flex h-full w-full bg-bg-primary">
 
       <Sidebar />
       <div
         className="w-[12px] shrink-0
-    bg-[repeating-linear-gradient(135deg,transparent_0px,transparent_6px,var(--border-secondary)_6px,var(--border-secondary)_8px)]"
+    bg-[repeating-linear-gradient(135deg,transparent_0px,transparent_6px,var(--border-primary)_6px,var(--border-primary)_8px)]"
       />
 
 
