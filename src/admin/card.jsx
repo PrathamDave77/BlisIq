@@ -17,9 +17,10 @@ const Card = (props) => {
         font-inter
         border
         border-border-secondary
+        shadow-xs
       "
     >
-      <div className="w-full aspect-[16/9] overflow-hidden p-sm">
+      <div className="w-full aspect-[16/9] overflow-hidden">
         <img src={image} alt="cover" className="w-full h-full object-cover rounded-xl" />
       </div>
 
@@ -44,7 +45,7 @@ const Card = (props) => {
           <h3
             className="
             text-md
-            leading-display-md
+            leading-md
             font-semibold
             text-text-primary
           "
@@ -60,7 +61,7 @@ const Card = (props) => {
               key={index}
               className="
                 px-md
-                py-xs
+                py-xxs
                 rounded-full
                 bg-utility-gray-50
                 text-utility-gray-700

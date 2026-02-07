@@ -88,35 +88,36 @@ const Home = () => {
   const [activeTab, setActiveTab] = useState(tabs[0]);
 
   return (
-    <div className="flex-1 overflow-y-auto py-4xl px-4xl bg-bg-primary">
+    <div className="font-inter flex-1 overflow-y-auto py-4xl px-4xl bg-bg-primary">
       <div className="gap-4xl flex flex-col">
-        <h1 className="text-3xl font-semibold text-text-primary">Learning</h1>
-
-        <div className="relative border-b border-border-secondary">
-          <div className="flex gap-md items-center  ">
-            {tabs.map((tab) => {
-              const isActive = activeTab === tab;
-              return (
-                <button
-                  key={tab}
-                  onClick={() => setActiveTab(tab)}
-                  className={`px-xs pb-lg text-sm font-semibold transition-all relative z-10 ${
-                    isActive
-                      ? "text-text-brand-secondary"
-                      : "text-text-quaternary hover:text-text-secondary-hover"
-                  }`}
-                >
-                  {tab}
-                  {isActive && (
-                    <div className="absolute bottom-0 left-0 right-0 h-1 bg-text-brand-secondary rounded-full" />
-                  )}
-                </button>
-              );
-            })}
+        <div className="flex flex-col gap-3xl">
+          <div className="text-display-xs font-family-body font-semibold text-text-primary self-stretch leading-display-xs ">Learning</div>
+          <div className="relative border-b border-border-secondary">
+            <div className="flex gap-md items-center  ">
+              {tabs.map((tab) => {
+                const isActive = activeTab === tab;
+                return (
+                  <button
+                    key={tab}
+                    onClick={() => setActiveTab(tab)}
+                    className={`px-xs pb-lg text-sm font-semibold transition-all relative z-10 ${isActive
+                        ? "text-text-brand-secondary"
+                        : "text-text-quaternary hover:text-text-secondary-hover"
+                      }`}
+                  >
+                    {tab}
+                    {isActive && (
+                      <div className="absolute bottom-0 left-0 right-0 h-[2px] bg-text-brand-secondary rounded-full" />
+                    )}
+                  </button>
+                );
+              })}
+            </div>
           </div>
         </div>
+
         <div className="flex items-center justify-between w-full">
-          <div className="flex items-center gap-2 px-lg py-md border border-border-primary rounded-lg w-[280px] cursor-pointer">
+          <div className="flex items-center gap-2 px-lg py-md border border-border-primary rounded-lg w-[280px] cursor-pointer shadow-xs">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="20"
@@ -136,7 +137,7 @@ const Home = () => {
             <input
               type="text"
               placeholder="Search user"
-              className="w-full text-md outline-none placeholder:text-text-placeholder"
+              className="w-full text-md font-normal outline-none text-text-placeholder placeholder:text-text-placeholder "
             />
           </div>
 

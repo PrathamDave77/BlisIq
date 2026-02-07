@@ -1,3 +1,4 @@
+@import "@fontsource/inter/variable.css";
 @import "tailwindcss";
 
 /* 2️⃣ Semantic tokens AFTER */
@@ -10,7 +11,19 @@
 @import "./styles/semantic/focus_modes.css";
 @import "./styles/semantic/foreground_modes.css";
 
+
+@layer base {
+  html {
+    font-family: Inter, system-ui, sans-serif;
+    font-optical-sizing: auto;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+}
 @theme {
+   
+   --font-inter: Inter, system-ui, sans-serif;
+
   /* --- Spacing --- */
   --spacing-none: var(--spacing-none);
   --spacing-xxs: var(--spacing-xxs);
@@ -60,8 +73,8 @@
 
   /* ---------- Font families ---------- */
 
-  --font-display: var(--font-family-display);
-  --font-body: var(--font-family-body);
+  /*--font-display: var(--font-family-display);
+  --font-body: var(--font-family-body);*/
 
   /* ---------- Font sizes ---------- */
 
@@ -225,6 +238,6 @@
    /*Shadows */
    --color-shadow-xs:var(--shadow-xs);
 
-   --bg-primary-hover:var(--bg-primary-hover);
+   --color-bg-primary-hover:var(--bg-primary-hover);
 
 }
