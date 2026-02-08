@@ -1,4 +1,4 @@
-@import "@fontsource/inter/variable.css";
+
 @import "tailwindcss";
 
 /* 2️⃣ Semantic tokens AFTER */
@@ -11,18 +11,10 @@
 @import "./styles/semantic/focus_modes.css";
 @import "./styles/semantic/foreground_modes.css";
 
-
-@layer base {
-  html {
-    font-family: Inter, system-ui, sans-serif;
-    font-optical-sizing: auto;
-    -webkit-font-smoothing: antialiased;
-    text-rendering: optimizeLegibility;
-  }
-}
 @theme {
    
-   --font-inter: Inter, system-ui, sans-serif;
+   --font-family-display:var(--font-family-display);
+   --font-family-body:var(--font-family-body);
 
   /* --- Spacing --- */
   --spacing-none: var(--spacing-none);

@@ -91,7 +91,7 @@ const Home = () => {
     <div className="font-inter flex-1 overflow-y-auto py-4xl px-4xl bg-bg-primary">
       <div className="gap-4xl flex flex-col">
         <div className="flex flex-col gap-3xl">
-          <div className="text-display-xs font-family-body font-semibold text-text-primary self-stretch leading-display-xs ">Learning</div>
+          <div className="text-display-xs font-family-display font-semibold text-text-primary self-stretch leading-display-xs ">Learning</div>
           <div className="relative border-b border-border-secondary">
             <div className="flex gap-md items-center  ">
               {tabs.map((tab) => {

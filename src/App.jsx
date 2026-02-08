@@ -3,7 +3,7 @@ import Sidebar from './admin/Sidebar.jsx';
 import Home from './admin/Home.jsx';
 
 function App() {
-  const n = 100;
+
   return (
     <div className="flex h-full w-full bg-bg-primary">
 
@@ -14,7 +14,7 @@ function App() {
       />
 
 
-      {/*{[...Array(n)].map(item => <div className="flex justify-center items-center text-text-primary">{"/"}</div>)}*/}
+
 
 
       <Home />
