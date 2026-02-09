@@ -116,12 +116,12 @@ const Sidebar = () => {
   
   const Setlightmode = () => {
     document.documentElement.classList.remove("theme-dark");
-    setIsdarkcolor(prev => !prev);
+    setIsdarkcolor(prev => false);
   }
 
   const Setdarkmode = () => {
     document.documentElement.classList.add("theme-dark");
-    setIsdarkcolor(prev => !prev);
+    setIsdarkcolor(prev => true);
   }
 
   return (
