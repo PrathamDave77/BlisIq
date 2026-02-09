@@ -47,7 +47,7 @@
   --radius-full: var(--radius-full);
 
   /* --- Fixed Widths --- */
-
+   --width-xxs:var(--widths-xxs);
   --width-xs: var(--widths-xs);
   --width-sm: var(--widths-sm);
   --width-md: var(--widths-md);

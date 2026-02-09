@@ -117,7 +117,7 @@ const Home = () => {
         </div>
 
         <div className="flex items-center justify-between w-full">
-          <div className="flex items-center gap-2 px-lg py-md border border-border-primary rounded-lg w-[280px] cursor-pointer shadow-xs">
+          <div className="flex items-center gap-2 px-lg py-md border border-border-primary rounded-lg w-xxs cursor-pointer shadow-xs">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="20"

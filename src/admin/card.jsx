@@ -20,7 +20,7 @@ const Card = (props) => {
         shadow-xs
       "
     >
-      <div className="w-full aspect-[16/9] overflow-hidden">
+      <div className="w-full aspect-[61/34] overflow-hidden pt-xs px-xs">
         <img src={image} alt="cover" className="w-full h-full object-cover rounded-xl" />
       </div>
 
@@ -46,6 +46,7 @@ const Card = (props) => {
             className="
             text-md
             leading-md
+            font-family-body
             font-semibold
             text-text-primary
           "
