@@ -228,8 +228,60 @@
    --color-bg-primary:var(--bg-primary);
 
    /*Shadows */
-   --color-shadow-xs:var(--shadow-xs);
+   --shadow-xs:0 1px 2px 0 var(--shadow-xs);
+   --shadow-sm:0 1px 3px 0 var(--shadow-sm_01), 0 1px 2px -1px var(--shadow-sm_02);
+   --shadow-md: 0 4px 6px -1px var(--shadow-md_01), 0 2px 4px -2px var(--shadow-md_02);
+   --shadow-lg:0 12px 16px -4px var(--shadow-lg_01), 0 4px 6px -2px var(--shadow-lg_02), 0 2px 2px -1px var(--shadow-lg_03);
+   --shadow-xl:0 20px 24px -4px var(--shadow-xl_01), 0 8px 8px -4px var(--shadow-xl_02), 0 3px 3px -1.5px var(--shadow-xl_03);
+   --shadow-2xl:0 20px 24px -4px var(--shadow-2xl_01), 0 4px 4px -2px var(--shadow-2xl_02);
+   --shadow-3xl:0 32px 64px -12px var(--shadow-3xl_01), 0 5px 5px -2.5px var(--shadow-3xl_02);
+   --shadow-xs-skeumorphic:0 1px 2px 0 var(--shadow-xs) inset, 0 -2px 0 0 var(--shadow-xs) inset;
+   --shadow-modern: 0 -2px 2px 0 rgba(0, 0, 0, 0.13) inset, 1px 13px 5px 0 rgba(0, 0, 0, 0.01), 2px 21px 6px 0 rgba(0, 0, 0, 0.00), 1px 8px 5px 0 rgba(0, 0, 0, 0.05), 0 3px 3px 0 rgba(0, 0, 0, 0.09), 0 1px 2px 0 rgba(0, 0, 0, 0.10);
+
 
    --color-bg-primary-hover:var(--bg-primary-hover);
 
+   --color-bg-brand-solid:var(--bg-brand-solid);
+
+   /*Skeumorphic Focus Rings*/
+
+   
+
+   --focus-ring:0 0 0 2px var(--focus-ring-01), 
+      0 0 0 4px var(--focus-ring-02);  
+
+   --focus-ring-error: 0 0 0 2px var(--focus-ring-error-01), 
+      0 0 0 4px var(--focus-ring-error-01);
+   
+   --focus-ring-shadow-xs:0 1px 2px 0 var(--focus-ring-shadow-xs-skeumorphic-01), 
+      0 0 0 2px var(--focus-ring-shadow-xs-skeumorphic-02), 
+      0 0 0 4px var(--focus-ring-shadow-xs-skeumorphic-03);
+
+   --focus-ring-shadow-sm:0 1px 2px 0 var(--focus-ring-shadow-xs-skeumorphic-01), 
+      0 1px 3px 0 var(--focus-ring-shadow-xs-skeumorphic-02), 
+      0 0 0 2px var(--focus-ring-shadow-xs-skeumorphic-03),
+      0 0 0 4px var(--focus-ring-shadow-xs-skeumorphic-04);
+
+   --focus-ring-error-shadow-xs:0 1px 2px 0 var(--focus-ring-error-shadow-xs-01), 
+      0 0 0 2px var(--focus-ring-error-shadow-xs-02), 
+      0 0 0 4px var(--focus-ring-error-shadow-xs-03);
+
+   --focus-ring-shadow-xs-skeumorphic:0 0 0 1px var(--focus-ring-shadow-xs-skeumorphic-01) inset,
+      0 -2px 0 0 var(--focus-ring-shadow-xs-skeumorphic-02) inset,
+      0 1px 2px 0 var(--focus-ring-shadow-xs-skeumorphic-03),
+      0 0 0 2px var(--focus-ring-shadow-xs-skeumorphic-04),
+      0 0 0 4px var(--focus-ring-shadow-xs-skeumorphic-05);
+
+   --focus-ring-shadow-xs-skeumorphic-error:
+      0 0 0 1px var(--focus-ring-error-shadow-xs-skeumorphic-01) inset,
+      0 -2px 0 0 var(--focus-ring-error-shadow-xs-skeumorphic-02) inset, 
+      0 1px 2px 0 var(--focus-ring-error-shadow-xs-skeumorphic-03), 
+      0 0 0 2px var(--focus-ring-error-shadow-xs-skeumorphic-04), 
+      0 0 0 4px var(--focus-ring-error-shadow-xs-skeumorphic-05);
+
+   /*Error colors text*/
+   --color-text-error-primary:var(--color-error-600);
+   
+
+   
 }

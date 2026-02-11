@@ -8,6 +8,7 @@ import five from "./../../public/5.png";
 import six from "./../../public/6.png";
 import seven from "./../../public/7.png";
 import eight from "./../../public/8.png";
+import Button from '../Base/Components/Button.jsx';
 
 const Home = () => {
   const tabs = [
@@ -88,7 +89,7 @@ const Home = () => {
   const [activeTab, setActiveTab] = useState(tabs[0]);
 
   return (
-    <div className="font-inter flex-1 overflow-y-auto py-4xl px-4xl bg-bg-primary">
+    <div className="font-inter flex-1 overflow-y-auto py-4xl px-4xl bg-bg-primary w-full">
       <div className="gap-4xl flex flex-col">
         <div className="flex flex-col gap-3xl">
           <div className="text-display-xs font-family-display font-semibold text-text-primary self-stretch leading-display-xs ">Learning</div>
@@ -116,8 +117,8 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="flex items-center justify-between w-full">
-          <div className="flex items-center gap-2 px-lg py-md border border-border-primary rounded-lg w-xxs cursor-pointer shadow-xs">
+        <div className="flex flex-row items-center justify-between w-full ">
+          <div className="flex items-center gap-md px-lg py-md border border-border-primary rounded-lg w-xxs cursor-pointer shadow-xs">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="20"
@@ -158,6 +159,8 @@ const Home = () => {
             </svg>
             Filters
           </button>
+      
+          <Button/>
         </div>
         {activeTab === "All Status" && (
           <div className="grid grid-cols-4 gap-3xl">
@@ -167,6 +170,7 @@ const Home = () => {
           </div>
         )}
       </div>
+      <Button variant="primary">Primary</Button>
     </div>
   );
 };
