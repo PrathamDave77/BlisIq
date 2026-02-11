@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import {React} from 'react';
+import { useState, forwardRef } from "react";
 import Card from "./card";
 import one from "./../../public/1.png";
 import two from "./../../public/2.png";
@@ -170,7 +171,7 @@ const Home = () => {
           </div>
         )}
       </div>
-      <Button variant="primary">Primary</Button>
+      <Button variant="primary" size="xl" isError>Error Primary</Button>
     </div>
   );
 };

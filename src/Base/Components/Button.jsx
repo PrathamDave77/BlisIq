@@ -1,9 +1,8 @@
 import { React } from 'react'
-import { useState } from 'react'
+import { useState, forwardRef } from "react";
 import '../../styles/semantic/bg_modes.css';
 import { cva } from 'class-variance-authority'
-
-import '../../lib/utils.js';
+import {cn} from '../../lib/utils.js';
 
 
 const buttonVariants = cva(
@@ -11,18 +10,20 @@ const buttonVariants = cva(
 
     {
         variants: {
+            /*Primary isError only*/
             isError:{
                 true:'',
                 false:'',
             },
-            type: {
-                primary:`border-[2px] border-[#FFF] text-text-white shadow-[var(--shadow-xs-skeumorphic)]  disabled:border-px disabled:border-[var(--border-disabled-subtle)] disabled:shadow-[var(--color-shadow-xs)] ${isError ? 'bg-[var(--bg-error-solid)] hover:bg-[var(--bg-error-solid-hover)] focus-visible:shadow-[var(--focus-ring-shadow-xs-skeumorphic-error)] ' : 'bg-[var(--bg-brand-solid)] hover:bg-[var(--bg-brand-solid-hover)] focus-visible:shadow-[var(--focus-ring-shadow-xs-skeumorphic)]'}`,
-                secondary:` border-px bg-[var(--bg-primary])]   shadow-[var(--shadow-xs-skeumorphic)]  focus-visible:shadow-[var(--focus-ring-shadow-xs-skeumorphic)] disabled:border-[var(--border-disabled-subtle)] disabled:shadow-xs disabled:text-fg-disabled ${isError ? 'border-[var(--border-error-subtle)]  hover:bg-[var(--bg-error-primary)] text-' : 'border-border-primary text-text-secondary hover:bg-bg-primary-hover text-text-error'}
+            variant: {
+                primary:`border-[2px] border-[#FFF] text-text-white shadow-[var(--shadow-xs-skeumorphic)]  disabled:border-px disabled:border-[var(--border-disabled-subtle)] disabled:shadow-[var(--color-shadow-xs)] bg-[var(--bg-brand-solid)] hover:bg-[var(--bg-brand-solid-hover)] focus-visible:shadow-[var(--focus-ring-shadow-xs-skeumorphic)]`,
+                secondary:` border-px bg-[var(--bg-primary])] text- shadow-[var(--shadow-xs-skeumorphic)]  focus-visible:shadow-[var(--focus-ring-shadow-xs-skeumorphic)] disabled:border-[var(--border-disabled-subtle)] disabled:shadow-xs disabled:text-fg-disabled border-border-primary text-text-secondary hover:bg-bg-primary-hover text-text-error
                 `,
-                tertiary:` border-[2px] text-text-tertiary text-sm hover:bg-bg-primary-hover hover:text-text-tertiary-hover focus-visible:bg-[#FFF] focus-visible:shadow-[var(--focus-ring)] disabled:text-fg-disabled disabled:bg-bg-primary-hover ${isError ? 'text-text-primary-error' : ''}`,
+                tertiary:` border-[2px] text-text-tertiary text-sm hover:bg-bg-primary-hover hover:text-text-tertiary-hover focus-visible:bg-[#FFF] focus-visible:shadow-[var(--focus-ring)] disabled:text-fg-disabled disabled:bg-bg-primary-hover`,
                 link:`text-text-brand-secondary hover:text-text-brand-secondary-hover hover:underline hover:decoration-solid hover:decoration-skip-ink-auto hover:decoration-auto hover:underline-offset-auto hover:underline-from-font focus-visible:bg-[rgba(255, 255, 255, 0.01)] focus-visible:shadow-[var(--focus-ring)]disabled:text-fg-disabled `,
                 gray_link:' text-text-tertiary hover:text-text-tertiary-hover hover:underline hover:decoration-solid hover:decoration-skip-ink-auto hover:decoration-auto hover:underline-offset-auto hover:underline-from-font focus-visible:bg-[rgba(255, 255, 255, 0.01)] focus-visible:shadow-[var(--focus-ring)]disabled:text-fg-disabled focus-visible:bg-[rgba(255, 255, 255, 0.01)] focus-visible:shadow-[var(--focus-ring)] disabled:text-fg-disabled' 
             },
+            
             size: {
                 sm:'pt-spacing-md pt-spacing-lg pb-spacing-md pl-spacing-lg text-sm gap-xs',
                 md:'py-[10px] px-[14px] text-sm',
@@ -39,16 +40,36 @@ const buttonVariants = cva(
             iconLeft:{},
             iconRight:{},
         },
+        compoundVariants:[
+                {
+                    variant:"primary",
+                    isError:true,
+                    class:'bg-[var(--bg-error-solid)] hover:bg-[var(--bg-error-solid-hover)] focus-visible:shadow-[var(--focus-ring-shadow-xs-skeumorphic-error)]',
+                },
+                {
+                    variant:"secondary",
+                    isError:true,
+                    class:'border-[var(--border-error-subtle)] hover:bg-[var(--bg-error-primary)] text-',
+                },
+                {
+                    variant:"tertiary",
+                    isError:true,
+                    class:'text-text-primary-error',
+                },
+        ],
     }
 );
 
-const Button = ({children,variant,size,disabled,className,...props}) => {
+const Button = forwardRef(
+
+    ({children,variant,size,disabled,isError,...props},ref) => {
 
     const [isloading,setIsloading] = useState(false);
 
     return (
-        <button className={`${baseStyles} ${variants[variant]}`}>{children}</button>
-    )
-}
+        <button className={cn(buttonVariants({variant,size,isError}))} ref={ref}>{children}</button>
+    );
+    }
+);
 
 export default Button
