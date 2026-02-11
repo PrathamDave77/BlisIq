@@ -217,6 +217,8 @@
   --color-border-secondary: var(--border-secondary);
   --color-border-tertiary: var(--border-tertiary);
 
+  --color-border-error: var(--border-error); 
+
   /* ================================
      ALT / TRANSLUCENT
      ================================ */
@@ -227,8 +229,13 @@
 
    --color-bg-primary:var(--bg-primary);
 
+   --color-bg-brand-primary: var(--bg-brand-primary);
+
+   --color-focus-ring-02 : var(--focus-ring-02);
+
+
    /*Shadows */
-   --color-shadow-xs:var(--shadow-xs);
+   --color-shadow-xs :var(--shadow-xs);
 
    --color-bg-primary-hover:var(--bg-primary-hover);
 
