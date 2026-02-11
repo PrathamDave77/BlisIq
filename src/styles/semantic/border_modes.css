@@ -1,6 +1,5 @@
 @import "../primitives/colors.css";
 
-
   :root {
     /* Primary borders */
     --border-primary: var(--color-light-gray-300);
@@ -23,8 +22,8 @@
     --border-brand-alt: var(--color-brand-blue-600);
 
     /* Error borders */
-    --border-error: var(--color-heading-500);
-    --border-error-subtle: var(--color-heading-300);
+    --border-error: var(--color-error-500);
+    --border-error-subtle: var(--color-error-300);
   }
 
   .theme-dark {
@@ -45,7 +44,7 @@
     --border-brand-alt: var(--color-dark-gray-700);
 
     /* Error borders */
-    --border-error: var(--color-heading-400);
-    --border-error-subtle: var(--color-heading-500);
+    --border-error: var(--color-error-400);
+    --border-error-subtle: var(--color-error-500);
   }
 

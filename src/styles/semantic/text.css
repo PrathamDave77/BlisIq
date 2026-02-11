@@ -1,4 +1,5 @@
-@import '../primitives/colors.css';
+@import "../primitives/colors.css";
+
 :root{
 
     /* Primary text */
@@ -36,8 +37,8 @@
     --color-text-error-primary_hover:var(--color-error-400);
 
     /* Status text */
-    --color-text-utility-error-primary: var(--color-heading-600);
-    --color-text-utility-error-primary-hover: var(--color-heading-700);
+    --color-text-utility-error-primary: var(--color-error-600);
+    --color-text-utility-error-primary-hover: var(--color-error-700);
 
     --color-text-warning-primary: var(--color-warning-600);
     --color-text-warning-primary-hover: var(--color-warning-700);
@@ -80,8 +81,8 @@
   --color-text-brand-tertiary-alt: var(--color-brand-blue-300);
  
   /* Status text */
-  --color-text-utility-error-primary: var(--color-heading-400);
-  --color-text-utility-error-primary-hover: var(--color-heading-300);
+  --color-text-utility-error-primary: var(--color-error-400);
+  --color-text-utility-error-primary-hover: var(--color-error-300);
  
   --color-text-warning-primary: var(--color-warning-400);
   --color-text-warning-primary-hover: var(--color-warning-300);

@@ -8,7 +8,7 @@
 
     /* Error Focus Rings */
     --focus-ring-error-01: var(--color-white);
-    --focus-ring-error-02: var(--color-heading-500);
+    --focus-ring-error-02: var(--color-error-500);
 
     /* ============================================
        FOCUS RING SHADOWS - EXTRA SMALL (xs)
@@ -44,7 +44,7 @@
         0.05);
     /* --color-light-gray-950 at 5% */
     --focus-ring-error-shadow-xs-02: var(--color-white);
-    --focus-ring-error-shadow-xs-03: var(--color-heading-500);
+    --focus-ring-error-shadow-xs-03: var(--color-error-500);
 
     /* Primary Focus Ring Shadows - XS Skeumorphic */
     --focus-ring-shadow-xs-skeumorphic-01: rgba(10,
@@ -82,7 +82,7 @@
         0.05);
     /* --color-light-gray-950 at 5% */
     --focus-ring-error-shadow-xs-skeumorphic-04: var(--color-white);
-    --focus-ring-error-shadow-xs-skeumorphic-05: var(--color-heading-500);
+    --focus-ring-error-shadow-xs-skeumorphic-05: var(--color-error-500);
 
     /*Focus Rings*/
 
@@ -91,92 +91,92 @@
 
     .theme-dark{
        /* Primary Focus Rings - Dark Mode */
-    --focus-ring-01-dark: var(--color-dark-gray-950);
-    --focus-ring-02-dark: var(--color-brand-blue-500);
+    --focus-ring-01: var(--color-dark-gray-950);
+    --focus-ring-02: var(--color-brand-blue-500);
 
     /* Error Focus Rings - Dark Mode */
-    --focus-ring-error-01-dark: var(--color-dark-gray-950);
-    --focus-ring-error-02-dark: var(--color-heading-500);
+    --focus-ring-error-01: var(--color-dark-gray-950);
+    --focus-ring-error-02: var(--color-error-500);
 
     /* Primary Shadows - Dark Mode */
-    --focus-ring-shadow-xs-01-dark: rgba(249,
+    --focus-ring-shadow-xs-01: rgba(249,
         249,
         249,
         0.1);
     /* --color-dark-gray-50 at 10% */
-    --focus-ring-shadow-xs-02-dark: rgba(249,
+    --focus-ring-shadow-xs-02: rgba(249,
         249,
         249,
         0.1);
     /* --color-dark-gray-50 at 10% */
-    --focus-ring-shadow-xs-03-dark: var(--color-dark-gray-950);
-    --focus-ring-shadow-xs-04-dark: var(--color-brand-blue-500);
+    --focus-ring-shadow-xs-03: var(--color-dark-gray-950);
+    --focus-ring-shadow-xs-04: var(--color-brand-blue-500);
 
     /* Error Shadows - Dark Mode */
-    --focus-ring-error-shadow-xs-01-dark: rgba(249,
+    --focus-ring-error-shadow-xs-01: rgba(249,
         249,
         249,
         0);
     /* --color-dark-gray-50 at 0% */
-    --focus-ring-error-shadow-xs-02-dark: var(--color-dark-gray-950);
-    --focus-ring-error-shadow-xs-03-dark: var(--color-heading-500);
+    --focus-ring-error-shadow-xs-02: var(--color-dark-gray-950);
+    --focus-ring-error-shadow-xs-03: var(--color-error-500);
 
     /* Error Shadow Sizes - Dark Mode */
-    --focus-ring-shadow-xs-size-01-dark: rgba(249,
+    --focus-ring-shadow-xs-size-01: rgba(249,
         249,
         249,
         0);
     /* --color-dark-gray-50 at 0% */
-    --focus-ring-shadow-xs-size-02-dark: rgba(249,
+    --focus-ring-shadow-xs-size-02: rgba(249,
         249,
         249,
         0.05);
-    /* --color-dark-gray-50 at 5% */
-    --focus-ring-shadow-xs-size-03-dark: rgba(249,
+    /* --color-gray-50 at 5% */
+    --focus-ring-shadow-xs-size-03: rgba(249,
         249,
         249,
         0.05);
-    /* --color-dark-gray-50 at 5% */
-    --focus-ring-shadow-xs-size-04-dark: var(--color-dark-gray-950);
-    --focus-ring-shadow-xs-size-05-dark: var(--color-brand-blue-500);
+    /* --color-gray-50 at 5% */
+    --focus-ring-shadow-xs-size-04: var(--color-dark-gray-950);
+    --focus-ring-shadow-xs-size-05: var(--color-brand-blue-500);
 
     /* Primary Focus Ring Shadows - XS Skeumorphic Dark */
-    --focus-ring-shadow-xs-skeumorphic-01-dark: rgba(249,
+    --focus-ring-shadow-xs-skeumorphic-01: rgba(249,
         249,
         249,
         0);
-    /* --color-dark-gray-50 at 0% */
-    --focus-ring-shadow-xs-skeumorphic-02-dark: rgba(249,
+    /* --color-gray-50 at 0% */
+    --focus-ring-shadow-xs-skeumorphic-02: rgba(249,
         249,
         249,
         0.05);
-    /* --color-dark-gray-50 at 5% */
-    --focus-ring-shadow-xs-skeumorphic-03-dark: rgba(249,
+    /* --color-gray-50 at 5% */
+    --focus-ring-shadow-xs-skeumorphic-03: rgba(249,
         249,
         249,
         0.05);
-    /* --color-dark-gray-50 at 5% */
-    --focus-ring-shadow-xs-skeumorphic-04-dark: var(--color-dark-gray-950);
-    --focus-ring-shadow-xs-skeumorphic-05-dark: var(--color-brand-blue-500);
+    /* --color-gray-50 at 5% */
+    --focus-ring-shadow-xs-skeumorphic-04: var(--color-dark-gray-950);
+    --focus-ring-shadow-xs-skeumorphic-05: var(--color-brand-blue-500);
 
     /* Error Focus Ring Shadows - XS Skeumorphic Dark */
-    --focus-ring-error-shadow-xs-skeumorphic-01-dark: rgba(249,
+    --focus-ring-error-shadow-xs-skeumorphic-01: rgba(249,
         249,
         249,
         0.18);
-    /* --color-dark-gray-50 at 18% */
-    --focus-ring-error-shadow-xs-skeumorphic-02-dark: rgba(249,
+    /* --color-gray-50 at 18% */
+    --focus-ring-error-shadow-xs-skeumorphic-02: rgba(249,
         249,
         249,
         0.05);
-    /* --color-dark-gray-50 at 5% */
-    --focus-ring-error-shadow-xs-skeumorphic-03-dark: rgba(249,
+    /* --color-gray-50 at 5% */
+    --focus-ring-error-shadow-xs-skeumorphic-03: rgba(249,
         249,
         249,
         0.05);
-    /* --color-dark-gray-50 at 5% */
-    --focus-ring-error-shadow-xs-skeumorphic-04-dark: var(--color-dark-gray-950);
-    --focus-ring-error-shadow-xs-skeumorphic-05-dark: var(--color-heading-500);
+    /* --color-gray-50 at 5% */
+    --focus-ring-error-shadow-xs-skeumorphic-04: var(--color-dark-gray-950);
+    --focus-ring-error-shadow-xs-skeumorphic-05: var(--color-error-500);
 
     /* Neutral focus outline on dark surfaces */
     --focus-ring-01: var(--color-gray-950);

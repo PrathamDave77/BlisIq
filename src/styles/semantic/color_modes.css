@@ -108,14 +108,14 @@
     /* ========================================
        ERROR COLORS
        ======================================== */
-    --color-utility-error-50: var(--color-heading-50);
-    --color-utility-error-100: var(--color-heading-900);
-    --color-utility-error-200: var(--color-heading-800);
-    --color-utility-error-300: var(--color-heading-700);
-    --color-utility-error-400: var(--color-heading-600);
-    --color-utility-error-500: var(--color-heading-500);
-    --color-utility-error-600: var(--color-heading-400);
-    --color-utility-error-700: var(--color-heading-300);
+    --color-utility-error-50: var(--color-error-50);
+    --color-utility-error-100: var(--color-error-100);
+    --color-utility-error-200: var(--color-error-200);
+    --color-utility-error-300: var(--color-error-300);
+    --color-utility-error-400: var(--color-error-400);
+    --color-utility-error-500: var(--color-error-500);
+    --color-utility-error-600: var(--color-error-600);
+    --color-utility-error-700: var(--color-error-700);
   
 
     /* ========================================
@@ -386,14 +386,14 @@
        ERROR COLORS
        ======================================== */
     
-    --color-utility-error-50: var(--color-heading-950);
-    --color-utility-error-100: var(--color-heading-900);
-    --color-utility-error-200: var(--color-heading-800);
-    --color-utility-error-300: var(--color-heading-700);
-    --color-utility-error-400: var(--color-heading-600);
-    --color-utility-error-500: var(--color-heading-500);
-    --color-utility-error-600: var(--color-heading-400);
-    --color-utility-error-700: var(--color-heading-300);
+    --color-utility-error-50: var(--color-error-950);
+    --color-utility-error-100: var(--color-error-900);
+    --color-utility-error-200: var(--color-error-800);
+    --color-utility-error-300: var(--color-error-700);
+    --color-utility-error-400: var(--color-error-600);
+    --color-utility-error-500: var(--color-error-500);
+    --color-utility-error-600: var(--color-error-400);
+    --color-utility-error-700: var(--color-error-300);
     
     
     /*Warning*/
