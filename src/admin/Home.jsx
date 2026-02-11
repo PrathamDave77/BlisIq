@@ -171,7 +171,7 @@ const Home = () => {
           </div>
         )}
       </div>
-      <Button variant="primary" size="xl" isError>Error Primary</Button>
+      <Button variant="primary" size="sm" >Error Primary</Button>
     </div>
   );
 };

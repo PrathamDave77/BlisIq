@@ -1,11 +1,12 @@
+import React from 'react'
+import {tooltipPagination} from './tooltipPagination';
 import { React } from 'react'
 import { useState, forwardRef } from "react";
-import '../../styles/semantic/bg_modes.css';
 import { cva } from 'class-variance-authority'
 import {cn} from '../../lib/utils.js';
 
-const buttonVariants = cva(
-    "inline-flex justify-center cursor-pointer items-center rounded-md transition-all duration-200 font-semibold leading-sm font-family-body bg-bg-primary",
+const tooltipactions = cva(
+    "flex justify-center cursor-pointer items-center transition-all duration-200 font-semibold leading-sm font-family-body bg-bg-primary",
     {
         variants: {
             /*Primary isError only*/
@@ -14,7 +15,7 @@ const buttonVariants = cva(
                 false:'',
             },
             variant: {
-                primary:`border-[2px] border-[#FFF] text-text-white shadow-[var(--shadow-xs-skeumorphic)]  disabled:border-px disabled:border-[var(--border-disabled-subtle)] disabled:shadow-[var(--color-shadow-xs)] bg-[var(--bg-brand-solid)] hover:bg-[var(--bg-brand-solid-hover)] focus-visible:shadow-[var(--focus-ring-shadow-xs-skeumorphic)] `,
+                primarysecondary:`border-[2px] border-[#FFF] text-text-white shadow-[var(--shadow-xs-skeumorphic)]  disabled:border-px disabled:border-[var(--border-disabled-subtle)] disabled:shadow-[var(--color-shadow-xs)] bg-[var(--bg-brand-solid)] hover:bg-[var(--bg-brand-solid-hover)] focus-visible:shadow-[var(--focus-ring-shadow-xs-skeumorphic)] `,
                 secondary:` border-px bg-[var(--bg-primary])] text- shadow-[var(--shadow-xs-skeumorphic)]  focus-visible:shadow-[var(--focus-ring-shadow-xs-skeumorphic)] disabled:border-[var(--border-disabled-subtle)] disabled:shadow-xs disabled:text-fg-disabled border-border-primary text-text-secondary hover:bg-bg-primary-hover text-text-error
                 `,
                 tertiary:` border-[2px] text-text-tertiary text-sm hover:bg-bg-primary-hover hover:text-text-tertiary-hover focus-visible:bg-[#FFF] focus-visible:shadow-[var(--focus-ring)] disabled:text-fg-disabled disabled:bg-bg-primary-hover`,
@@ -38,23 +39,6 @@ const buttonVariants = cva(
             iconLeft:{},
             iconRight:{},
         },
-        compoundVariants:[
-                {
-                    variant:"primary",
-                    isError:true,
-                    class:'bg-[var(--bg-error-solid)] hover:bg-[var(--bg-error-solid-hover)] focus-visible:shadow-[var(--focus-ring-shadow-xs-skeumorphic-error)]',
-                },
-                {
-                    variant:"secondary",
-                    isError:true,
-                    class:'border-[var(--border-error-subtle)] hover:bg-[var(--bg-error-primary)] text-',
-                },
-                {
-                    variant:"tertiary",
-                    isError:true,
-                    class:'text-text-primary-error',
-                },
-        ],
     }
 );
 
@@ -65,9 +49,24 @@ const Button = forwardRef(
     const [isloading,setIsloading] = useState(false);
 
     return (
-        <button className={cn(buttonVariants({variant,size,isError}))} ref={ref}>{children}</button>
+      
+        <div className={cn(buttonVariants({variant,size,isError}))} ref={ref}>{children}</div>
     );
     }
 );
 
 export default Button
+
+
+
+  return (
+    <div className="flex pt-0 pb-lg px-xl">
+      <tooltipPagination/>
+      <div className="flex justify-end items-center gap-lg flex-1">
+        <button className="flex py-md px-lg justify-center items-center gap-xs rounded-md border-px border-solid bg-bg-primary border-border-primary">Skip</button>
+        <button className="flex py-md px-lg justify-center items-center gap-xs bg-bg-brand-solid border-[2px] border-solid border-[#FFF]">Next</button>
+      </div>
+      
+    </div>
+  )
+
