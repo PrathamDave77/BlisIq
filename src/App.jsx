@@ -1,9 +1,10 @@
 import "./index.css";
 import Sidebar from "./admin/Sidebar.jsx";
 import Home from "./admin/Home.jsx";
-import { Select } from "./Base-Components/Select.jsx";
+import { Select } from "./Base/Components/Select.jsx";
 import React, { useState } from "react";
-import { Input } from "./Base-Components/input.jsx";
+import { Inputfields } from "./Base/Components/Inputfields.jsx";
+import TableCell from './Base/Components/Tables/TableCell.jsx';
 
 function App() {
   const [value, setValue] = useState("");
@@ -34,7 +35,7 @@ function App() {
 
     //   <Home />
     // </div>
-    <div className="p-xl">
+    <div className="">
       {/* <Select
         searchable
         label="Team member"
@@ -46,19 +47,9 @@ function App() {
           { value: "darrell", label: "Darrell Steward" },
         ]}
       /> */}
-      <Input
-        label="Description"
-        placeholder="Enter a description..."
-        hint="This is a hint text to help user."
-      />
-
-      <Input
-        label="Description"
-        placeholder="Enter a description..."
-        error="This field is required."
-      />
-
-      <Input label="Description" disabled />
+      <TableCell variant username="Pratham77.pdf" email="234 KB" isAvatar={false} isFile={false} isPayment={false} isBadge={false} isMultipleBadges={true}>
+           
+      </TableCell>
     </div>
   );
 }
