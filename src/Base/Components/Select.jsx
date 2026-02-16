@@ -2,7 +2,7 @@
 
 import React, { useState, useRef, useEffect } from "react";
 import { cva } from "class-variance-authority";
-import { cn } from "./utils/cn.js";
+import {cn} from '../../lib/utils.js';
 
 const selectStyles = cva(
   `

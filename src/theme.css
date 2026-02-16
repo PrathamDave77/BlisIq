@@ -12,9 +12,16 @@
 @import "./styles/semantic/foreground_modes.css";
 
 @theme {
-   
    --font-family-display:var(--font-family-display);
    --font-family-body:var(--font-family-body);
+
+   /*Text sizes*/
+   --text-xl:var(--text-xl);
+   --text-lg:var(--text-ld);
+   --text-md:var(--text-md);
+   --text-sm:var(--text-sm);
+   --text-xs:var(--text-xs);
+
 
   /* --- Spacing --- */
   --spacing-none: var(--spacing-none);
@@ -70,18 +77,18 @@
 
   /* ---------- Font sizes ---------- */
 
-  --text-display-2xl: var(--display-2xl);
-  --text-display-xl: var(--display-xl);
-  --text-display-lg: var(--display-lg);
-  --text-display-md: var(--display-md);
-  --text-display-sm: var(--display-sm);
-  --text-display-xs: var(--display-xs);
+  --color-display-2xl: var(--display-2xl);
+  --color-display-xl: var(--display-xl);
+  --color-display-lg: var(--display-lg);
+  --color-display-md: var(--display-md);
+  --color-display-sm: var(--display-sm);
+  --color-display-xs: var(--display-xs);
 
-  --text-xl: var(--text-xl);
-  --text-lg: var(--text-lg);
-  --text-md: var(--text-md);
-  --text-sm: var(--text-sm);
-  --text-xs: var(--text-xs);
+  --color-xl: var(--color-xl);
+  --color-lg: var(--color-lg);
+  --color-md: var(--color-md);
+  --color-sm: var(--color-sm);
+  --color-xs: var(--color-xs);
 
   /* ---------- Line heights ---------- */
 
@@ -100,51 +107,180 @@
   --leading-sm: var(--leading-text-sm);
   --leading-xs: var(--leading-text-xs);
 
-  --color-text-primary: var(--color-text-primary);
-  --color-text-primary-on-brand: var(--color-text-primary-on-brand);
+  /* ================= PRIMARY SURFACES ================= */
+  --color-bg-primary: var(--bg-primary);
+  --color-bg-primary-alt: var(--bg-primary-alt);
+  --color-bg-primary-hover: var(--bg-primary-hover);
+  --color-bg-primary-solid: var(--bg-primary-solid);
 
-  --color-text-secondary: var(--color-text-secondary);
-  --color-text-secondary-hover: var(--color-text-secondary-hover);
-  --color-text-secondary-on-brand: var(--color-text-secondary-on-brand);
+  /* ================= SECONDARY SURFACES ================= */
+  --color-bg-secondary: var(--bg-secondary);
+  --color-bg-secondary-alt: var(--bg-secondary-alt);
+  --color-bg-secondary-hover: var(--bg-secondary-hover);
+  --color-bg-secondary-subtle: var(--bg-secondary-subtle);
+  --color-bg-secondary-solid: var(--bg-secondary-solid);
 
-  --color-text-tertiary: var(--color-text-tertiary);
-  --color-text-tertiary-hover: var(--color-text-tertiary-hover);
-  --color-text-tertiary-on-brand: var(--color-text-tertiary-on-brand);
+  /* ================= TERTIARY ================= */
+  --color-bg-tertiary: var(--bg-tertiary);
+  --color-bg-quaternary: var(--bg-quaternary);
 
-  --color-text-quaternary: var(--color-text-quaternary);
-  --color-text-quaternary-on-brand: var(--color-text-quaternary-on-brand);
+  /* ================= STATES ================= */
+  --color-bg-active: var(--bg-active);
+  --color-bg-disabled: var(--bg-disabled);
+  --color-bg-disabled-subtle: var(--bg-disabled-subtle);
+  --color-bg-overlay: var(--bg-overlay);
 
-  /* ================================
-     UTILITY / SYSTEM
-     ================================ */
+  /* ================= BRAND ================= */
+  --color-bg-brand-primary: var(--bg-brand-primary);
+  --color-bg-brand-primary-alt: var(--bg-brand-primary-alt);
+  --color-bg-brand-secondary: var(--bg-brand-secondary);
+  --color-bg-brand-solid: var(--bg-brand-solid);
+  --color-bg-brand-solid-hover: var(--bg-brand-solid-hover);
+  --color-bg-brand-section: var(--bg-brand-section);
+  --color-bg-brand-section-subtle: var(--bg-brand-section-subtle);
 
-  --color-text-white: var(--color-text-white);
-  --color-text-disabled: var(--color-text-disabled);
-  --color-text-placeholder: var(--color-text-placeholder);
-  --color-text-placeholder-subtle: var(--color-text-placeholder-subtle);
+  /* ================= ERROR ================= */
+  --color-bg-error-primary: var(--bg-error-primary);
+  --color-bg-error-secondary: var(--bg-error-secondary);
+  --color-bg-error-solid: var(--bg-error-solid);
+  --color-bg-error-solid-hover: var(--bg-error-solid-hover);
 
-  /* ================================
-     BRAND
-     ================================ */
+  /* ================= WARNING ================= */
+  --color-bg-warning-primary: var(--bg-warning-primary);
+  --color-bg-warning-secondary: var(--bg-warning-secondary);
+  --color-bg-warning-solid: var(--bg-warning-solid);
 
-  --color-text-brand-primary: var(--color-text-brand-primary);
-  --color-text-brand-secondary: var(--color-text-brand-secondary);
-  --color-text-brand-secondary-hover: var(--color-text-brand-secondary-hover);
-  --color-text-brand-tertiary: var(--color-text-brand-tertiary);
-  --color-text-brand-tertiary-alt: var(--color-text-brand-tertiary-alt);
+  /* ================= SUCCESS ================= */
+  --color-bg-success-primary: var(--bg-success-primary);
+  --color-bg-success-secondary: var(--bg-success-secondary);
+  --color-bg-success-solid: var(--bg-success-solid);
 
-  /* ================================
-     STATUS
-     ================================ */
+   /* ================= PRIMARY BORDERS ================= */
+  --color-border-primary: var(--border-primary);
+  --color-border-secondary: var(--border-secondary);
+  --color-border-tertiary: var(--border-tertiary);
 
-  --color-text-error: var(--color-text-utility-error-primary);
-  --color-text-error-hover: var(--color-text-utility-error-primary-hover);
+  /* ================= ALT ================= */
+  --color-border-secondary-alt: var(--border-secondary-alt);
 
-  --color-text-warning: var(--color-text-warning-primary);
-  --color-text-warning-hover: var(--color-text-warning-primary-hover);
+  /* ================= DISABLED ================= */
+  --color-border-disabled: var(--border-disabled);
+  --color-border-disabled-subtle: var(--border-disabled-subtle);
 
-  --color-text-success: var(--color-text-success-primary);
-  --color-text-success-hover: var(--color-text-success-primary-hover);
+  /* ================= BRAND ================= */
+  --color-border-brand: var(--border-brand);
+  --color-border-brand-alt: var(--border-brand-alt);
+
+  /* ================= ERROR ================= */
+  --color-border-error: var(--border-error);
+  --color-border-error-subtle: var(--border-error-subtle);
+
+  /* =====================================================
+     ALPHA TOKENS
+  ===================================================== */
+
+  --color-alpha-white-transparent: var(--alpha-white-transparent);
+  --color-alpha-white-10: var(--alpha-white-10);
+  --color-alpha-white-20: var(--alpha-white-20);
+  --color-alpha-white-30: var(--alpha-white-30);
+  --color-alpha-white-40: var(--alpha-white-40);
+  --color-alpha-white-50: var(--alpha-white-50);
+  --color-alpha-white-60: var(--alpha-white-60);
+  --color-alpha-white-70: var(--alpha-white-70);
+  --color-alpha-white-80: var(--alpha-white-80);
+  --color-alpha-white-90: var(--alpha-white-90);
+  --color-alpha-white-100: var(--alpha-white-100);
+
+  --color-alpha-black-10: var(--alpha-black-10);
+  --color-alpha-black-20: var(--alpha-black-20);
+  --color-alpha-black-30: var(--alpha-black-30);
+  --color-alpha-black-40: var(--alpha-black-40);
+  --color-alpha-black-50: var(--alpha-black-50);
+  --color-alpha-black-60: var(--alpha-black-60);
+  --color-alpha-black-70: var(--alpha-black-70);
+  --color-alpha-black-80: var(--alpha-black-80);
+  --color-alpha-black-90: var(--alpha-black-90);
+  --color-alpha-black-100: var(--alpha-black-100);
+
+
+  /* =====================================================
+     UTILITY COLORS
+  ===================================================== */
+
+  --color-gray-50: var(--color-utility-gray-50);
+  --color-gray-100: var(--color-utility-gray-100);
+  --color-gray-200: var(--color-utility-gray-200);
+  --color-gray-300: var(--color-utility-gray-300);
+  --color-gray-400: var(--color-utility-gray-400);
+  --color-gray-500: var(--color-utility-gray-500);
+  --color-gray-600: var(--color-utility-gray-600);
+  --color-gray-700: var(--color-utility-gray-700);
+  --color-gray-800: var(--color-utility-gray-800);
+  --color-gray-900: var(--color-utility-gray-900);
+
+  --color-brand-50: var(--color-utility-brand-50);
+  --color-brand-100: var(--color-utility-brand-100);
+  --color-brand-200: var(--color-utility-brand-200);
+  --color-brand-300: var(--color-utility-brand-300);
+  --color-brand-400: var(--color-utility-brand-400);
+  --color-brand-500: var(--color-utility-brand-500);
+  --color-brand-600: var(--color-utility-brand-600);
+  --color-brand-700: var(--color-utility-brand-700);
+  --color-brand-800: var(--color-utility-brand-800);
+  --color-brand-900: var(--color-utility-brand-900);
+
+  --color-error-50: var(--color-utility-error-50);
+  --color-error-100: var(--color-utility-error-100);
+  --color-error-200: var(--color-utility-error-200);
+  --color-error-300: var(--color-utility-error-300);
+  --color-error-400: var(--color-utility-error-400);
+  --color-error-500: var(--color-utility-error-500);
+  --color-error-600: var(--color-utility-error-600);
+  --color-error-700: var(--color-utility-error-700);
+
+  --color-warning-50: var(--color-utility-warning-50);
+  --color-warning-100: var(--color-utility-warning-100);
+  --color-warning-200: var(--color-utility-warning-200);
+  --color-warning-300: var(--color-utility-warning-300);
+  --color-warning-400: var(--color-utility-warning-400);
+  --color-warning-500: var(--color-utility-warning-500);
+  --color-warning-600: var(--color-utility-warning-600);
+  --color-warning-700: var(--color-utility-warning-700);
+
+  --color-success-50: var(--color-utility-success-50);
+  --color-success-100: var(--color-utility-success-100);
+  --color-success-200: var(--color-utility-success-200);
+  --color-success-300: var(--color-utility-success-300);
+  --color-success-400: var(--color-utility-success-400);
+  --color-success-500: var(--color-utility-success-500);
+  --color-success-600: var(--color-utility-success-600);
+  --color-success-700: var(--color-utility-success-700);
+
+
+  /* =====================================================
+     COMPONENT TOKENS
+  ===================================================== */
+
+  --color-featured-icon-brand: var(--color-featured-icon-light-fg-brand);
+  --color-featured-icon-gray: var(--color-featured-icon-light-fg-gray);
+  --color-featured-icon-error: var(--color-featured-icon-light-fg-error);
+  --color-featured-icon-warning: var(--color-featured-icon-light-fg-warning);
+  --color-featured-icon-success: var(--color-featured-icon-light-fg-success);
+
+  --color-button-primary-icon: var(--color-button-primary-icon);
+  --color-button-primary-icon-hover: var(--color-button-primary-icon_hover);
+
+  --color-button-destructive-icon: var(--color-button-destructive-primary-icon);
+  --color-button-destructive-icon-hover: var(--color-button-destructive-primary-icon_hover);
+
+  --color-toggle-border: var(--color-toggle-border);
+  --color-toggle-pressed: var(--color-toggle-slim-border_pressed);
+  --color-toggle-pressed-hover: var(--color-toggle-slim-border_pressed-hover);
+  --color-toggle-disabled: var(--color-toggle-button-fg_disabled);
+
+  --color-tooltip-supporting-text: var(--color-tooltip-supporting-text);
+  --color-slider-handle-border: var(--color-slider-handle-border);
+  --color-slider-handle-bg: var(--color-slider-handle-bg);
 
   /* ================================
      NEUTRAL FOREGROUNDS
@@ -231,8 +367,76 @@
 
    --color-bg-brand-primary: var(--bg-brand-primary);
 
-   --color-focus-ring-02 : var(--focus-ring-02);
 
+      /* =====================================================
+     FOCUS RINGS - BASE
+  ===================================================== */
+
+  --color-focus-ring-01: var(--focus-ring-01);
+  --color-focus-ring-02: var(--focus-ring-02);
+
+  --color-focus-ring-error-01: var(--focus-ring-error-01);
+  --color-focus-ring-error-02: var(--focus-ring-error-02);
+
+  /* =====================================================
+     FOCUS RING SHADOWS - XS
+  ===================================================== */
+
+  --shadow-focus-ring-xs-01: var(--focus-ring-shadow-xs-01);
+  --shadow-focus-ring-xs-02: var(--focus-ring-shadow-xs-02);
+  --shadow-focus-ring-xs-03: var(--focus-ring-shadow-xs-03);
+  --shadow-focus-ring-xs-04: var(--focus-ring-shadow-xs-04);
+  --shadow-focus-ring-xs-05: var(--focus-ring-shadow-xs-05);
+
+  --shadow-focus-ring-error-xs-01: var(--focus-ring-error-shadow-xs-01);
+  --shadow-focus-ring-error-xs-02: var(--focus-ring-error-shadow-xs-02);
+  --shadow-focus-ring-error-xs-03: var(--focus-ring-error-shadow-xs-03);
+  --shadow-focus-ring-error-xs-04: var(--focus-ring-error-shadow-xs-04);
+  --shadow-focus-ring-error-xs-05: var(--focus-ring-error-shadow-xs-05);
+
+
+  /* =====================================================
+     FOCUS RING SHADOWS - SM
+  ===================================================== */
+
+  --shadow-focus-ring-sm-01: var(--focus-ring-shadow-sm-01);
+  --shadow-focus-ring-sm-02: var(--focus-ring-shadow-sm-02);
+  --shadow-focus-ring-sm-03: var(--focus-ring-shadow-sm-03);
+  --shadow-focus-ring-sm-04: var(--focus-ring-shadow-sm-04);
+
+
+  /* =====================================================
+     SKEUOMORPHIC FOCUS SHADOWS - XS
+  ===================================================== */
+
+  --shadow-focus-ring-xs-skeu-01: var(--focus-ring-shadow-xs-skeumorphic-01);
+  --shadow-focus-ring-xs-skeu-02: var(--focus-ring-shadow-xs-skeumorphic-02);
+  --shadow-focus-ring-xs-skeu-03: var(--focus-ring-shadow-xs-skeumorphic-03);
+  --shadow-focus-ring-xs-skeu-04: var(--focus-ring-shadow-xs-skeumorphic-04);
+  --shadow-focus-ring-xs-skeu-05: var(--focus-ring-shadow-xs-skeumorphic-05);
+
+  --shadow-focus-ring-error-xs-skeu-01: var(--focus-ring-error-shadow-xs-skeumorphic-01);
+  --shadow-focus-ring-error-xs-skeu-02: var(--focus-ring-error-shadow-xs-skeumorphic-02);
+  --shadow-focus-ring-error-xs-skeu-03: var(--focus-ring-error-shadow-xs-skeumorphic-03);
+  --shadow-focus-ring-error-xs-skeu-04: var(--focus-ring-error-shadow-xs-skeumorphic-04);
+  --shadow-focus-ring-error-xs-skeu-05: var(--focus-ring-error-shadow-xs-skeumorphic-05);
+
+
+  /* =====================================================
+     STACK SHADOWS (Dark Mode Variants)
+  ===================================================== */
+
+  --shadow-focus-ring-xs-stack-01: var(--focus-ring-shadow-xs-stack-01);
+  --shadow-focus-ring-xs-stack-02: var(--focus-ring-shadow-xs-stack-02);
+  --shadow-focus-ring-xs-stack-03: var(--focus-ring-shadow-xs-stack-03);
+  --shadow-focus-ring-xs-stack-04: var(--focus-ring-shadow-xs-stack-04);
+  --shadow-focus-ring-xs-stack-05: var(--focus-ring-shadow-xs-stack-05);
+
+  --shadow-focus-ring-error-xs-stack-01: var(--focus-ring-error-shadow-xs-stack-01);
+  --shadow-focus-ring-error-xs-stack-02: var(--focus-ring-error-shadow-xs-stack-02);
+  --shadow-focus-ring-error-xs-stack-03: var(--focus-ring-error-shadow-xs-stack-03);
+  --shadow-focus-ring-error-xs-stack-04: var(--focus-ring-error-shadow-xs-stack-04);
+  --shadow-focus-ring-error-xs-stack-05: var(--focus-ring-error-shadow-xs-stack-05);
 
    /*Shadows */
    --shadow-xs:0 1px 2px 0 var(--shadow-xs);
@@ -286,9 +490,97 @@
       0 0 0 2px var(--focus-ring-error-shadow-xs-skeumorphic-04), 
       0 0 0 4px var(--focus-ring-error-shadow-xs-skeumorphic-05);
 
-   /*Error colors text*/
-   --color-text-error-primary:var(--color-error-600);
-   
+   /* ============================================
+     NEUTRAL FOREGROUNDS
+  ============================================ */
 
+  --color-fg-primary: var(--fg-primary);
+  --color-fg-secondary: var(--fg-secondary);
+  --color-fg-secondary-hover: var(--fg-secondary-hover);
+  --color-fg-tertiary: var(--fg-tertiary);
+  --color-fg-tertiary-hover: var(--fg-tertiary-hover);
+  --color-fg-quaternary: var(--fg-quaternary);
+  --color-fg-quaternary-hover: var(--fg-quaternary-hover);
+
+  /* ============================================
+     FIXED
+  ============================================ */
+
+  --color-fg-white: var(--fg-white);
+
+  /* ============================================
+     DISABLED
+  ============================================ */
+
+  --color-fg-disabled: var(--fg-disabled);
+  --color-fg-disabled-subtle: var(--fg-disabled-subtle);
+
+  /* ============================================
+     BRAND
+  ============================================ */
+
+  --color-fg-brand-primary: var(--fg-brand-primary);
+  --color-fg-brand-primary-alt: var(--fg-brand-primary-alt);
+  --color-fg-brand-secondary: var(--fg-brand-secondary);
+  --color-fg-brand-secondary-hover: var(--fg-brand-secondary-hover);
+  --color-fg-brand-secondary-alt: var(--fg-brand-secondary-alt);
+
+  /* ============================================
+     ERROR
+  ============================================ */
+
+  --color-fg-error-primary: var(--fg-error-primary);
+  --color-fg-error-secondary: var(--fg-error-secondary);
+
+  /* ============================================
+     WARNING
+  ============================================ */
+
+  --color-fg-warning-primary: var(--fg-warning-primary);
+  --color-fg-warning-secondary: var(--fg-warning-secondary);
+
+  /* ============================================
+     SUCCESS
+  ============================================ */
+
+  --color-fg-success-primary: var(--fg-success-primary);
+  --color-fg-success-secondary: var(--fg-success-secondary);
    
+   
+    /* Base hierarchy */
+  --color-text-primary: var(--color-text-primary);
+  --color-text-secondary: var(--color-text-secondary);
+  --color-text-secondary-hover: var(--color-text-secondary-hover);
+  --color-text-tertiary: var(--color-text-tertiary);
+  --color-text-tertiary-hover: var(--color-text-tertiary-hover);
+  --color-text-quaternary: var(--color-text-quaternary);
+
+  /* On brand surfaces */
+  --color-on-brand-primary: var(--color-text-primary-on-brand);
+  --color-on-brand-secondary: var(--color-text-secondary-on-brand);
+  --color-on-brand-tertiary: var(--color-text-tertiary-on-brand);
+  --color-on-brand-quaternary: var(--color-text-quaternary-on-brand);
+
+  /* Utility */
+  --color-white: var(--color-text-white);
+  --color-disabled: var(--color-text-disabled);
+  --color-placeholder: var(--color-text-placeholder);
+  --color-placeholder-subtle: var(--color-text-placeholder-subtle);
+
+  /* Brand emphasis */
+  --color-brand-primary: var(--color-text-brand-primary);
+  --color-brand-secondary: var(--color-text-brand-secondary);
+  --color-brand-secondary-hover: var(--color-text-brand-secondary-hover);
+  --color-brand-tertiary: var(--color-text-brand-tertiary);
+  --color-brand-tertiary-alt: var(--color-text-brand-tertiary-alt);
+
+  /* Status */
+  --color-text-error-primary: var(--color-text-utility-error-primary);
+  --color-error-primary-hover: var(--color-text-utility-error-primary-hover);
+
+  --color-warning-primary: var(--color-text-warning-primary);
+  --color-warning-primary-hover: var(--color-text-warning-primary-hover);
+
+  --color-success-primary: var(--color-text-success-primary);
+  --color-success-primary-hover: var(--color-text-success-primary-hover);
 }
