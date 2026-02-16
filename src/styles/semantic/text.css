@@ -1,5 +1,4 @@
-@import "../primitives/colors.css";
-
+@import '../primitives/colors.css';
 :root{
 
     /* Primary text */
@@ -32,6 +31,9 @@
     --color-text-brand-secondary-hover: var(--color-brand-blue-800);
     --color-text-brand-tertiary: var(--color-brand-blue-600);
     --color-text-brand-tertiary-alt: var(--color-brand-blue-600);
+
+    --color-text-error-primary:var(--color-error-600);
+    --color-text-error-primary_hover:var(--color-error-400);
 
     /* Status text */
     --color-text-utility-error-primary: var(--color-error-600);

@@ -9,8 +9,6 @@
     --color-white: #FFFFFF;
     --color-black: 000000;
 
-    /* BASE COLOR */
-    
     /*Light Palette*/
     --color-light-gray-25:#FDFDFD;
     --color-light-gray-50:#FAFAFA;
@@ -195,6 +193,9 @@
     --color-orange-800: #932F19;
     --color-orange-900: #772917;
     --color-orange-950: #511C10;
+
+  
+    
 
 } 
    

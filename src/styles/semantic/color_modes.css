@@ -253,7 +253,41 @@
    --color-slider-handle-border:var(--color-brand-blue-600);
    --color-slider-handle-bg:var(--color-white);
 
-  }
+   /* =========================================================
+   Backdrop – Light Blur
+   ========================================================= */
+
+   .backdrop-light-blur-sm {
+   border-radius: var(--radius-xl);
+   background-color: var(--alpha-white-60);
+   backdrop-filter: blur(4px);
+   -webkit-backdrop-filter: blur(4px);
+   }
+
+   .backdrop-light-blur-md {
+   border-radius: var(--radius-xl);
+   background-color: var(--alpha-white-60);
+   backdrop-filter: blur(4px);
+   -webkit-backdrop-filter: blur(4px);
+   }
+
+   .backdrop-light-blur-lg {
+   border-radius: var(--radius-xl);
+   background-color: var(--alpha-white-60);
+   backdrop-filter: blur(4px);
+   -webkit-backdrop-filter: blur(4px);
+   }
+
+   .backdrop-light-blur-xl {
+   border-radius: var(--radius-xl);
+   background-color: var(--alpha-white-60);
+   backdrop-filter: blur(4px);
+   -webkit-backdrop-filter: blur(4px);
+   }
+
+   
+
+}
 
 /* -------------------------
    DARK MODE
@@ -507,5 +541,41 @@
    --color-tooltip-supporting-text:var(--color-gray-300);
    --color-slider-handle-border:var(--color-brand-blue-600);
    --color-slider-handle-bg:var(--color-gray-800);
+
+   .backdrop-blur-sm {
+      border-radius: var(--radius-xl, 12px);
+      background-color: var(--alpha-black-60);
+      backdrop-filter: blur(4px);
+      -webkit-backdrop-filter: blur(4px);
+   }
+   
+.backdrop-blur-md {
+  border-radius: var(--radius-xl, 12px);
+  background-color: var(
+    --alpha-black-60
+
+  );
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.backdrop-blur-lg {
+  border-radius: var(--radius-xl, 12px);
+  background-color: var(
+    --alpha-black-60
+
+  );
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.backdrop-blur-xl {
+  border-radius: var(--radius-xl, 12px);
+  background-color: var(
+    --alpha-black-60
+  );
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
 }
    
