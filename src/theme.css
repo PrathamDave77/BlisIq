@@ -334,16 +334,16 @@
   --color-fg-success-primary: var(--fg-success-primary);
   --color-fg-success-secondary: var(--fg-success-secondary);
 
-  --color-utility-gray-50: var(--color-utility-gray-50);
-  --color-utility-gray-100: var(--color-utility-gray-100);
-  --color-utility-gray-200: var(--color-utility-gray-200);
-  --color-utility-gray-300: var(--color-utility-gray-300);
-  --color-utility-gray-400: var(--color-utility-gray-400);
-  --color-utility-gray-500: var(--color-utility-gray-500);
-  --color-utility-gray-600: var(--color-utility-gray-600);
-  --color-utility-gray-700: var(--color-utility-gray-700);
-  --color-utility-gray-800: var(--color-utility-gray-800);
-  --color-utility-gray-900: var(--color-utility-gray-900);
+  --color-gray-50: var(--color-utility-gray-50);
+  --color-gray-100: var(--color-utility-gray-100);
+  --color-gray-200: var(--color-utility-gray-200);
+  --color-gray-300: var(--color-utility-gray-300);
+  --color-gray-400: var(--color-utility-gray-400);
+  --color-gray-500: var(--color-utility-gray-500);
+  --color-gray-600: var(--color-utility-gray-600);
+  --color-gray-700: var(--color-utility-gray-700);
+  --color-gray-800: var(--color-utility-gray-800);
+  --color-gray-900: var(--color-utility-gray-900);
 
   /* ================================
      PRIMARY BORDERS
@@ -448,6 +448,7 @@
    --shadow-3xl:0 32px 64px -12px var(--shadow-3xl_01), 0 5px 5px -2.5px var(--shadow-3xl_02);
    --shadow-xs-skeumorphic:0 1px 2px 0 var(--shadow-xs) inset, 0 -2px 0 0 var(--shadow-xs) inset;
    --shadow-modern: 0 -2px 2px 0 rgba(0, 0, 0, 0.13) inset, 1px 13px 5px 0 rgba(0, 0, 0, 0.01), 2px 21px 6px 0 rgba(0, 0, 0, 0.00), 1px 8px 5px 0 rgba(0, 0, 0, 0.05), 0 3px 3px 0 rgba(0, 0, 0, 0.09), 0 1px 2px 0 rgba(0, 0, 0, 0.10);
+   
 
 
    --color-bg-primary-hover:var(--bg-primary-hover);
@@ -575,8 +576,8 @@
   --color-brand-tertiary-alt: var(--color-text-brand-tertiary-alt);
 
   /* Status */
-  --color-text-error-primary: var(--color-text-utility-error-primary);
-  --color-error-primary-hover: var(--color-text-utility-error-primary-hover);
+  --color-text-error-primary: var(--color-text-error-primary);
+  --color-error-primary-hover: var(--color-text-error-primary-hover);
 
   --color-warning-primary: var(--color-text-warning-primary);
   --color-warning-primary-hover: var(--color-text-warning-primary-hover);

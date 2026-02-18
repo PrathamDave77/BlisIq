@@ -5,7 +5,11 @@ import { Select } from "./Base/Components/Select.jsx";
 import React, { useState } from "react";
 import { Inputfields } from "./Base/Components/Inputfields.jsx";
 import TableCell from './Base/Components/Tables/TableCell.jsx';
-import Badges from './Base/Components/Badges/Badges.jsx';
+import Badges from './Base/Components/Badges/Badges.jsx'
+import {AvatarOnlineIndicator} from './Base/Components/Avatar/AvatarOnlineIndicator.jsx';
+import Avatar from './Base/Components/Avatar/Avatar.jsx';
+import {CompanyIcon} from './Base/Components/Avatar/AvatarOnlineIndicator.jsx';
+import Cardheader from './Base/Components/Button.jsx';
 
 function App() {
   const [value, setValue] = useState("");
@@ -36,7 +40,7 @@ function App() {
 
     //   <Home />
     // </div>
-    <div className="">
+    <div className=" ">
       {/* <Select
         searchable
         label="Team member"
@@ -48,9 +52,9 @@ function App() {
           { value: "darrell", label: "Darrell Steward" },
         ]}
       /> */}
-      <TableCell variant="trendpos" username="Pratham77.pdf" email="234 KB" isAvatar={false} isFile={false} isPayment={true} isBadge={false} isMultipleBadges={true} />
-
       
+      <Cardheader />
+
     </div>
   );
 }

@@ -7,11 +7,7 @@
     --border-tertiary: var(--color-light-gray-100);
 
     /* Secondary alt (black @ 8%) */
-    --border-secondary-alt: color-mix(
-      in srgb,
-      var(--color-black) 8%,
-      transparent
-    );
+    --border-secondary-alt: rgba(0, 0, 0, 0.08);
 
     /* Disabled borders */
     --border-disabled: var(--color-light-gray-300);
@@ -33,7 +29,7 @@
     --border-tertiary: var(--color-dark-gray-800);
 
     /* Secondary alt */
-    --border-secondary-alt: var(--color-dark-gray-800);
+    --border-secondary-alt: rgba(0, 0, 0, 0.08);
 
     /* Disabled borders */
     --border-disabled: var(--color-dark-gray-700);
