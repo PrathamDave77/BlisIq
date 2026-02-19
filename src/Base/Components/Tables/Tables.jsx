@@ -102,7 +102,7 @@ const Tables = () => {
             {data.map(item => <Badges />)}
         </div>
         <div className="flex flex-col items-start">
-
+          
         </div>
 
       </div>
