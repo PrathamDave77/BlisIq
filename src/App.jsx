@@ -9,7 +9,8 @@ import Badges from './Base/Components/Badges/Badges.jsx'
 import {AvatarOnlineIndicator} from './Base/Components/Avatar/AvatarOnlineIndicator.jsx';
 import Avatar from './Base/Components/Avatar/Avatar.jsx';
 import {CompanyIcon} from './Base/Components/Avatar/AvatarOnlineIndicator.jsx';
-import Cardheader from './Base/Components/Button.jsx';
+import Cardheader from './Base/Components/Tables/Cardheader.jsx';
+import Tables from './Base/Components/Tables/Tables.jsx';
 
 function App() {
   const [value, setValue] = useState("");
@@ -53,7 +54,7 @@ function App() {
         ]}
       /> */}
       
-      <Cardheader />
+      <Tables />
 
     </div>
   );

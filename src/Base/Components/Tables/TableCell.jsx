@@ -4,7 +4,7 @@
     import TableCellActions from './TableCellActions.jsx';
     import File_icons from '../../../../public/File_icons.png';
     import Badges from '../Badges/Badges.jsx';
-
+    import Checkbox from '../../../../public/Checkbox.png';
 
     const actions = cva(
         `inline-flex items-center gap-lg py-lg px-xl border-b-[1px] border-b-border-secondary hover:bg-bg-primary-hover text-text-tertiary text-center font-family-body text-sm leading-sm`,
@@ -21,9 +21,14 @@
 
     )
 
-    const TableCell = ({ variant, istableaction, email, username, isAvatar, isAvatarGrp, isFile, isPayment, isBadge,istrend,amount, credentials }) => {
+    const TableCell = ({ variant, isdefault,istableaction, email, username, isAvatar, isAvatarGrp, isFile, isPayment, isBadge,istrend,amount, credentials, children }) => {
         return (
-            <div className={cn(actions({ variant }))}>
+            <div >
+                {isdefault && <div className={cn(actions({ variant }))}>
+                        <img src={Checkbox} alt="image"/>
+                        <div className="flex flex-col items-start"><div className="line-clamp-1 text-text-primary font-semibold ">{username}</div><div className="self-stretch line-clamp-1 overflow-ellipsis text-text-tertiary font-normal">{email}</div>
+                        </div>
+                    </div>}
                 {isBadge==="single" && <div className="flex py-xxs px-md justify-center items-center gap-md rounded-full border border-success-200 bg-success-50 text-(--color-success-700) content-center font-family-body text-xs font-normal leading-xs">Active</div>} 
                 {isBadge==="multiple" && <><Badges pillcolor={true} variant isIcon={false} badgecolor={false} badgeModern={false} color="rose" label="label" /><Badges pillcolor={true} variant isIcon={false} badgecolor={false} badgeModern={false} color="rose" label="label" /><Badges pillcolor={true} variant isIcon={false} badgecolor={false} badgeModern={false} color="rose" label="label" /><div className="flex py-xxs px-md justify-center items-center gap-md rounded-full border border-solid border-utility-gray-200 bg-utility-gray-50 text-utility-gray-700 text-center font-family-body text-xs font-normal leading-xs">+4</div></>}
 
@@ -39,11 +44,12 @@
                     </svg></div>} 
                     
                     {credentials && <div>
-                        <div className="self-stretch line-clamp-1 overflow-ellipsis text-text-primary font-semibold ">{credentials}</div>
-                        <div className="line-clamp-1 text-text-tertiary font-normal">{credentials}</div>
+                        <div className="self-stretch line-clamp-1 overflow-ellipsis text-text-primary font-semibold ">{email}</div>
+                        <div className="line-clamp-1 text-text-tertiary font-normal">{username}</div>
                     </div>}
-                    {}
+                    
                 </div>} 
+                
                 {istrend==="postive" && <div className="flex flex-row gap-lg">
                     <div>{amount}</div>
                     <Badges variant="Iconarrowup" isIcon="arrowup" pillcolor={true} color="teal" label="20%"/> 

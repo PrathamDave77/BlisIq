@@ -5,7 +5,7 @@ import Indian_flag from '../../../../public/Indian_flag.png';
 import pkd from '../../../../public/pkd.jpg';
 
 const actions = cva(
-    `inline-flex items-center justify-center gap-md py-xxs px-md  border border-gray-200 bg-gray-50 text-gray-700 content-center font-family-body text-xs font-normal leading-xs md:px-[10px] lg:py-xs lg:px-lg`,
+    `inline-flex items-center justify-center  gap-md py-xxs px-md  border content-center font-family-body text-xs font-normal leading-xs md:px-[10px] lg:py-xs lg:px-lg`,
     {
         variants: {
             variant: {
@@ -23,7 +23,7 @@ const actions = cva(
             badgeModern: { true: "rounded-sm text-xs leading-xs text-utility-gray-700 " },
             color: {
                 grey: "border-gray-200 bg-gray-50 text-gray-700",
-                brand: "border-brand-200 text-brand-700",
+                brand: "border-[var(--color-brand-200)] text-[var(--color-brand-700)] bg-[var(--color-brand-50)]",
                 error: "border-[var(--color-error-200)] bg-[var(--color-error-50)] text-[var(--color-error-700)]",
                 warning: "border-[var(--color-warning-200)] bg-[var(--color-warning-50)] text-[var(--color-warning-700)]",
                 success: "border-success-200 bg-success-50 text-success-700",
