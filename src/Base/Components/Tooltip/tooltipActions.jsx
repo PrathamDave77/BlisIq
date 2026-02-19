@@ -1,12 +1,13 @@
 import React from 'react'
-import {tooltipPagination} from './tooltipPagination.jsx';
 import { React } from 'react'
 import { useState, forwardRef } from "react";
 import { cva } from 'class-variance-authority'
 import {cn} from '../../../lib/utils.js';
 
+import tooltipPagination from './tooltipPagination.jsx';
+
 const tooltipactions = cva(
-    "flex pt-0 pb-lg px-xl",
+    "flex pt-0 pb-lg px-lg items-center justify-center gap-xl ",
     {
         variants: {
             /*Primary isError only*/
@@ -30,7 +31,7 @@ const tooltippagination = forwardRef(
 
         return (
             <div className="flex pt-0 pb-lg px-xl">
-            <tooltipPagination/>
+            {variant==="dot" && <tooltipPagination variant="dot"/> || variant==="text" && <tooltipPagination variant="text"/>}
             <div className="flex justify-end items-center gap-lg flex-1">
                 <button className="flex py-md px-lg justify-center items-center gap-xs rounded-md border-px border-solid bg-bg-primary border-border-primary">Skip</button>
                 <button className="flex py-md px-lg justify-center items-center gap-xs bg-bg-brand-solid border-[2px] border-solid border-[#FFF]">Next</button>

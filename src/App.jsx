@@ -4,13 +4,13 @@ import Home from "./admin/Home.jsx";
 import { Select } from "./Base/Components/Select.jsx";
 import React, { useState } from "react";
 import { Inputfields } from "./Base/Components/Inputfields.jsx";
-import TableCell from "./Base/Components/Tables/TableCell.jsx";
-import Badges from "./Base/Components/Badges/Badges.jsx";
-import SidebarMenu from "./Base/Components/sidebar/SidebarMenu.jsx";
-import UpperNavigation from "./Base/Components/UpperNavigation.jsx";
-import Users from "./admin/Users.jsx";
-import Groups from "./admin/Groups.jsx";
-import CourseVerif from "./admin/CourseVerif.jsx";
+import TableCell from './Base/Components/Tables/TableCell.jsx';
+import Badges from './Base/Components/Badges/Badges.jsx'
+import {AvatarOnlineIndicator} from './Base/Components/Avatar/AvatarOnlineIndicator.jsx';
+import Avatar from './Base/Components/Avatar/Avatar.jsx';
+import {CompanyIcon} from './Base/Components/Avatar/AvatarOnlineIndicator.jsx';
+import Cardheader from './Base/Components/Tables/Cardheader.jsx';
+import Tables from './Base/Components/Tables/Tables.jsx';
 
 function App() {
   const [value, setValue] = useState("");

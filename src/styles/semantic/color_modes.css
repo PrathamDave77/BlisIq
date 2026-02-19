@@ -73,26 +73,36 @@
        BRAND COLORS
        ======================================== */
     
-    --color-utility-brand-50: var(--brand-blue-950);
-    --color-utility-brand-50-alt: var(--brand-blue-900);
-    --color-utility-brand-100: var(--brand-blue-900);
-    --color-utility-brand-100-alt: var(--brand-blue-800);
-    --color-utility-brand-200: var(--brand-blue-800);
-    --color-utility-brand-200-alt: var(--brand-blue-800);
-    --color-utility-brand-300: var(--brand-blue-700);
-    --color-utility-brand-300-alt: var(--brand-blue-700);
-    --color-utility-brand-400: var(--brand-blue-600);
-    --color-utility-brand-400-alt: var(--brand-blue-600);
-    --color-utility-brand-500: var(--brand-blue-500);
-    --color-utility-brand-500-alt: var(--brand-blue-500);
-    --color-utility-brand-600: var(--brand-blue-400);
-    --color-utility-brand-600-alt: var(--brand-blue-400);
-    --color-utility-brand-700: var(--brand-blue-300);
-    --color-utility-brand-700-alt: var(--brand-blue-300);
-    --color-utility-brand-800: var(--brand-blue-200);
-    --color-utility-brand-800-alt: var(--brand-blue-200);
-    --color-utility-brand-900: var(--brand-blue-100);
-    --color-utility-brand-900-alt: var(--brand-blue-100);
+    --color-utility-brand-50: var(--color-brand-blue-100);
+--color-utility-brand-50-alt: var(--color-brand-blue-200);
+
+--color-utility-brand-100: var(--color-brand-blue-200);
+--color-utility-brand-100-alt: var(--color-brand-blue-300);
+
+--color-utility-brand-200: var(--color-brand-blue-300);
+--color-utility-brand-200-alt: var(--color-brand-blue-400);
+
+--color-utility-brand-300: var(--color-brand-blue-400);
+--color-utility-brand-300-alt: var(--color-brand-blue-500);
+
+--color-utility-brand-400: var(--color-brand-blue-500);
+--color-utility-brand-400-alt: var(--color-brand-blue-600);
+
+--color-utility-brand-500: var(--color-brand-blue-600);
+--color-utility-brand-500-alt: var(--color-brand-blue-700);
+
+--color-utility-brand-600: var(--color-brand-blue-700);
+--color-utility-brand-600-alt: var(--color-brand-blue-800);
+
+--color-utility-brand-700: var(--color-brand-blue-800);
+--color-utility-brand-700-alt: var(--color-brand-blue-900);
+
+--color-utility-brand-800: var(--color-brand-blue-900);
+--color-utility-brand-800-alt: var(--color-brand-blue-950);
+
+--color-utility-brand-900: var(--color-brand-blue-950);
+--color-utility-brand-900-alt: var(--color-brand-blue-950);
+
     
     /*Warning Colors*/
     --color-utility-warning-50:var(--color-warning-50);            
@@ -233,7 +243,7 @@
        FEATURED ICON COLORS
        ======================================== */
     
-    --color-featured-icon-light-fg-brand: var(--brand-blue-600);
+    --color-featured-icon-light-fg-brand: var(--color-brand-blue-600);
     --color-featured-icon-light-fg-gray: var(--light-gray-600);
    --color-featured-icon-light-fg-error:var(--color-error-600);
    --color-featured-icon-light-fg-warning:var(--color-warning-600);
@@ -350,26 +360,26 @@
        BRAND COLORS
        ======================================== */
     
-    --color-utility-brand-50: var(--brand-blue-950);
-    --color-utility-brand-50-alt: var(--brand-blue-900);
-    --color-utility-brand-100: var(--brand-blue-900);
-    --color-utility-brand-100-alt: var(--brand-blue-800);
-    --color-utility-brand-200: var(--brand-blue-800);
-    --color-utility-brand-200-alt: var(--brand-blue-800);
-    --color-utility-brand-300: var(--brand-blue-700);
-    --color-utility-brand-300-alt: var(--brand-blue-700);
-    --color-utility-brand-400: var(--brand-blue-600);
-    --color-utility-brand-400-alt: var(--brand-blue-600);
-    --color-utility-brand-500: var(--brand-blue-500);
-    --color-utility-brand-500-alt: var(--brand-blue-500);
-    --color-utility-brand-600: var(--brand-blue-400);
-    --color-utility-brand-600-alt: var(--brand-blue-400);
-    --color-utility-brand-700: var(--brand-blue-300);
-    --color-utility-brand-700-alt: var(--brand-blue-300);
-    --color-utility-brand-800: var(--brand-blue-200);
-    --color-utility-brand-800-alt: var(--brand-blue-200);
-    --color-utility-brand-900: var(--brand-blue-100);
-    --color-utility-brand-900-alt: var(--brand-blue-100);
+    --color-utility-brand-50: var(--color-brand-blue-950);
+    --color-utility-brand-50-alt: var(--color-brand-blue-900);
+    --color-utility-brand-100: var(--color-brand-blue-900);
+    --color-utility-brand-100-alt: var(--color-brand-blue-800);
+    --color-utility-brand-200: var(--color-brand-blue-800);
+    --color-utility-brand-200-alt: var(--color-brand-blue-800);
+    --color-utility-brand-300: var(--color-brand-blue-700);
+    --color-utility-brand-300-alt: var(--color-brand-blue-700);
+    --color-utility-brand-400: var(--color-brand-blue-600);
+    --color-utility-brand-400-alt: var(--color-brand-blue-600);
+    --color-utility-brand-500: var(--color-brand-blue-500);
+    --color-utility-brand-500-alt: var(--color-brand-blue-500);
+    --color-utility-brand-600: var(--color-brand-blue-400);
+    --color-utility-brand-600-alt: var(--color-brand-blue-400);
+    --color-utility-brand-700: var(--color-brand-blue-300);
+    --color-utility-brand-700-alt: var(--color-brand-blue-300);
+    --color-utility-brand-800: var(--color-brand-blue-200);
+    --color-utility-brand-800-alt: var(--color-brand-blue-200);
+    --color-utility-brand-900: var(--color-brand-blue-100);
+    --color-utility-brand-900-alt: var(--color-brand-blue-100);
     
     /*Warning Colors*/
     --color-utility-warning-50:var(--color-warning-50);            
@@ -522,7 +532,7 @@
        FEATURED ICON COLORS
        ======================================== */
     
-   --color-featured-icon-light-fg-brand: var(--brand-blue-400);
+   --color-featured-icon-light-fg-brand: var(--color-brand-blue-400);
    --color-featured-icon-light-fg-gray: var(--light-gray-400);
    --color-featured-icon-light-fg-error:var(--color-error-400);
    --color-featured-icon-light-fg-warning:var(--color-warning-400);

@@ -5,7 +5,7 @@ import Indian_flag from '../../../../public/Indian_flag.png';
 import pkd from '../../../../public/pkd.jpg';
 
 const actions = cva(
-    `inline-flex items-center justify-center gap-md py-xxs px-md  border border-gray-200 bg-gray-50 text-gray-700 content-center font-family-body text-xs font-normal leading-xs md:px-[10px] lg:py-xs lg:px-lg`,
+    `inline-flex items-center justify-center  gap-md py-xxs px-md  border content-center font-family-body text-xs font-normal leading-xs md:px-[10px] lg:py-xs lg:px-lg`,
     {
         variants: {
             variant: {
@@ -15,6 +15,7 @@ const actions = cva(
                 Iconclose: "py-xxs pl-md pr-[3px] gap-xxs md:pl-[10px] md:pr-xs lg:py-xs lg:pl-lg ",
                 Iconarrowright: "py-xxs pl-md pr-sm gap-xxs md:pl-[10px] lg:pl-[10px] md:pr-xs lg:py-xs lg:pl-lg",
                 Iconarrowup: "py-xxs pl-sm pr-md gap-xxs md:py-xxs md:px-md md:gap-xs lg:py-xs lg:pr-lg lg:pl-[10px]",
+                Iconarrowdown: "py-xxs pl-sm pr-md gap-xxs md:py-xxs md:px-md md:gap-xs lg:py-xs lg:pr-lg lg:pl-[10px]",
                 Icononly: "p-[5px] gap-xxs rounded-full md:p-sm lg:p-lg",
             },
             pillcolor: { true: "rounded-full " },
@@ -22,9 +23,9 @@ const actions = cva(
             badgeModern: { true: "rounded-sm text-xs leading-xs text-utility-gray-700 " },
             color: {
                 grey: "border-gray-200 bg-gray-50 text-gray-700",
-                brand: "border-brand-200 text-brand-700",
-                error: "border-error-200 bg-error-200 text-error-700",
-                warning: "border-warning-200 bg-warning-50 text-warning-700",
+                brand: "border-[var(--color-brand-200)] text-[var(--color-brand-700)] bg-[var(--color-brand-50)]",
+                error: "border-[var(--color-error-200)] bg-[var(--color-error-50)] text-[var(--color-error-700)]",
+                warning: "border-[var(--color-warning-200)] bg-[var(--color-warning-50)] text-[var(--color-warning-700)]",
                 success: "border-success-200 bg-success-50 text-success-700",
                 bluegray: "border-gray-blue-200 bg-gray-blue-50 text-gray-blue-700",
                 lightblue: "border-blue-light-200 bg-blue-light-50 text-blue-light-700",
@@ -43,8 +44,8 @@ const actions = cva(
 
 const Badges = ({ variant, isIcon, pillcolor, badgecolor, badgeModern, color, label }) => {
     return (
-            <>
-                {isIcon===true ? 
+        <>
+            {isIcon ?
                 <div className={cn(actions({ variant, pillcolor, badgecolor, badgeModern, color }))}>
                     {isIcon === "dot" && <><svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
                         <circle cx="3.99976" cy="4" r="3" fill="currentColor" />
@@ -57,14 +58,18 @@ const Badges = ({ variant, isIcon, pillcolor, badgecolor, badgeModern, color, la
                             stroke-linejoin="round"
                         />
                     </svg></span>
-                    </> || isIcon === "arrow-right" && <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                    </> || isIcon === "arrowright" && <>{label}<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
                         <path d="M2.5 6H9.5M9.5 6L6 2.5M9.5 6L6 9.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg> || isIcon==="close" && <span><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
-                        <path d="M6 2.5V9.5M2.5 6H9.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg></span>
+                    </svg></> || isIcon === "close" && <>{label}<span className="p-xxs"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                        <path d="M9 3L3 9M3 3L9 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg></span></> || isIcon === "arrowup" && <><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                        <path d="M6 9.5V2.5M6 2.5L2.5 6M6 2.5L9.5 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>{label}</> || isIcon === "arrowdown" && <><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                        <path d="M6 2.5V9.5M6 9.5L9.5 6M6 9.5L2.5 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>{label}</>
                     }
                 </div> : <div className={cn(actions({ variant, pillcolor, badgecolor, badgeModern, color }))}>{label}</div>}
-            </>
+        </>
     )
 }
 

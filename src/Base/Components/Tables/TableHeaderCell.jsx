@@ -5,7 +5,7 @@ import { cva } from "class-variance-authority";
 import { cn } from '../../../lib/utils.js';
 
 const cellstyles = cva(
-    `flex flex-row py-lg px-xl items-center gap-lg border-b-[1px] border-b-border-secondary bg-bg-primary hover:bg-bg-secondary`, 
+    `flex flex-row py-lg px-xl w-full items-center gap-lg border-b-[1px] border-b-border-secondary bg-[var(--color-gray-50)] hover:bg-bg-secondary `, 
     {
         variants:{
             variant:{
@@ -17,12 +17,12 @@ const cellstyles = cva(
     
 
 
-const TableHeaderCell = ({Text,Checkbox}) => {
+const TableHeaderCell = ({Text,Checkbox,title}) => {
 
     return (
         <div className={cellstyles({})}>
             {Checkbox && <TableCellActions checkbox = {true} variant="checkbox" isToggle={false}/>}
-            {Text && <HeaderTable label="company" arrowDownIcon={true}/>}
+            {Text && <HeaderTable label={title} arrowDownIcon={false}/>}
         </div>
         
     );
