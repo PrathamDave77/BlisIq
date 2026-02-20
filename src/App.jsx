@@ -350,19 +350,18 @@ function App() {
     //   className="mb-4" // You can pass extra tailwind classes
     // />
 <div className="flex ">
-    // <Cardheader
-    //   title="Team members"
-    //   subtitle="Manage your team members and their account permission here."
-    //   actions={
-    //     <>
-    //       <Button variant="secondary">Import</Button>
-    //       <Button>+ Add user</Button>
-    //     </>
-    //   }
-    // />
-
-    <Sidebar/>
-    <Tables /></div>
+     {/* <Cardheader
+      title="Team members"
+      subtitle="Manage your team members and their account permission here."
+      actions={
+        <>
+          <Button variant="secondary">Import</Button>
+          <Button>+ Add user</Button>
+        </>
+      }
+    /> */}
+    <Tables />
+    </div>
     // <Groups />
     // <CourseVerif />
   );

@@ -14,11 +14,11 @@
     --display-xs: 24px;
 
     /* Text Sizes */
-    --text-size-xl: 20px;
-    --text-size-lg: 18px;
-    --text-size-md: 16px;
-    --text-size-sm: 14px;
-    --text-size-xs: 12px;
+    --text-xl: 20px;
+    --text-lg: 18px;
+    --text-md: 16px;
+    --text-sm: 14px;
+    --text-xs: 12px;
 
     /* Line heights — display */
     --leading-display-2xl: 90px;
