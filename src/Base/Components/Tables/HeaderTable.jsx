@@ -7,7 +7,7 @@ const actions = cva(
     {
         variants: {
             variant: {
-                
+
             },
 
         }
@@ -15,7 +15,7 @@ const actions = cva(
 
 )
 
-const HeaderTable = ({ label, helpIcon, arrowIcon, arrowUpIcon, arrowDownIcon }) => {
+const HeaderTable = ({ label, helpIcon, arrowIcon, arrowUpIcon, arrowDownIcon, isarrowSelectorVertical }) => {
 
     const help = <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
         <g clip-path="url(#clip0_32998_1251)">
@@ -41,10 +41,13 @@ const HeaderTable = ({ label, helpIcon, arrowIcon, arrowUpIcon, arrowDownIcon })
     </svg>;
 
 
-
-
     return (
-        <div className={cn(actions(),'group')}><div className="text-text-tertiary font-family-body font-semibold text-xs leading-xs group-hover:text-text-quaternary">{label}</div>{helpIcon && <button className="flex items-center gap-[8px] text-[#A4A7AE] group-hover:text-[#717680]">{help}</button>} {arrowIcon && <button className="flex items-center gap-[8px] text-[#A4A7AE] group-hover:text-[#717680]">{arrow}</button>} {arrowUpIcon && <button className="flex items-center gap-[8px] text-[#A4A7AE] group-hover:text-[#717680]">{arrowUp}</button>} {arrowDownIcon && <button className="flex items-center gap-[8px] text-[#A4A7AE] group-hover:text-[#717680]">{arrowDown}</button>}</div>
+        <div className={cn(actions(), 'group')}><div className="text-text-tertiary font-family-body font-semibold text-xs leading-xs ">{label}</div>{helpIcon && <button className="flex items-center gap-[8px] text-[#A4A7AE] group-hover:text-[#717680]">{help}</button>} {arrowIcon && <button className="flex items-center gap-[8px] text-[#A4A7AE] group-hover:text-[#717680]">{arrow}</button>} {arrowUpIcon && <button className="flex items-center gap-[8px] text-[#A4A7AE] group-hover:text-[#717680]">{arrowUp}</button>} {arrowDownIcon && <button className="flex items-center gap-[8px] text-[#A4A7AE] group-hover:text-[#717680]">{arrowDown}</button>}
+            {isarrowSelectorVertical && <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                <path d="M3.5 7.5L6 10L8.5 7.5M3.5 4.5L6 2L8.5 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>}
+
+        </div>
     )
 }
 

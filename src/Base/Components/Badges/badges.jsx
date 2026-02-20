@@ -5,7 +5,7 @@ import Indian_flag from '../../../../public/Indian_flag.png';
 import pkd from '../../../../public/pkd.jpg';
 
 const actions = cva(
-    `inline-flex items-center justify-center  gap-md py-xxs px-md  border content-center font-family-body text-xs font-normal leading-xs md:px-[10px] lg:py-xs lg:px-lg`,
+    `inline-flex items-center justify-center gap-md py-xxs px-md  border content-center font-family-body text-xs font-normal leading-xs md:px-[10px] lg:py-xs lg:px-lg`,
     {
         variants: {
             variant: {

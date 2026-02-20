@@ -21,11 +21,11 @@ const divstyles = cva("flex ",
 
 );
 
-const Avatar = ({ variant,size }) => {
+const Avatar = ({ variant,size,isOnline }) => {
     return (
         <div className={cn(divstyles({size}))}>
             <div className={cn(actions({variant,size}))}>
-                <AvatarOnlineIndicator variant="default" size="xs" isOnline={true}/>
+                <AvatarOnlineIndicator variant="default" size="xs" isOnline={isOnline}/>
             </div>
         </div>
         
