@@ -1,4 +1,3 @@
-
 @import "tailwindcss";
 
 /* 2️⃣ Semantic tokens AFTER */
@@ -12,16 +11,25 @@
 @import "./styles/semantic/foreground_modes.css";
 
 @theme {
-   --font-family-display:var(--font-family-display);
-   --font-family-body:var(--font-family-body);
+  /* 1. Reference the primitives from typography.css correctly */
+  --font-family-display: var(--font-family-display);
+  --font-family-body: var(--font-family-body);
 
-   /*Text sizes*/
-   --text-xl:var(--text-xl);
-   --text-lg:var(--text-ld);
-   --text-md:var(--text-md);
-   --text-sm:var(--text-sm);
-   --text-xs:var(--text-xs);
 
+  
+  --text-xl: var(--text-xl); 
+  --text-lg: var(--text-lg);
+  --text-md: var(--text-md);
+  --text-sm: var(--text-sm); 
+  --text-xs: var(--text-xs);
+
+  
+  --text-display-2xl: var(--display-2xl);
+  --text-display-xl: var(--display-xl);
+  --text-display-lg: var(--display-lg);
+  --text-display-md: var(--display-md);
+  --text-display-sm: var(--display-sm);
+  --text-display-xs: var(--display-xs);
 
   /* --- Spacing --- */
   --spacing-none: var(--spacing-none);
@@ -54,7 +62,7 @@
   --radius-full: var(--radius-full);
 
   /* --- Fixed Widths --- */
-   --width-xxs:var(--widths-xxs);
+  --width-xxs: var(--widths-xxs);
   --width-xs: var(--widths-xs);
   --width-sm: var(--widths-sm);
   --width-md: var(--widths-md);
@@ -70,29 +78,10 @@
   --width-container-max: var(--container-max-width-desktop);
   --width-paragraph: var(--paragraph-max-widths);
 
-  /* ---------- Font families ---------- */
-
-  /*--font-display: var(--font-family-display);
-  --font-body: var(--font-family-body);*/
-
-  /* ---------- Font sizes ---------- */
-
-  --color-display-2xl: var(--display-2xl);
-  --color-display-xl: var(--display-xl);
-  --color-display-lg: var(--display-lg);
-  --color-display-md: var(--display-md);
-  --color-display-sm: var(--display-sm);
-  --color-display-xs: var(--display-xs);
-
-  --color-xl: var(--color-xl);
-  --color-lg: var(--color-lg);
-  --color-md: var(--color-md);
-  --color-sm: var(--color-sm);
-  --color-xs: var(--color-xs);
 
   /* ---------- Line heights ---------- */
 
-   /*Display is for heading*/
+  /*Display is for heading*/
   --leading-display-2xl: var(--leading-display-2xl);
   --leading-display-xl: var(--leading-display-xl);
   --leading-display-lg: var(--leading-display-lg);
@@ -100,7 +89,7 @@
   --leading-display-sm: var(--leading-display-sm);
   --leading-display-xs: var(--leading-display-xs);
 
-   /*For normal texts*/
+  /*For normal texts*/
   --leading-xl: var(--leading-text-xl);
   --leading-lg: var(--leading-text-lg);
   --leading-md: var(--leading-text-md);
@@ -155,7 +144,7 @@
   --color-bg-success-secondary: var(--bg-success-secondary);
   --color-bg-success-solid: var(--bg-success-solid);
 
-   /* ================= PRIMARY BORDERS ================= */
+  /* ================= PRIMARY BORDERS ================= */
   --color-border-primary: var(--border-primary);
   --color-border-secondary: var(--border-secondary);
   --color-border-tertiary: var(--border-tertiary);
@@ -201,7 +190,6 @@
   --color-alpha-black-80: var(--alpha-black-80);
   --color-alpha-black-90: var(--alpha-black-90);
   --color-alpha-black-100: var(--alpha-black-100);
-
 
   /* =====================================================
      UTILITY COLORS
@@ -256,7 +244,6 @@
   --color-success-600: var(--color-utility-success-600);
   --color-success-700: var(--color-utility-success-700);
 
-
   /* =====================================================
      COMPONENT TOKENS
   ===================================================== */
@@ -271,7 +258,9 @@
   --color-button-primary-icon-hover: var(--color-button-primary-icon_hover);
 
   --color-button-destructive-icon: var(--color-button-destructive-primary-icon);
-  --color-button-destructive-icon-hover: var(--color-button-destructive-primary-icon_hover);
+  --color-button-destructive-icon-hover: var(
+    --color-button-destructive-primary-icon_hover
+  );
 
   --color-toggle-border: var(--color-toggle-border);
   --color-toggle-pressed: var(--color-toggle-slim-border_pressed);
@@ -353,22 +342,21 @@
   --color-border-secondary: var(--border-secondary);
   --color-border-tertiary: var(--border-tertiary);
 
-  --color-border-error: var(--border-error); 
+  --color-border-error: var(--border-error);
 
   /* ================================
      ALT / TRANSLUCENT
      ================================ */
 
   --color-border-secondary-alt: var(--border-secondary-alt);
-   /* Secondary surfaces */
-   --color-bg-secondary: var(--bg-secondary);
+  /* Secondary surfaces */
+  --color-bg-secondary: var(--bg-secondary);
 
-   --color-bg-primary:var(--bg-primary);
+  --color-bg-primary: var(--bg-primary);
 
-   --color-bg-brand-primary: var(--bg-brand-primary);
+  --color-bg-brand-primary: var(--bg-brand-primary);
 
-
-      /* =====================================================
+  /* =====================================================
      FOCUS RINGS - BASE
   ===================================================== */
 
@@ -394,7 +382,6 @@
   --shadow-focus-ring-error-xs-04: var(--focus-ring-error-shadow-xs-04);
   --shadow-focus-ring-error-xs-05: var(--focus-ring-error-shadow-xs-05);
 
-
   /* =====================================================
      FOCUS RING SHADOWS - SM
   ===================================================== */
@@ -403,7 +390,6 @@
   --shadow-focus-ring-sm-02: var(--focus-ring-shadow-sm-02);
   --shadow-focus-ring-sm-03: var(--focus-ring-shadow-sm-03);
   --shadow-focus-ring-sm-04: var(--focus-ring-shadow-sm-04);
-
 
   /* =====================================================
      SKEUOMORPHIC FOCUS SHADOWS - XS
@@ -415,12 +401,21 @@
   --shadow-focus-ring-xs-skeu-04: var(--focus-ring-shadow-xs-skeumorphic-04);
   --shadow-focus-ring-xs-skeu-05: var(--focus-ring-shadow-xs-skeumorphic-05);
 
-  --shadow-focus-ring-error-xs-skeu-01: var(--focus-ring-error-shadow-xs-skeumorphic-01);
-  --shadow-focus-ring-error-xs-skeu-02: var(--focus-ring-error-shadow-xs-skeumorphic-02);
-  --shadow-focus-ring-error-xs-skeu-03: var(--focus-ring-error-shadow-xs-skeumorphic-03);
-  --shadow-focus-ring-error-xs-skeu-04: var(--focus-ring-error-shadow-xs-skeumorphic-04);
-  --shadow-focus-ring-error-xs-skeu-05: var(--focus-ring-error-shadow-xs-skeumorphic-05);
-
+  --shadow-focus-ring-error-xs-skeu-01: var(
+    --focus-ring-error-shadow-xs-skeumorphic-01
+  );
+  --shadow-focus-ring-error-xs-skeu-02: var(
+    --focus-ring-error-shadow-xs-skeumorphic-02
+  );
+  --shadow-focus-ring-error-xs-skeu-03: var(
+    --focus-ring-error-shadow-xs-skeumorphic-03
+  );
+  --shadow-focus-ring-error-xs-skeu-04: var(
+    --focus-ring-error-shadow-xs-skeumorphic-04
+  );
+  --shadow-focus-ring-error-xs-skeu-05: var(
+    --focus-ring-error-shadow-xs-skeumorphic-05
+  );
 
   /* =====================================================
      STACK SHADOWS (Dark Mode Variants)
@@ -432,66 +427,88 @@
   --shadow-focus-ring-xs-stack-04: var(--focus-ring-shadow-xs-stack-04);
   --shadow-focus-ring-xs-stack-05: var(--focus-ring-shadow-xs-stack-05);
 
-  --shadow-focus-ring-error-xs-stack-01: var(--focus-ring-error-shadow-xs-stack-01);
-  --shadow-focus-ring-error-xs-stack-02: var(--focus-ring-error-shadow-xs-stack-02);
-  --shadow-focus-ring-error-xs-stack-03: var(--focus-ring-error-shadow-xs-stack-03);
-  --shadow-focus-ring-error-xs-stack-04: var(--focus-ring-error-shadow-xs-stack-04);
-  --shadow-focus-ring-error-xs-stack-05: var(--focus-ring-error-shadow-xs-stack-05);
+  --shadow-focus-ring-error-xs-stack-01: var(
+    --focus-ring-error-shadow-xs-stack-01
+  );
+  --shadow-focus-ring-error-xs-stack-02: var(
+    --focus-ring-error-shadow-xs-stack-02
+  );
+  --shadow-focus-ring-error-xs-stack-03: var(
+    --focus-ring-error-shadow-xs-stack-03
+  );
+  --shadow-focus-ring-error-xs-stack-04: var(
+    --focus-ring-error-shadow-xs-stack-04
+  );
+  --shadow-focus-ring-error-xs-stack-05: var(
+    --focus-ring-error-shadow-xs-stack-05
+  );
 
-   /*Shadows */
-   --shadow-xs:0 1px 2px 0 var(--shadow-xs);
-   --shadow-sm:0 1px 3px 0 var(--shadow-sm_01), 0 1px 2px -1px var(--shadow-sm_02);
-   --shadow-md: 0 4px 6px -1px var(--shadow-md_01), 0 2px 4px -2px var(--shadow-md_02);
-   --shadow-lg:0 12px 16px -4px var(--shadow-lg_01), 0 4px 6px -2px var(--shadow-lg_02), 0 2px 2px -1px var(--shadow-lg_03);
-   --shadow-xl:0 20px 24px -4px var(--shadow-xl_01), 0 8px 8px -4px var(--shadow-xl_02), 0 3px 3px -1.5px var(--shadow-xl_03);
-   --shadow-2xl:0 20px 24px -4px var(--shadow-2xl_01), 0 4px 4px -2px var(--shadow-2xl_02);
-   --shadow-3xl:0 32px 64px -12px var(--shadow-3xl_01), 0 5px 5px -2.5px var(--shadow-3xl_02);
-   --shadow-xs-skeumorphic:0 1px 2px 0 var(--shadow-xs) inset, 0 -2px 0 0 var(--shadow-xs) inset;
-   --shadow-modern: 0 -2px 2px 0 rgba(0, 0, 0, 0.13) inset, 1px 13px 5px 0 rgba(0, 0, 0, 0.01), 2px 21px 6px 0 rgba(0, 0, 0, 0.00), 1px 8px 5px 0 rgba(0, 0, 0, 0.05), 0 3px 3px 0 rgba(0, 0, 0, 0.09), 0 1px 2px 0 rgba(0, 0, 0, 0.10);
-   
+  /*Shadows */
+  --shadow-xs: 0 1px 2px 0 var(--shadow-xs);
+  --shadow-sm:
+    0 1px 3px 0 var(--shadow-sm_01), 0 1px 2px -1px var(--shadow-sm_02);
+  --shadow-md:
+    0 4px 6px -1px var(--shadow-md_01), 0 2px 4px -2px var(--shadow-md_02);
+  --shadow-lg:
+    0 12px 16px -4px var(--shadow-lg_01), 0 4px 6px -2px var(--shadow-lg_02),
+    0 2px 2px -1px var(--shadow-lg_03);
+  --shadow-xl:
+    0 20px 24px -4px var(--shadow-xl_01), 0 8px 8px -4px var(--shadow-xl_02),
+    0 3px 3px -1.5px var(--shadow-xl_03);
+  --shadow-2xl:
+    0 20px 24px -4px var(--shadow-2xl_01), 0 4px 4px -2px var(--shadow-2xl_02);
+  --shadow-3xl:
+    0 32px 64px -12px var(--shadow-3xl_01),
+    0 5px 5px -2.5px var(--shadow-3xl_02);
+  --shadow-xs-skeumorphic:
+    0 1px 2px 0 var(--shadow-xs) inset, 0 -2px 0 0 var(--shadow-xs) inset;
+  --shadow-modern:
+    0 -2px 2px 0 rgba(0, 0, 0, 0.13) inset, 1px 13px 5px 0 rgba(0, 0, 0, 0.01),
+    2px 21px 6px 0 rgba(0, 0, 0, 0), 1px 8px 5px 0 rgba(0, 0, 0, 0.05),
+    0 3px 3px 0 rgba(0, 0, 0, 0.09), 0 1px 2px 0 rgba(0, 0, 0, 0.1);
 
+  --color-bg-primary-hover: var(--bg-primary-hover);
 
-   --color-bg-primary-hover:var(--bg-primary-hover);
+  --color-bg-brand-solid: var(--bg-brand-solid);
 
-   --color-bg-brand-solid:var(--bg-brand-solid);
+  /*Skeumorphic Focus Rings*/
 
-   /*Skeumorphic Focus Rings*/
+  --focus-ring: 0 0 0 2px var(--focus-ring-01), 0 0 0 4px var(--focus-ring-02);
 
-   
+  --focus-ring-error:
+    0 0 0 2px var(--focus-ring-error-01), 0 0 0 4px var(--focus-ring-error-01);
 
-   --focus-ring:0 0 0 2px var(--focus-ring-01), 
-      0 0 0 4px var(--focus-ring-02);  
+  --focus-ring-shadow-xs:
+    0 1px 2px 0 var(--focus-ring-shadow-xs-skeumorphic-01),
+    0 0 0 2px var(--focus-ring-shadow-xs-skeumorphic-02),
+    0 0 0 4px var(--focus-ring-shadow-xs-skeumorphic-03);
 
-   --focus-ring-error: 0 0 0 2px var(--focus-ring-error-01), 
-      0 0 0 4px var(--focus-ring-error-01);
-   
-   --focus-ring-shadow-xs:0 1px 2px 0 var(--focus-ring-shadow-xs-skeumorphic-01), 
-      0 0 0 2px var(--focus-ring-shadow-xs-skeumorphic-02), 
-      0 0 0 4px var(--focus-ring-shadow-xs-skeumorphic-03);
+  --focus-ring-shadow-sm:
+    0 1px 2px 0 var(--focus-ring-shadow-xs-skeumorphic-01),
+    0 1px 3px 0 var(--focus-ring-shadow-xs-skeumorphic-02),
+    0 0 0 2px var(--focus-ring-shadow-xs-skeumorphic-03),
+    0 0 0 4px var(--focus-ring-shadow-xs-skeumorphic-04);
 
-   --focus-ring-shadow-sm:0 1px 2px 0 var(--focus-ring-shadow-xs-skeumorphic-01), 
-      0 1px 3px 0 var(--focus-ring-shadow-xs-skeumorphic-02), 
-      0 0 0 2px var(--focus-ring-shadow-xs-skeumorphic-03),
-      0 0 0 4px var(--focus-ring-shadow-xs-skeumorphic-04);
+  --focus-ring-error-shadow-xs:
+    0 1px 2px 0 var(--focus-ring-error-shadow-xs-01),
+    0 0 0 2px var(--focus-ring-error-shadow-xs-02),
+    0 0 0 4px var(--focus-ring-error-shadow-xs-03);
 
-   --focus-ring-error-shadow-xs:0 1px 2px 0 var(--focus-ring-error-shadow-xs-01), 
-      0 0 0 2px var(--focus-ring-error-shadow-xs-02), 
-      0 0 0 4px var(--focus-ring-error-shadow-xs-03);
+  --focus-ring-shadow-xs-skeumorphic:
+    0 0 0 1px var(--focus-ring-shadow-xs-skeumorphic-01) inset,
+    0 -2px 0 0 var(--focus-ring-shadow-xs-skeumorphic-02) inset,
+    0 1px 2px 0 var(--focus-ring-shadow-xs-skeumorphic-03),
+    0 0 0 2px var(--focus-ring-shadow-xs-skeumorphic-04),
+    0 0 0 4px var(--focus-ring-shadow-xs-skeumorphic-05);
 
-   --focus-ring-shadow-xs-skeumorphic:0 0 0 1px var(--focus-ring-shadow-xs-skeumorphic-01) inset,
-      0 -2px 0 0 var(--focus-ring-shadow-xs-skeumorphic-02) inset,
-      0 1px 2px 0 var(--focus-ring-shadow-xs-skeumorphic-03),
-      0 0 0 2px var(--focus-ring-shadow-xs-skeumorphic-04),
-      0 0 0 4px var(--focus-ring-shadow-xs-skeumorphic-05);
+  --focus-ring-shadow-xs-skeumorphic-error:
+    0 0 0 1px var(--focus-ring-error-shadow-xs-skeumorphic-01) inset,
+    0 -2px 0 0 var(--focus-ring-error-shadow-xs-skeumorphic-02) inset,
+    0 1px 2px 0 var(--focus-ring-error-shadow-xs-skeumorphic-03),
+    0 0 0 2px var(--focus-ring-error-shadow-xs-skeumorphic-04),
+    0 0 0 4px var(--focus-ring-error-shadow-xs-skeumorphic-05);
 
-   --focus-ring-shadow-xs-skeumorphic-error:
-      0 0 0 1px var(--focus-ring-error-shadow-xs-skeumorphic-01) inset,
-      0 -2px 0 0 var(--focus-ring-error-shadow-xs-skeumorphic-02) inset, 
-      0 1px 2px 0 var(--focus-ring-error-shadow-xs-skeumorphic-03), 
-      0 0 0 2px var(--focus-ring-error-shadow-xs-skeumorphic-04), 
-      0 0 0 4px var(--focus-ring-error-shadow-xs-skeumorphic-05);
-
-   /* ============================================
+  /* ============================================
      NEUTRAL FOREGROUNDS
   ============================================ */
 
@@ -546,9 +563,8 @@
 
   --color-fg-success-primary: var(--fg-success-primary);
   --color-fg-success-secondary: var(--fg-success-secondary);
-   
-   
-    /* Base hierarchy */
+
+  /* Base hierarchy */
   --color-text-primary: var(--color-text-primary);
   --color-text-secondary: var(--color-text-secondary);
   --color-text-secondary-hover: var(--color-text-secondary-hover);

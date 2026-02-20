@@ -14,7 +14,7 @@ const styles = cva("flex flex-col py-[1px] px-sm items-start gap-md rounded-md b
 
 });
 
-const Dropdownmenu = ({ Iconleading, Checkboxleading,Isdivider,children }) => {
+const Dropdownlistitem = ({ Iconleading, Checkboxleading,Isdivider,children }) => {
     return (
         <>
         {Isdivider ? <div className={cn(styles({variant:Isdivider}))}>
@@ -46,4 +46,4 @@ const Dropdownmenu = ({ Iconleading, Checkboxleading,Isdivider,children }) => {
 
 
 
-export default Dropdownmenu
+export default Dropdownlistitem

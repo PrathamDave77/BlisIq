@@ -1,10 +1,11 @@
 import React from 'react'
 import { cva } from "class-variance-authority";
 import { cn } from "../../../lib/utils.js";
-import Cardheader from './Cardheader.jsx';
+
 import TableCell from './TableCell.jsx';
 import TableHeaderCell from './TableHeaderCell.jsx';
 import HeaderTable from './HeaderTable.jsx';
+import { Cardheader } from './Cardheader.jsx';
 
 
 const data = [
@@ -91,7 +92,7 @@ const Tables = () => {
 
   return (
     <div className="inline-flex flex-col h-full w-full items-start rounded-xl border border-[var(--color-gray-200)] bg-white shadow-xs">
-      <Cardheader isAvatar={true} />
+      <Cardheader />
       <div className="flex items-start self-stretch">
         <div className="flex flex-col items-start flex-1">
           <TableHeaderCell Checkbox={true} Text={true} title="Name" />

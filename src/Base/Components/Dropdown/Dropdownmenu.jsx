@@ -1,7 +1,7 @@
 import React from 'react'
 import { cva } from "class-variance-authority";
-import { cn } from "../../../lib/utils.js";
-import Dropdownlistitem from './Dropdownlistitem';
+import { cn } from "../../../Base/lib/utils.js";
+import Dropdownlistitem from './Dropdownlistitem.jsx';
 import Dropdownlistheader from './Dropdownlistheader.jsx';
 
 const styles = cva("flex flex-col items-start rounded-md border border-border-secondary bg-bg-primary shadow-lg",{

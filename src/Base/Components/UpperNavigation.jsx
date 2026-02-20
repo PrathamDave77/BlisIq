@@ -8,7 +8,7 @@ const tabVariants = cva(
     variants: {
       variant: {
         underline: "px-xs pb-lg border-b-2 border-transparent text-text-quaternary",
-        pill: "py-[10px] px-[14px] rounded-md text-text-quaternary ",
+        pill: "h-[36px] py-[10px] px-[14px] rounded-md text-text-quaternary ",
       },
       isActive: {
         true: "",
@@ -26,7 +26,7 @@ const tabVariants = cva(
       {
         variant: "pill",
         isActive: true,
-        className: "shadow-xs bg-bg-primary-alt text-text-secondary border border-border-primary",
+        className: " bg-bg-primary-alt text-text-secondary border-2 border-border-primary",
       },
     ],
     defaultVariants: {
@@ -46,7 +46,7 @@ function UpperNavigation({
   return (
     <div
       className={cn(
-        "flex items-center w-full overflow-x-auto no-scrollbar",
+        "flex items-center w-full",
 
         variant === "underline"
           ? "border-b border-border-secondary gap-md"
@@ -66,7 +66,7 @@ function UpperNavigation({
           >
             <span>{item.label}</span>
 
-            {item.count !== undefined && (
+            {/* {item.count !== undefined && (
               <span
                 className={cn(
                   "flex items-center py-xxs px-md justify-center rounded-full border leading-xs font-normal text-xs transition-colors",
@@ -78,7 +78,7 @@ function UpperNavigation({
               >
                 {item.count}
               </span>
-            )}
+            )} */}
           </button>
         );
       })}
