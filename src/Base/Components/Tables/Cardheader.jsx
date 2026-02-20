@@ -32,21 +32,7 @@ const Cardheader = ({isAvatar}) => {
                             Manage your team members and their account permission here.
                         </div>
                     </div>}
-                    <div id="actions" className="flex items-center gap-lg">
-                        <Button variant="tertiary" size="sm" isError="false">
-                            Tertiary
-                        </Button>
-                        <Button variant="secondary" size="sm" isError="false">
-                            Secodary
-                        </Button>
-                        <Button variant="secondary" size="sm" isError="false">
-                            Secodary
-                        </Button>
-                        <Button variant="primary" size="sm" isError="false">
-                            Primary
-                        </Button>
-
-                    </div>
+                    
                     <div className="flex flex-col items-end gap-md ">
                         <button className="cursor-pointer" onClick={() => setDropdown(prev => !prev)}><svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5" viewBox="0 0 20 20" fill="none">
                             <path d="M9.99996 10.8333C10.4602 10.8333 10.8333 10.4602 10.8333 10C10.8333 9.53976 10.4602 9.16667 9.99996 9.16667C9.53972 9.16667 9.16663 9.53976 9.16663 10C9.16663 10.4602 9.53972 10.8333 9.99996 10.8333Z" stroke="#A4A7AE" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />

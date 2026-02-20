@@ -16,11 +16,11 @@
    --font-family-body:var(--font-family-body);
 
    /*Text sizes*/
-   --text-xl:var(--text-xl);
-   --text-lg:var(--text-ld);
-   --text-md:var(--text-md);
-   --text-sm:var(--text-sm);
-   --text-xs:var(--text-xs);
+   --text-xl:var(--text-size-xl);
+   --text-lg:var(--text-size-lg);
+   --text-md:var(--text-size-md);
+   --text-sm:var(--text-size-sm);
+   --text-xs:var(--text-size-xs);
 
 
   /* --- Spacing --- */

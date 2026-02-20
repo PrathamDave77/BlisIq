@@ -1,6 +1,6 @@
 import "./index.css";
-import Sidebar from "./admin/Sidebar.jsx";
-import Home from "./admin/Home.jsx";
+import Sidebar from "./AdminScreens/Sidebar.jsx";
+import Home from "./AdminScreens/Home.jsx";
 import { Select } from "./Base/Components/Select.jsx";
 import React, { useState } from "react";
 import { Inputfields } from "./Base/Components/Inputfields.jsx";
@@ -343,8 +343,9 @@ function App() {
     //   onChange={setFilter}
     //   className="mb-4" // You can pass extra tailwind classes
     // />
-
-    <Users />
+<div className="flex ">
+    <Sidebar/>
+    <Tables /></div>
     // <Groups />
     // <CourseVerif />
   );
