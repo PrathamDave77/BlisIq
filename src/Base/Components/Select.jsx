@@ -61,7 +61,7 @@ export function Select({
   avatarSrc,
   dotColor = "bg-success-500",
 
-  options = [],
+  options = [{label:"sad"},{label:"happy"},{label:"confused"},{label:"angry"}],
   value,
 
   placeholder = "Select option",
@@ -173,12 +173,13 @@ export function Select({
       {open && !disabled && (
         <div className="absolute top-full mt-1 w-full bg-bg-primary border border-border-secondary rounded-md shadow-lg z-50 max-h-64 overflow-auto">
           {filtered.length === 0 && (
-            <div className="px-lg py-md text-sm text-text-tertiary">
+            <div className="px-lg py-md text-sm text-text-tertiary ">
               No results
             </div>
           )}
 
           {filtered.map((opt) => (
+            <div className="px-sm py-[1px]  self-stretch  hover:bg-bg-secondary cursor-pointer text-sm">
             <div
               key={opt.value}
               onMouseDown={() => {
@@ -186,10 +187,10 @@ export function Select({
                 setQuery("");
                 setOpen(false);
               }}
-              className="px-lg py-md hover:bg-bg-secondary cursor-pointer text-sm"
+              className="p-md gap-md rounded-sm self-stretch flex items-center flex-1 text-text-primary font-family-body text-md leading-md  "
             >
               {opt.label}
-            </div>
+            </div></div>
           ))}
         </div>
       )}

@@ -14,12 +14,81 @@ import Tables from "./Base/Components/Tables/Tables.jsx";
 
 import SidebarMenu from "./Base/Components/sidebar/SidebarMenu.jsx";
 import UpperNavigation from "./Base/Components/UpperNavigation.jsx";
-import Users from "./admin/Users.jsx";
-import Groups from "./admin/Groups.jsx";
-import CourseVerif from "./admin/CourseVerif.jsx";
+import Users from "./AdminScreens/Users.jsx";
+import Groups from "./AdminScreens/Groups.jsx";
+import CourseVerif from "./AdminScreens/CourseVerif.jsx";
 import Button from "./Base/Components/Button.jsx";
 
 function App() {
+
+const data = [
+  {
+    username: "5 steps optimizing user experience",
+    email: "Owned by Pratham Dave",
+    Requested: "Mar 13,2025",
+    Type:"Course",
+    Tags:["Design","Research"],
+    Collaborators:["A","B","C","D"],
+    
+  },
+  {
+    username: "5 steps optimizing user experience",
+    email: "Owned by Pratham Dave",
+    Requested: "Mar 13,2025",
+    Type:"Course",
+    Tags:["Design","Research"],
+  }, {
+    username: "5 steps optimizing user experience",
+    email: "Owned by Pratham Dave",
+    Requested: "Mar 13,2025",
+    Type:"Course",
+    Tags:["Design","Research"],
+  }, {
+    username: "5 steps optimizing user experience",
+    email: "Owned by Pratham Dave",
+    Requested: "Mar 13,2025",
+    Type:"Course",
+    Tags:["Design","Research"],
+  }, {
+    username: "5 steps optimizing user experience",
+    email: "Owned by Pratham Dave",
+    Requested: "Mar 13,2025",
+    Type:"Course",
+    Tags:["Design","Research"],
+  }, {
+    username: "5 steps optimizing user experience",
+    email: "Owned by Pratham Dave",
+    Requested: "Mar 13,2025",
+    Type:"Course",
+    Tags:["Design","Research"],
+ 
+  }, {
+    username: "5 steps optimizing user experience",
+    email: "Owned by Pratham Dave",
+    Requested: "Mar 13,2025",
+    Type:"Course",
+    Tags:["Design","Research"],
+  }, {
+    username: "5 steps optimizing user experience",
+    email: "Owned by Pratham Dave",
+    Requested: "Mar 13,2025",
+    Type:"Course",
+    Tags:["Design","Research"],
+  }, {
+    username: "5 steps optimizing user experience",
+    email: "Owned by Pratham Dave",
+    Requested: "Mar 13,2025",
+    Type:"Course",
+    Tags:["Design","Research"],
+  }, {
+    username: "5 steps optimizing user experience",
+    email: "Owned by Pratham Dave",
+    Requested: "Mar 13,2025",
+    Type:"Course",
+    Tags:["Design","Research"],
+  },
+
+];
   const [value, setValue] = useState("");
 
   const sidebarData = [
@@ -291,79 +360,11 @@ function App() {
 
   const [filter, setFilter] = useState("all");
   return (
-    // <div className="flex flex-row h-screen w-full bg-bg-primary">
-    //   <Sidebar />
-    // <svg width="12" height="100vh" xmlns="http://www.w3.org/2000/svg">
-    //   <defs>
-    //     <pattern
-    //       id="slashes"
-    //       patternUnits="userSpaceOnUse"
-    //       width="8"
-    //       height="8"
-    //       patternTransform="rotate(235)"
-    //     >
-    //       <line
-    //         x1="0"
-    //         y1="0"
-    //         x2="0"
-    //         y2="8"
-    //         stroke="gray"
-    //         strokeWidth="1"
-    //       />
-    //     </pattern>
-    //   </defs>
-    //   <rect width="12" height="100vh" fill="url(#slashes)" />
-    // </svg>
-
-    //   <Home />
-    // </div>
-    // <div className="">
-    //   {/* <Select
-    //     searchable
-    //     label="Team member"
-    //     placeholder="Select team member"
-    //     options={[
-    //       { value: "jacob", label: "Jacob Jones" },
-    //       { value: "courtney", label: "Courtney Henry" },
-    //       { value: "cameron", label: "Cameron Williamson" },
-    //       { value: "darrell", label: "Darrell Steward" },
-    //     ]}
-    //   /> */}
-    //   {/* <TableCell variant="trendpos" username="Pratham77.pdf" email="234 KB" isAvatar={false} isFile={false} isPayment={true} isBadge={false} isMultipleBadges={true} /> */}
-    // </div>
-
-    // <div className="flex h-screen">
-    //   <aside className="">
-    //     <SidebarMenu sections={sidebarData} variant="default" user={userData} />
-    //   </aside>
-
-    //   <main className="flex-1 p-xs">
-    //     <h1>Welcome to the App</h1>
-    //   </main>
-    // </div>
-
-    // <UpperNavigation
-    //   variant="pill"
-    //   items={filterOptions}
-    //   value={filter}
-    //   onChange={setFilter}
-    //   className="mb-4" // You can pass extra tailwind classes
-    // />
-<div className="flex ">
-     {/* <Cardheader
-      title="Team members"
-      subtitle="Manage your team members and their account permission here."
-      actions={
-        <>
-          <Button variant="secondary">Import</Button>
-          <Button>+ Add user</Button>
-        </>
-      }
-    /> */}
-    <Tables />
-    </div>
-    // <Groups />
-    // <CourseVerif />
+    
+  <div className="flex ">
+    <Users  />
+  </div>
+    
   );
 }
 
