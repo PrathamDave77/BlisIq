@@ -1,6 +1,6 @@
 import React from "react";
 import { cva } from "class-variance-authority";
-import { cn } from "../../lib/utils.js";
+import { cn } from "../../../lib/utils.js";
 
 const tabVariants = cva(
   "flex items-center text-sm font-semibold leading-sm font-inter transition cursor-pointer ",

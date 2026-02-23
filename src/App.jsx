@@ -3,7 +3,7 @@ import Sidebar from "./AdminScreens/Sidebar.jsx";
 import Home from "./AdminScreens/Home.jsx";
 import { Select } from "./Base/Components/Select.jsx";
 import React, { useState } from "react";
-import { Inputfields } from "./Base/Components/Inputfields.jsx";
+import { Inputfields } from "./Base/Components/Input/Inputfields.jsx";
 
 import Badges from "./Base/Components/Badges/Badges.jsx";
 import { AvatarOnlineIndicator } from "./Base/Components/Avatar/AvatarOnlineIndicator.jsx";
@@ -13,11 +13,11 @@ import { CompanyIcon } from "./Base/Components/Avatar/AvatarOnlineIndicator.jsx"
 import Tables from "./Base/Components/Tables/Tables.jsx";
 
 import SidebarMenu from "./Base/Components/sidebar/SidebarMenu.jsx";
-import UpperNavigation from "./Base/Components/UpperNavigation.jsx";
+import UpperNavigation from "./Base/Components/Navigation/UpperNavigation.jsx";
 import Users from "./AdminScreens/Users.jsx";
 import Groups from "./AdminScreens/Groups.jsx";
 import CourseVerif from "./AdminScreens/CourseVerif.jsx";
-import Button from "./Base/Components/Button.jsx";
+import Button from "./Base/Components/Buttons/Button.jsx";
 
 function App() {
   const [value, setValue] = useState("");

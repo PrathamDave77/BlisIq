@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import SidebarMenu from "../Base/Components/sidebar/SidebarMenu.jsx";
-import UpperNavigation from "../Base/Components/UpperNavigation.jsx";
-import Button from "../Base/Components/Button.jsx";
+import UpperNavigation from "../Base/Components/Navigation/UpperNavigation.jsx";
+import Button from "../Base/Components/Buttons/Button.jsx";
 import { Select } from "../Base/Components/Select.jsx";
 import {
   Cardheader,
   Sectionheader,
-} from "../Base/Components/Tables/Cardheader.jsx";
+} from "../Base/Components/Navigation/Cardheader.jsx";
 
 const PlusIcon = () => (
   <svg

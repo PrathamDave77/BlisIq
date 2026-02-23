@@ -1,6 +1,6 @@
 import React from "react";
 import SidebarMenu from "../Base/Components/sidebar/SidebarMenu.jsx";
-import Button from "../Base/Components/Button.jsx";
+import Button from "../Base/Components/Buttons/Button.jsx";
 import { Select } from "../Base/Components/Select.jsx";
 
 
