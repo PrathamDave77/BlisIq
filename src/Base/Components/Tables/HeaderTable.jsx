@@ -3,11 +3,11 @@ import { cva } from "class-variance-authority";
 import { cn } from '../../../lib/utils.js';
 
 const actions = cva(
-    ` inline-flex items-center gap-xs py-lg px-3xl`,
+    ` inline-flex items-center gap-xs bg-bg-secondary w-full`,
     {
         variants: {
             variant: {
-
+                
             },
 
         }

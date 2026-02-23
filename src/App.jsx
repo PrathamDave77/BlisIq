@@ -10,7 +10,7 @@ import { AvatarOnlineIndicator } from "./Base/Components/Avatar/AvatarOnlineIndi
 import Avatar from "./Base/Components/Avatar/Avatar.jsx";
 import { CompanyIcon } from "./Base/Components/Avatar/AvatarOnlineIndicator.jsx";
 
-import Tables from "./Base/Components/Tables/Tables.jsx";
+
 
 import SidebarMenu from "./Base/Components/sidebar/SidebarMenu.jsx";
 import UpperNavigation from "./Base/Components/UpperNavigation.jsx";
@@ -363,6 +363,7 @@ const data = [
     
   <div className="flex ">
     <Users  />
+
   </div>
     
   );

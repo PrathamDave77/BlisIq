@@ -1,6 +1,6 @@
 export const Cardheader = ({ title, subtitle, badge, actions }) => {
   return (
-    <div className="font-inter flex flex-col w-full">
+    <div className="font-inter flex flex-col w-full bg-bg-primary">
       <div className="flex items-center gap-xl">
         <div className="flex flex-col gap-xxs flex-1">
           {(title || badge) && (

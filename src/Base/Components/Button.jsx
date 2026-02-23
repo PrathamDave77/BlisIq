@@ -4,46 +4,33 @@ import { cn } from "../../lib/utils.js";
 
 
 const base = [
-  "inline-flex items-center justify-center gap-xs",
-  "rounded-md font-semibold font-family-body leading-sm",
-  "transition-all duration-200 cursor-pointer",
-  "disabled:cursor-not-allowed disabled:text-fg-disabled",
-  "focus-visible:outline-none",
+  "inline-flex items-center justify-center gap-xs rounded-md font-semibold font-family-body leading-sm transition-all duration-200 cursor-pointer disabled:cursor-not-allowed disabled:text-fg-disabled focus-visible:outline-none",
 ].join(" ");
 
 const buttonVariants = cva(base, {
   variants: {
     variant: {
       primary: [
-        "border-2 border-white text-white",
-        "bg-[var(--bg-brand-solid)] hover:bg-[var(--bg-brand-solid-hover)]",
-        "shadow-[var(--shadow-xs-skeumorphic)]",
-        "focus-visible:shadow-[var(--focus-ring-shadow-xs-skeumorphic)]",
-        "disabled:border disabled:border-[var(--border-disabled-subtle)] disabled:bg-[var(--bg-disabled)]",
+        "outline-[2px] outline-[#FFF] border-solid text-white bg-bg-brand-solid hover:bg-(--bg-brand-solid-hover) shadow-xs-skeumorphic focus-visible:shadow-(--focus-ring-shadow-xs-skeumorphic) disabled:border disabled:border-(--border-disabled-subtle) disabled:bg-(--bg-disabled)"
       ],
       secondary: [
-        "border border-border-primary",
-        "bg-[var(--bg-primary)] text-text-secondary",
-        "shadow-[var(--shadow-xs-skeumorphic)]",
-        "hover:bg-bg-primary-hover",
-        "focus-visible:shadow-[var(--focus-ring-shadow-xs-skeumorphic)]",
-        "disabled:border-[var(--border-disabled-subtle)]",
-      ],
+        "border border-border-primary bg-(--bg-primary) text-text-secondary shadow-(--shadow-xs-skeumorphic) hover:bg-bg-primary-hover focus-visible:shadow-(--focus-ring-shadow-xs-skeumorphic) disabled:border-(--border-disabled-subtle)",
+      ],  
       tertiary: [
         "border-2 text-text-tertiary",
         "hover:bg-bg-primary-hover hover:text-text-tertiary-hover",
-        "focus-visible:bg-white focus-visible:shadow-[var(--focus-ring)]",
+        "focus-visible:bg-white focus-visible:shadow-(--focus-ring)",
         "disabled:bg-bg-primary-hover",
       ],
       link: [
         "text-text-brand-secondary",
         "hover:text-text-brand-secondary-hover hover:underline",
-        "focus-visible:shadow-[var(--focus-ring)]",
+        "focus-visible:shadow-(--focus-ring)",
       ],
       gray_link: [
         "text-text-tertiary",
         "hover:text-text-tertiary-hover hover:underline",
-        "focus-visible:shadow-[var(--focus-ring)]",
+        "focus-visible:shadow-(--focus-ring)",
       ],
     },
     size: {
@@ -63,14 +50,14 @@ const buttonVariants = cva(base, {
       variant: "primary",
       isError: true,
       class: [
-        "bg-[var(--bg-error-solid)] hover:bg-[var(--bg-error-solid-hover)]",
-        "focus-visible:shadow-[var(--focus-ring-shadow-xs-skeumorphic-error)]",
+        "bg-(--bg-error-solid) hover:bg-(--bg-error-solid-hover)",
+        "focus-visible:shadow-(--focus-ring-shadow-xs-skeumorphic-error)",
       ],
     },
     {
       variant: "secondary",
       isError: true,
-      class: "border-[var(--border-error-subtle)] text-text-error hover:bg-[var(--bg-error-primary)]",
+      class: "border-(--border-error-subtle) text-text-error hover:bg-(--bg-error-primary)",
     },
     {
       variant: "tertiary",
@@ -109,16 +96,16 @@ const Button = forwardRef(({
     ref={ref}
     disabled={disabled || isLoading}
     aria-busy={isLoading}
-    className={cn(buttonVariants({ variant, size, isError }), className)}
+    className={cn(buttonVariants({ variant, size, isError }))}
     {...props}
   >
     {isLoading ? (
       <><Spinner /><span>{loadingText}</span></>
     ) : (
       <>
-        {IconLeft && <IconLeft className="w-4 h-4" aria-hidden="true" />}
+        {IconLeft && <IconLeft className="w-5 h-5" aria-hidden="true" />}
         {children}
-        {IconRight && <IconRight className="w-4 h-4" aria-hidden="true" />}
+        {IconRight && <IconRight className="w-5 h-5" aria-hidden="true" />}
       </>
     )}
   </button>
