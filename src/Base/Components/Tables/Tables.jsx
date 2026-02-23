@@ -93,28 +93,28 @@ const styles = cva("", {
 const Tables = () => {
 
   return (
-    <div className="inline-flex flex-col h-full w-full items-start rounded-xl border border-[var(--color-gray-200)] bg-white shadow-xs">
+    <div className="flex flex-col h-full w-full items-start rounded-xl bg-white shadow-xs">
       <Cardheader />
       <div className="flex items-start self-stretch">
-        <div className="flex flex-col items-start flex-1 w-full ">
-          <TableHeaderCell Checkbox={true} Text={true} title="Content" />
+        <div className="flex flex-col items-start flex-1 w-full rounded-tl-md rounded-bl-md">
+          <TableHeaderCell title="User name" Text={true} Checkbox={true}/>
           {data.map(item => <TableCell isAvatar={true} credentials={true} isdefault={false} username={item.username} email={item.email} />)}
           
         </div>
         <div className="flex flex-col items-start flex-1 w-full ">
-            <TableHeaderCell Checkbox={false} Text={true} title="Status" />
+            <TableHeaderCell title="Status" Text={true} Checkbox={false}/>
             {data.map(item => item.Tags && <div className="flex flex-row"><TableCell  isBadge={true}  children="Design"/><TableCell  isBadge={true}  children="Research"/></div>)}
         </div>
-        <div className="flex flex-col items-start flex-1 w-full">
-            <TableHeaderCell Checkbox={false} Text={true} title="Requested for" />
+        <div className="flex flex-col items-start flex-1 w-full ">
+            <TableHeaderCell title="Content" Text={true} Checkbox={false}/>
             {data.map(item => <TableHeaderCell Text={true} title={item.Requested}/>)}
         </div>
-        <div className="flex flex-col items-start flex-1 w-full">
-            <HeaderTable label="Type" isarrowSelectorVertical={true} />
+        <div className="flex flex-col items-start flex-1 w-full ">
+            <TableHeaderCell title="Type" Text={true} Checkbox={false}/>
             {data.map(item => <TableHeaderCell Text={true} title={item.Type}/>)}
         </div>
-        <div className="flex flex-col items-start">
-            <HeaderTable label="Collaborators" isarrowSelectorVertical={true}/>
+        <div className="flex flex-col items-start flex-1 w-full">
+            <TableHeaderCell title="Collaborators" Text={true} Checkbox={false}/>
             {data.map(item => <div className="flex"><Avatar variant="default" size="md" isOnline={false}/><Avatar variant="default" size="md" isOnline={false}/><Avatar variant="default" size="md" isOnline={false}/><Avatar variant="default" size="md" isOnline={false}/></div>)}
         </div>
       </div>
@@ -123,4 +123,4 @@ const Tables = () => {
 }
 
 
-export default Tables
+export default Tables;

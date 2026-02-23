@@ -3,6 +3,7 @@ import SidebarMenu from "../Base/Components/sidebar/SidebarMenu.jsx";
 import UpperNavigation from "../Base/Components/Navigation/UpperNavigation.jsx";
 import Button from "../Base/Components/Buttons/Button.jsx";
 import { Select } from "../Base/Components/Select.jsx";
+import Tables from "../Base/Components/Tables/Tables.jsx";
 import {
   Cardheader,
   Sectionheader,
@@ -343,10 +344,10 @@ function Users() {
             subtitle="Create and manage users for your organization."
             actions={
               <div className="flex gap-3">
-                <Button variant="secondary" iconLeft={ImportIcon}>
+                <Button variant="secondary" iconLeft={ImportIcon} size="md">
                   Import
                 </Button>
-                <Button variant="primary" iconLeft={PlusIcon}>
+                <Button variant="primary" iconLeft={PlusIcon} size="md">
                   Add user
                 </Button>
               </div>
@@ -387,10 +388,10 @@ function Users() {
         </header>
 
         <section className="px-8 flex-1 overflow-auto">
-          <div className="border border-border-secondary rounded-xl overflow-hidden">
-            <div className="p-10 text-center text-text-tertiary bg-white">
-              Table implementation goes here...
-            </div>
+          <div className=" rounded-xl overflow-hidden">
+            
+              {/*<Tables />*/}
+           
           </div>
         </section>
       </main>

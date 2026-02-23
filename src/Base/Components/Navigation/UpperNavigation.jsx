@@ -3,7 +3,7 @@ import { cva } from "class-variance-authority";
 import { cn } from "../../../lib/utils.js";
 
 const tabVariants = cva(
-  "flex items-center text-sm font-semibold leading-sm font-inter transition cursor-pointer ",
+  "flex items-center text-sm font-semibold leading-sm font-inter transition cursor-pointer hover:text-text-tertiary-hover",
   {
     variants: {
       variant: {
@@ -26,7 +26,7 @@ const tabVariants = cva(
       {
         variant: "pill",
         isActive: true,
-        className: " bg-bg-primary-alt text-text-secondary border-2 border-border-primary",
+        className: " bg-bg-primary-alt text-text-secondary outline-2 outline-border-primary ",
       },
     ],
     defaultVariants: {

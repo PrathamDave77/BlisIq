@@ -9,6 +9,7 @@
 @import "./styles/semantic/border_modes.css";
 @import "./styles/semantic/focus_modes.css";
 @import "./styles/semantic/foreground_modes.css";
+@import "./styles/semantic/shadow_modes.css";
 
 @theme {
   /* 1. Reference the primitives from typography.css correctly */
@@ -444,24 +445,23 @@
   );
 
   /*Shadows */
-  --shadow-xs: 0 1px 2px 0 var(--shadow-xs);
-  --shadow-sm:
-    0 1px 3px 0 var(--shadow-sm_01), 0 1px 2px -1px var(--shadow-sm_02);
+  --shadow-xs: 0 1px 2px 0 var(--shadow-color-xs);
+  --shadow-sm: 0 1px 3px 0 var(--shadow-color-sm-01), 0 1px 2px -1px var(--shadow-color-sm-02);
   --shadow-md:
-    0 4px 6px -1px var(--shadow-md_01), 0 2px 4px -2px var(--shadow-md_02);
+    0 4px 6px -1px var(--shadow-color-md-01), 0 2px 4px -2px var(--shadow-color-md-02);
   --shadow-lg:
-    0 12px 16px -4px var(--shadow-lg_01), 0 4px 6px -2px var(--shadow-lg_02),
-    0 2px 2px -1px var(--shadow-lg_03);
+    0 12px 16px -4px var(--shadow-color-lg-01), 0 4px 6px -2px var(--shadow-color-lg-02),
+    0 2px 2px -1px var(--shadow-color-lg-03);
   --shadow-xl:
-    0 20px 24px -4px var(--shadow-xl_01), 0 8px 8px -4px var(--shadow-xl_02),
-    0 3px 3px -1.5px var(--shadow-xl_03);
+    0 20px 24px -4px var(--shadow-color-xl-01), 0 8px 8px -4px var(--shadow-color-xl-02),
+    0 3px 3px -1.5px var(--shadow-color-xl-03);
   --shadow-2xl:
-    0 20px 24px -4px var(--shadow-2xl_01), 0 4px 4px -2px var(--shadow-2xl_02);
+    0 20px 24px -4px var(--shadow-color-2xl-01), 0 4px 4px -2px var(--shadow-color-2xl-02);
   --shadow-3xl:
-    0 32px 64px -12px var(--shadow-3xl_01),
-    0 5px 5px -2.5px var(--shadow-3xl_02);
+    0 32px 64px -12px var(--shadow-color-3xl-01),
+    0 5px 5px -2.5px var(--shadow-color-3xl-02);
   --shadow-xs-skeumorphic:
-    0 1px 2px 0 var(--shadow-xs) inset, 0 -2px 0 0 var(--shadow-xs) inset;
+    0 1px 2px 0 var(--shadow-color-xs) inset, 0 -2px 0 0 var(--shadow-color-xs) inset;
   --shadow-modern:
     0 -2px 2px 0 rgba(0, 0, 0, 0.13) inset, 1px 13px 5px 0 rgba(0, 0, 0, 0.01),
     2px 21px 6px 0 rgba(0, 0, 0, 0), 1px 8px 5px 0 rgba(0, 0, 0, 0.05),

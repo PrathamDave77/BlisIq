@@ -10,7 +10,7 @@ import { AvatarOnlineIndicator } from "./Base/Components/Avatar/AvatarOnlineIndi
 import Avatar from "./Base/Components/Avatar/Avatar.jsx";
 import { CompanyIcon } from "./Base/Components/Avatar/AvatarOnlineIndicator.jsx";
 
-import Tables from "./Base/Components/Tables/Tables.jsx";
+
 
 import SidebarMenu from "./Base/Components/sidebar/SidebarMenu.jsx";
 import UpperNavigation from "./Base/Components/Navigation/UpperNavigation.jsx";
@@ -20,6 +20,75 @@ import CourseVerif from "./AdminScreens/CourseVerif.jsx";
 import Button from "./Base/Components/Buttons/Button.jsx";
 
 function App() {
+
+const data = [
+  {
+    username: "5 steps optimizing user experience",
+    email: "Owned by Pratham Dave",
+    Requested: "Mar 13,2025",
+    Type:"Course",
+    Tags:["Design","Research"],
+    Collaborators:["A","B","C","D"],
+    
+  },
+  {
+    username: "5 steps optimizing user experience",
+    email: "Owned by Pratham Dave",
+    Requested: "Mar 13,2025",
+    Type:"Course",
+    Tags:["Design","Research"],
+  }, {
+    username: "5 steps optimizing user experience",
+    email: "Owned by Pratham Dave",
+    Requested: "Mar 13,2025",
+    Type:"Course",
+    Tags:["Design","Research"],
+  }, {
+    username: "5 steps optimizing user experience",
+    email: "Owned by Pratham Dave",
+    Requested: "Mar 13,2025",
+    Type:"Course",
+    Tags:["Design","Research"],
+  }, {
+    username: "5 steps optimizing user experience",
+    email: "Owned by Pratham Dave",
+    Requested: "Mar 13,2025",
+    Type:"Course",
+    Tags:["Design","Research"],
+  }, {
+    username: "5 steps optimizing user experience",
+    email: "Owned by Pratham Dave",
+    Requested: "Mar 13,2025",
+    Type:"Course",
+    Tags:["Design","Research"],
+ 
+  }, {
+    username: "5 steps optimizing user experience",
+    email: "Owned by Pratham Dave",
+    Requested: "Mar 13,2025",
+    Type:"Course",
+    Tags:["Design","Research"],
+  }, {
+    username: "5 steps optimizing user experience",
+    email: "Owned by Pratham Dave",
+    Requested: "Mar 13,2025",
+    Type:"Course",
+    Tags:["Design","Research"],
+  }, {
+    username: "5 steps optimizing user experience",
+    email: "Owned by Pratham Dave",
+    Requested: "Mar 13,2025",
+    Type:"Course",
+    Tags:["Design","Research"],
+  }, {
+    username: "5 steps optimizing user experience",
+    email: "Owned by Pratham Dave",
+    Requested: "Mar 13,2025",
+    Type:"Course",
+    Tags:["Design","Research"],
+  },
+
+];
   const [value, setValue] = useState("");
 
   const sidebarData = [
