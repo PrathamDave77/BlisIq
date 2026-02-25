@@ -4,7 +4,6 @@ import { cn } from "../../../lib/utils.js";
 
 import TableCell from './TableCell.jsx';
 import TableHeaderCell from './TableHeaderCell.jsx';
-import HeaderTable from './HeaderTable.jsx';
 import Badges from '../Badges/Badges.jsx';
 import Avatar from '../Avatar/Avatar.jsx';import { Cardheader } from '../Navigation/Cardheader.jsx';
 

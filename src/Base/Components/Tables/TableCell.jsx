@@ -1,7 +1,6 @@
     import React from 'react'
     import { cva } from "class-variance-authority";
     import { cn } from '../../../lib/utils.js';
-    import TableCellActions from './TableCellActions.jsx';
     import File_icons from '../../../../public/File_icons.png';
     import Badges from '../Badges/Badges.jsx';
     import Checkbox from '../../../../public/Checkbox.png';

@@ -1,7 +1,5 @@
 import "./index.css";
-import Sidebar from "./AdminScreens/Sidebar.jsx";
-import Home from "./AdminScreens/Home.jsx";
-import { Select } from "./Base/Components/Select.jsx";
+
 import React, { useState } from "react";
 import { Inputfields } from "./Base/Components/Input/Inputfields.jsx";
 
@@ -18,6 +16,8 @@ import Users from "./AdminScreens/Users.jsx";
 import Groups from "./AdminScreens/Groups.jsx";
 import CourseVerif from "./AdminScreens/CourseVerif.jsx";
 import Button from "./Base/Components/Buttons/Button.jsx";
+import CreatorSidebar from "./Base/Creator/CreatorSidebar/CreatorSidebar.jsx";
+import CollapsedSidebar from "./Base/Creator/CreatorSidebar/CollapsedSidebar.jsx";
 
 function App() {
 
@@ -429,11 +429,13 @@ const data = [
         </>
       }
     /> */}
-    {/* <Users /> */}
-    <Tables />
+    {/* <Groups /> */}
+      {/* <CourseVerif /> */}
+    <Users />
+    {/* <Tables /> */}
+    {/* <CollapsedSidebar /> */}
     </div>
-    // <Groups />
-    // <CourseVerif />
+
   );
 }
 
