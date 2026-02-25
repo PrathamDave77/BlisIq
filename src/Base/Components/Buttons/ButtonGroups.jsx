@@ -2,7 +2,7 @@ import { React } from 'react'
 import { useState, forwardRef } from "react";
 import '../../styles/semantic/bg_modes.css';
 import { cva } from 'class-variance-authority'
-import { cn } from '../../lib/utils.js';
+import { cn } from '../../../lib/utils.js';
 
 const buttonVariants = cva(
     "inline-flex justify-center items-center gap-sm rounded-md transition-all duration-200 font-semibold leading-sm font-family-body bg-bg-primary text-text-secondary text-sm",

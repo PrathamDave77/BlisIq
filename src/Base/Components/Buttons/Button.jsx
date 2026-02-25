@@ -1,6 +1,6 @@
 import { forwardRef } from "react";
 import { cva } from "class-variance-authority";
-import { cn } from "../../lib/utils.js";
+import { cn } from "../../../lib/utils.js";
 
 
 const base = [

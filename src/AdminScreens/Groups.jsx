@@ -1,7 +1,7 @@
 import React from "react";
 import SidebarMenu from "../Base/Components/sidebar/SidebarMenu.jsx";
-import Button from "../Base/Components/Button.jsx";
-import { Select } from "../Base/Components/Select.jsx";
+import Button from "../Base/Components/Buttons/Button.jsx";
+import { Select } from "../Base/Components/Input/Select.jsx";
 
 
 function DashboardIcon() {
@@ -60,7 +60,7 @@ const SIDEBAR_SECTIONS = [
 
 function Groups() {
   return (
-    <div className="flex min-h-screen bg-bg-primary font-inter">
+    <div className="flex min-h-screen bg-bg-primary font-inter w-full ">
 
       <SidebarMenu
         sections={SIDEBAR_SECTIONS}

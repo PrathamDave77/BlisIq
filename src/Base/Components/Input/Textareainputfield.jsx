@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import { cva } from "class-variance-authority";
-import { cn } from '../../lib/utils.js';
+import { cn } from '../../../lib/utils.js';
 
 const inputStyles = cva(
   `flex flex-col items-start gap-sm w-full rounded-md text-md font-normal leading-md shadow-shadow-xs outline-none  transition placeholder:text-text-placeholder border focus-visible:border-[2px] focus-visible:border-border-brand disabled:bg-bg-disabled-subtle`,

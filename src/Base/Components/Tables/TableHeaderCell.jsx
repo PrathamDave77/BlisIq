@@ -1,5 +1,4 @@
-import TableCellActions from './TableCellActions.jsx';
-import HeaderTable from './HeaderTable.jsx';
+
 import React from 'react';
 import { cva } from "class-variance-authority";
 import { cn } from '../../../lib/utils.js';
