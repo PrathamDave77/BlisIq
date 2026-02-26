@@ -1,7 +1,7 @@
-
-import React from 'react';
+import React from "react";
 import { cva } from "class-variance-authority";
-import { cn } from '../../../lib/utils.js';
+import TableCellActions from "./TableCellActions.jsx";
+import HeaderTable from "./HeaderTable.jsx";
 
 const cellstyles = cva(
     `flex py-lg px-xl w-full items-center gap-lg border-b-[1px] border-b-border-secondary bg-bg-secondary self-stretch `, 
@@ -16,7 +16,7 @@ const cellstyles = cva(
     
 
 
-const TableHeaderCell = ({Text,Checkbox,title}) => {
+const TableHeaderCell = ({ Text, Checkbox, title }) => {
 
     return (
         <div className={cellstyles({})}>

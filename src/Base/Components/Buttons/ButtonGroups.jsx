@@ -1,5 +1,4 @@
-import { React } from 'react'
-import { useState, forwardRef } from "react";
+import React, { forwardRef } from "react";
 import '../../styles/semantic/bg_modes.css';
 import { cva } from 'class-variance-authority'
 import { cn } from '../../../lib/utils.js';
@@ -44,15 +43,14 @@ const buttonVariants = cva(
 );
 
 const Button = forwardRef(
-
-    ({ children, variant, size, disabled, Current, ...props }, ref) => {
-
-        const [isloading, setIsloading] = useState(false);
-
-        return (
-            <button className={cn(buttonVariants({ variant, size, Current }))} ref={ref}>{children}</button>
-        );
-    }
+  ({ children, variant, size, _disabled, Current, ...props }, ref) => {
+    return (
+      <button className={cn(buttonVariants({ variant, size, Current }))} ref={ref} {...props}>
+        {children}
+      </button>
+    );
+  }
 );
+Button.displayName = "Button";
 
-export default Button
+export default Button;

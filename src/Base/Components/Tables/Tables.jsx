@@ -1,11 +1,9 @@
-import React from 'react'
-import { cva } from "class-variance-authority";
-import { cn } from "../../../lib/utils.js";
+import React from "react";
 
 import TableCell from './TableCell.jsx';
 import TableHeaderCell from './TableHeaderCell.jsx';
-import Badges from '../Badges/Badges.jsx';
-import Avatar from '../Avatar/Avatar.jsx';import { Cardheader } from '../Navigation/Cardheader.jsx';
+import Avatar from "../Avatar/Avatar.jsx";
+import { Cardheader } from "../Navigation/Cardheader.jsx";
 
 
 const data = [
@@ -77,15 +75,6 @@ const data = [
 
 ];
 
-const styles = cva("", {
-  variants: {
-    variant: {
-
-    },
-    size: {},
-  },
-
-});
 
 
 
@@ -97,24 +86,42 @@ const Tables = () => {
       <div className="flex items-start self-stretch">
         <div className="flex flex-col items-start flex-1 w-full rounded-tl-md rounded-bl-md">
           <TableHeaderCell title="User name" Text={true} Checkbox={true}/>
-          {data.map(item => <TableCell isAvatar={true} credentials={true} isdefault={false} username={item.username} email={item.email} />)}
+          {data.map((item) => (
+            <TableCell key={item.username + item.email} isAvatar={true} credentials={true} isdefault={false} username={item.username} email={item.email} />
+          ))}
           
         </div>
         <div className="flex flex-col items-start flex-1 w-full ">
             <TableHeaderCell title="Status" Text={true} Checkbox={false}/>
-            {data.map(item => item.Tags && <div className="flex flex-row"><TableCell  isBadge={true}  children="Design"/><TableCell  isBadge={true}  children="Research"/></div>)}
+            {data.map((item) => item.Tags && (
+            <div key={item.username} className="flex flex-row">
+              <TableCell isBadge={true}>Design</TableCell>
+              <TableCell isBadge={true}>Research</TableCell>
+            </div>
+          ))}
         </div>
         <div className="flex flex-col items-start flex-1 w-full ">
             <TableHeaderCell title="Content" Text={true} Checkbox={false}/>
-            {data.map(item => <TableHeaderCell Text={true} title={item.Requested}/>)}
+            {data.map((item) => (
+            <TableHeaderCell key={item.username} Text={true} title={item.Requested} />
+          ))}
         </div>
         <div className="flex flex-col items-start flex-1 w-full ">
             <TableHeaderCell title="Type" Text={true} Checkbox={false}/>
-            {data.map(item => <TableHeaderCell Text={true} title={item.Type}/>)}
+            {data.map((item) => (
+            <TableHeaderCell key={item.username} Text={true} title={item.Type} />
+          ))}
         </div>
         <div className="flex flex-col items-start flex-1 w-full">
             <TableHeaderCell title="Collaborators" Text={true} Checkbox={false}/>
-            {data.map(item => <div className="flex"><Avatar variant="default" size="md" isOnline={false}/><Avatar variant="default" size="md" isOnline={false}/><Avatar variant="default" size="md" isOnline={false}/><Avatar variant="default" size="md" isOnline={false}/></div>)}
+            {data.map((item) => (
+            <div key={item.username} className="flex">
+              <Avatar variant="default" size="md" isOnline={false} />
+              <Avatar variant="default" size="md" isOnline={false} />
+              <Avatar variant="default" size="md" isOnline={false} />
+              <Avatar variant="default" size="md" isOnline={false} />
+            </div>
+          ))}
         </div>
       </div>
     </div>
