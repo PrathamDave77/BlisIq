@@ -3,10 +3,10 @@
     import { cn } from '../../../lib/utils.js';
     import File_icons from '../../../../public/File_icons.png';
     import Badges from '../Badges/Badges.jsx';
-    import Checkbox from '../../../../public/Checkbox.png';
+    import Checkbox from '../Checkbox/Checkbox.jsx';
 
     const actions = cva(
-        `inline-flex items-center  gap-lg py-lg px-xl border-b-[1px] border-b-border-secondary bg-bg-primary text-text-tertiary text-center font-family-body text-sm leading-sm`,
+        `inline-flex flex-1 items-center gap-lg py-lg px-xl bg-bg-primary text-text-tertiary text-center font-family-body text-sm leading-sm`,
         {
             variants: {
                 variant: {
@@ -23,19 +23,19 @@
     const TableCell = ({ variant, isdefault,istableaction, email, username, isAvatar, isAvatarGrp, isFile, isPayment, isBadge,istrend,amount, credentials, children }) => {
         return (
             <div className={cn(actions({}))}>
+                {children}
                 {isdefault && <div className={cn(actions({ variant }))}>
-                        <img src={Checkbox} alt="image"/>
-                        <div className="flex flex-col items-start"><div className="line-clamp-1 text-text-primary font-semibold ">{username}</div><div className="self-stretch line-clamp-1 overflow-ellipsis text-text-tertiary font-normal ">{email}</div>
+                        <div className="flex flex-col items-    start"><div className="line-clamp-1 text-text-primary font-semibold ">{username}</div><div className="self-stretch line-clamp-1 overflow-ellipsis text-text-tertiary font-normal ">{email}</div>
                         </div>
                     </div>}
-                {isBadge && <div className="flex py-xxs px-md justify-center items-center gap-md rounded-full border border-success-200 bg-success-50 text-(--color-success-700) content-center font-family-body text-xs font-normal leading-xs">Active</div>} 
+                {isBadge && <Badges badgeModern={true} color="grey" label="343"/>} 
                 
 
                 {istableaction && <><TableCellActions Radio={false} Toggle="Toggle" isToggle={false}/></>}
 
                 {isAvatar && <div id="Avatar-Label-Group" className="flex items-center gap-lg font-family-body self-stretch leading-sm text-sm ">
-                    <img src={Checkbox} alt="image"/>
-                    <div id="Avatar" className="justify-center items-center flex "><div className="shrink-0 rounded-full border border-solid border-border-secondary-alt bg-[url('../../../public/pkd.jpg')] bg-lightgray bg-position-[50%] bg-cover bg-no-repeat h-10 w-10"></div></div>
+                    <Checkbox size="md" variant="isCheckbox"/>
+                    <div id="Avatar" className="justify-center items-center flex "><div className="shrink-0 rounded-full border-px border-border-secondary-alt bg-[url('../../../public/pkd.jpg')] bg-lightgray bg-position-[50%] bg-cover bg-no-repeat h-10 w-10"></div></div>
                     {isFile && <div className="flex items-center gap-2"><img src={File_icons} /></div>}
                     {isPayment && <div className="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="20" viewBox="0 0 28 20" fill="none">
                         <path d="M3.2002 0.400391H24C25.5464 0.400391 26.7998 1.6538 26.7998 3.2002V16C26.7998 17.5464 25.5464 18.7998 24 18.7998H3.2002C1.6538 18.7998 0.400391 17.5464 0.400391 16V3.2002C0.400391 1.6538 1.6538 0.400391 3.2002 0.400391Z" fill="white" />

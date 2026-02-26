@@ -4,6 +4,8 @@ import Button from "../Base/Components/Buttons/Button.jsx";
 import { Select } from "../Base/Components/Input/Select.jsx";
 import {Cardheader} from "../Base/Components/Navigation/Cardheader.jsx";
 import TableHeaderCell from '../Base/Components/Tables/TableHeaderCell.jsx';
+import Tables from '../Base/Components/Tables/Tables.jsx';
+
 
 function DashboardIcon() {
   return (
@@ -113,13 +115,9 @@ function Groups() {
        
         <section className="px-8 flex-1 overflow-auto">
           <div className="border border-border-secondary rounded-xl overflow-hidden bg-white min-h-[400px]">
-            <div className="p-10 text-center text-text-tertiary flex ">
+            <div className=" text-center text-text-tertiary flex ">
               {/* You can now drop a Table component here */}
-              <TableHeaderCell title="Group Name" Checkbox={false} Text/>
-              <TableHeaderCell title="Description" Checkbox={false} Text/>
-              <TableHeaderCell title="Members" Checkbox={false} Text/>
-              <TableHeaderCell title="Created by" Checkbox={false} Text/>
-              <TableHeaderCell title="Created on" Checkbox={false} Text/>
+              <Tables title="" isCheckbox, Text, isAvatar, size, username, credentials, isBadge, children/>
             </div>
           </div>
         </section>

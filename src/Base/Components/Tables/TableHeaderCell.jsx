@@ -24,7 +24,7 @@ const TableHeaderCell = ({Text,isCheckbox,title}) => {
     return (
         <div className={cellstyles({})}>
         
-            {Checkbox && <Checkbox ischeck={false} size="md" indeterminate={true} variant="isCheckbox" />}
+            {isCheckbox && <Checkbox variant="isCheckbox" size="md" indeterminate={true} text={false}/>}
             {Text && <HeaderTable label={title} isarrowSelectorVertical={true}/>}
         </div>
         

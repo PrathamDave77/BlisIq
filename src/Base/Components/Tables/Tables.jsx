@@ -7,73 +7,73 @@ import TableHeaderCell from './TableHeaderCell.jsx';
 import Badges from '../Badges/Badges.jsx';
 import Avatar from '../Avatar/Avatar.jsx';
 import { Cardheader } from '../Navigation/Cardheader.jsx';
-
+import Dropdownmenu from '../Dropdown/Dropdownmenu.jsx';
 
 const data = [
   {
     username: "5 steps optimizing user experience",
     email: "Owned by Pratham Dave",
     Requested: "Mar 13,2025",
-    Type:"Course",
-    Tags:["Design","Research"],
-    Collaborators:["A","B","C","D"],
-    
+    Type: "Course",
+    Tags: ["Design", "Research"],
+    Collaborators: ["A", "B", "C", "D"],
+
   },
   {
     username: "5 steps optimizing user experience",
     email: "Owned by Pratham Dave",
     Requested: "Mar 13,2025",
-    Type:"Course",
-    Tags:["Design","Research"],
+    Type: "Course",
+    Tags: ["Design", "Research"],
   }, {
     username: "5 steps optimizing user experience",
     email: "Owned by Pratham Dave",
     Requested: "Mar 13,2025",
-    Type:"Course",
-    Tags:["Design","Research"],
+    Type: "Course",
+    Tags: ["Design", "Research"],
   }, {
     username: "5 steps optimizing user experience",
     email: "Owned by Pratham Dave",
     Requested: "Mar 13,2025",
-    Type:"Course",
-    Tags:["Design","Research"],
+    Type: "Course",
+    Tags: ["Design", "Research"],
   }, {
     username: "5 steps optimizing user experience",
     email: "Owned by Pratham Dave",
     Requested: "Mar 13,2025",
-    Type:"Course",
-    Tags:["Design","Research"],
+    Type: "Course",
+    Tags: ["Design", "Research"],
   }, {
     username: "5 steps optimizing user experience",
     email: "Owned by Pratham Dave",
     Requested: "Mar 13,2025",
-    Type:"Course",
-    Tags:["Design","Research"],
- 
+    Type: "Course",
+    Tags: ["Design", "Research"],
+
   }, {
     username: "5 steps optimizing user experience",
     email: "Owned by Pratham Dave",
     Requested: "Mar 13,2025",
-    Type:"Course",
-    Tags:["Design","Research"],
+    Type: "Course",
+    Tags: ["Design", "Research"],
   }, {
     username: "5 steps optimizing user experience",
     email: "Owned by Pratham Dave",
     Requested: "Mar 13,2025",
-    Type:"Course",
-    Tags:["Design","Research"],
+    Type: "Course",
+    Tags: ["Design", "Research"],
   }, {
     username: "5 steps optimizing user experience",
     email: "Owned by Pratham Dave",
     Requested: "Mar 13,2025",
-    Type:"Course",
-    Tags:["Design","Research"],
+    Type: "Course",
+    Tags: ["Design", "Research"],
   }, {
     username: "5 steps optimizing user experience",
     email: "Owned by Pratham Dave",
     Requested: "Mar 13,2025",
-    Type:"Course",
-    Tags:["Design","Research"],
+    Type: "Course",
+    Tags: ["Design", "Research"],
   },
 
 ];
@@ -90,29 +90,28 @@ const styles = cva("", {
 
 
 
-const Tables = ({title}) => {
+const Tables = ({ title, isCheckbox, Text, isAvatar, size, username, credentials, isBadge, children }) => {
 
   return (
-    <div className="flex flex-col h-full w-full items-start rounded-xl bg-white shadow-xs">
+    <div className="flex flex-1 flex-col h-full w-full items-start rounded-xl bg-white shadow-xs">
       <Cardheader />
-      <div className="flex items-start self-stretch">
-        <div className="flex flex-col items-start flex-1 w-full rounded-tl-md rounded-bl-md">
-          <TableHeaderCell title={title} Text={true} Checkbox={true}/>
-          {data.map(item => <TableCell isAvatar={true} credentials={true} isdefault={false} username={item.username} email={item.email} />)}
-          
-        </div>
-        <div className="flex flex-col items-start flex-1 w-full ">
-            <TableHeaderCell title={title} Text={true} Checkbox={false}/>
-            {data.map(item => item.Tags && <TableCell isBadge={true} children="Design"/>)}
-        </div>
-        <div className="flex flex-col items-start flex-1 w-full ">
-            <TableHeaderCell title={title} Text={true} Checkbox={false}/>
-            {data.map(item => <TableHeaderCell Text={true} title={item.Requested}/>)}
-        </div>
-        <div className="flex flex-col items-start flex-1 w-full ">
-            <TableHeaderCell title={title} Text={true} Checkbox={false}/>
-            {data.map(item => <TableHeaderCell Text={true} title={item.Type}/>)}
-        </div>
+      <div className="flex flex-1 flex-col items-start self-stretch">
+        <th className="flex items-start self-stretch">
+          <TableHeaderCell title="Group Name" isCheckbox={true} Text />
+          <TableHeaderCell title="Description" isCheckbox={false} Text />
+          <TableHeaderCell title="Members" isCheckbox={false} Text />
+          <TableHeaderCell title="Created by" isCheckbox={false} Text />
+          <TableHeaderCell title="Created on" isCheckbox={false} Text />
+        </th>
+        <tr className="flex flex-1 w-full self-stretch items-center h-[72px] border-px border-b-border-secondary">
+          <td className="flex flex-1">
+            <TableCell isAvatar={true} size="md" username="Class 2nd" credentials={true}/>
+            <TableCell size="md" children="Class 2nd" />
+            <TableCell size="md" isBadge={true}/>
+            <TableCell size="md" children="Pratham Dave" />
+            <TableCell size="md" children="Mar 13, 2025" />
+          </td>
+        </tr>
       </div>
     </div>
   )
