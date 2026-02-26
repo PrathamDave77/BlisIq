@@ -117,7 +117,7 @@ function Groups() {
           <div className="border border-border-secondary rounded-xl overflow-hidden bg-white min-h-[400px]">
             <div className=" text-center text-text-tertiary flex ">
               {/* You can now drop a Table component here */}
-              <Tables title="" isCheckbox, Text, isAvatar, size, username, credentials, isBadge, children/>
+              <Tables />
             </div>
           </div>
         </section>
