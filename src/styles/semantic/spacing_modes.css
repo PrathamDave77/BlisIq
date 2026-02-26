@@ -3,9 +3,9 @@
 @layer base{
     :root{
          /*Radius*/
-  --radius-non:0px;
+  --radius-none: 0px;
 
-  --radius-xxs:2px;
+  --radius-xxxs:2px;
 
   --radius-xxs:4px;
   

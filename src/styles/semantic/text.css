@@ -34,7 +34,7 @@
     --color-text-brand-tertiary-alt: var(--color-brand-blue-600);
 
     --color-text-error-primary:var(--color-error-600);
-    --color-text-error-primary_hover:var(--color-error-400);
+    --color-text-error-primary-hover:var(--color-error-400);
 
     /* Status text */
     --color-text-utility-error-primary: var(--color-error-600);
@@ -88,7 +88,7 @@
   --color-text-warning-primary-hover: var(--color-warning-300);
  
   --color-text-success-primary: var(--color-success-400);
-  --color-text-success-primary_hover:var(--color-success-300);
+  --color-text-success-primary-hover:var(--color-success-300);
     
 }
 
