@@ -4,6 +4,7 @@ import UpperNavigation from "../Base/Components/Navigation/UpperNavigation.jsx";
 import Button from "../Base/Components/Buttons/Button.jsx";
 import { Select } from "../Base/Components/Input/Select.jsx";
 import Tables from "../Base/Components/Tables/Tables.jsx";
+
 import {
   Cardheader,
   Sectionheader,
@@ -389,8 +390,7 @@ function Users() {
 
         <section className="px-8 flex-1 overflow-auto">
           <div className=" rounded-xl overflow-hidden">
-            
-              {/*<Tables />*/}
+              <Tables />
            
           </div>
         </section>

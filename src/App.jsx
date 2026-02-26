@@ -14,6 +14,8 @@ import Button from "./Base/Components/Buttons/Button.jsx";
 import CreatorSidebar from "./Base/Creator/CreatorSidebar/CreatorSidebar.jsx";
 import CollapsedSidebar from "./Base/Creator/CreatorSidebar/CollapsedSidebar.jsx";
 
+
+
 function App() {
 
 const data = [
@@ -424,10 +426,10 @@ const data = [
         </>
       }
     /> */}
-    {/* <Groups /> */}
+    <Groups />
       {/* <CourseVerif /> */}
-    <Users />
-    {/* <Tables /> */}
+   
+    
     {/* <CollapsedSidebar /> */}
     </div>
 

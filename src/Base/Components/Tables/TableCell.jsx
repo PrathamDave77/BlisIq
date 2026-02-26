@@ -6,7 +6,7 @@
     import Checkbox from '../../../../public/Checkbox.png';
 
     const actions = cva(
-        `inline-flex items-center w-[280px] gap-lg py-lg px-xl border-b-[1px] border-b-border-secondary bg-bg-primary text-text-tertiary text-center font-family-body text-sm leading-sm`,
+        `inline-flex items-center  gap-lg py-lg px-xl border-b-[1px] border-b-border-secondary bg-bg-primary text-text-tertiary text-center font-family-body text-sm leading-sm`,
         {
             variants: {
                 variant: {
@@ -25,7 +25,7 @@
             <div className={cn(actions({}))}>
                 {isdefault && <div className={cn(actions({ variant }))}>
                         <img src={Checkbox} alt="image"/>
-                        <div className="flex flex-col items-start"><div className="line-clamp-1 text-text-primary font-semibold ">{username}</div><div className="self-stretch line-clamp-1 overflow-ellipsis text-text-tertiary font-normal">{email}</div>
+                        <div className="flex flex-col items-start"><div className="line-clamp-1 text-text-primary font-semibold ">{username}</div><div className="self-stretch line-clamp-1 overflow-ellipsis text-text-tertiary font-normal ">{email}</div>
                         </div>
                     </div>}
                 {isBadge && <div className="flex py-xxs px-md justify-center items-center gap-md rounded-full border border-success-200 bg-success-50 text-(--color-success-700) content-center font-family-body text-xs font-normal leading-xs">Active</div>} 
