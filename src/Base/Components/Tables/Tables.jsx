@@ -120,26 +120,26 @@ export const SiteManagementTables = ({ title, isCheckbox, Text, isAvatar, size, 
     <div className="flex flex-1 flex-col h-full w-full items-start rounded-xl bg-white shadow-xs">
       <Cardheader />
       <div className="flex w-full flex-col items-center self-stretch">
-        <table className="table-fixed">
+        <table className="table-fixed w-full border-collapse">
           <thead className="">
             <tr className=" w-full">
-              <th className="w-[437px]">
+              <th className="w-[337px]  p-0 text-left">
                 <TableHeaderCell title="Site Name" isCheckbox={true} Text isarrowSelectorVertical /></th>
-              <th className=" w-[168px]"><TableHeaderCell title="Address" isCheckbox={false} Text isarrowSelectorVertical /></th>
-              <th className="w-[168px]"><TableHeaderCell title="Location" isCheckbox={false} Text isarrowSelectorVertical /></th>
-              <th className=" w-[64px] "> <TableHeaderCell title="Country" isCheckbox={false} Text isarrowSelectorVertical /></th>
-              <th className=" bg-bg-secondary"><TableHeaderCell title="" isCheckbox={false} Text /></th>
+              <th className=" w-[168px] p-0 text-left"><TableHeaderCell title="Address" isCheckbox={false} Text isarrowSelectorVertical /></th>
+              <th className="w-[168px] p-0 text-left"><TableHeaderCell title="Location" isCheckbox={false} Text isarrowSelectorVertical /></th>
+              <th className=" w-[64px] p-0 text-left"> <TableHeaderCell title="Country" isCheckbox={false} Text isarrowSelectorVertical /></th>
+              <th className="py-lg px-xl bg-bg-secondary border-border-secondary border-b"></th>
             </tr>
           </thead>
 
           <tbody className="">
-            <tr className="w-full border-px border-b-border-secondary text-text-primary font-semibold">
-              <td className="w-[437px] text-left">
+            <tr className="w-full border-px border-b-border-secondary text-text-primary">
+              <td className="w-[337px] font-semibold p-0 text-left">
                 <TableCell children="ISC_Mangaon" credentials={false} istableaction={true} /></td>
-              <td className="w-[168px] text-left"><TableCell children="3605 Parker Rd." /></td>
-              <td className="w-[168px]  text-left"><TableCell children="Pune, Maharashtra" /></td>
-              <td className="w-[64px]  self-stretch"><TableCell children="India" /></td>
-              <td className=""><TableCell isAction={true} /></td>
+              <td className="w-[168px] text-left p-0 text-left"><TableCell children="3605 Parker Rd." /></td>
+              <td className="w-[168px] text-left p-0 text-left whitespace-nowrap"><TableCell children="Pune, Maharashtra" /></td>
+              <td className="w-[64px]  self-stretch p-0 text-left"><TableCell children="India" /></td>
+              <td className="p-0 text-left"><TableCell isAction={true} /></td>
             </tr>
           </tbody>
         </table>

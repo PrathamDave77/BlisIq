@@ -8,7 +8,7 @@ import TableCellActions from './TableCellActions.jsx';
 import Button from '../Buttons/Button.jsx';
 
 const actions = cva(
-    `inline-flex flex-1 items-center gap-lg py-lg px-xl bg-bg-primary text-text-tertiary text-center font-family-body text-sm leading-sm`,
+    `inline-flex flex-1 items-center gap-lg py-lg px-xl bg-bg-primary text-text-tertiary text-center font-family-body text-sm leading-sm h-[48px]`,
     {
         variants: {
             variant: {
