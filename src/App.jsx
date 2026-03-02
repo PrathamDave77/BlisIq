@@ -1,9 +1,19 @@
 import "./index.css";
-
 import React, { useState } from "react";
 import Users from "./AdminScreens/Users.jsx";
 import Modal from "./Base/Components/Modal/Modal.jsx";
 import { Inputfields } from "./Base/Components/Input/Inputfields.jsx";
+import Badges from "./Base/Components/Badges/Badges.jsx";
+import { AvatarOnlineIndicator } from "./Base/Components/Avatar/AvatarOnlineIndicator.jsx";
+import Avatar from "./Base/Components/Avatar/Avatar.jsx";
+import { CompanyIcon } from "./Base/Components/Avatar/AvatarOnlineIndicator.jsx";
+import SidebarMenu from "./Base/Components/sidebar/SidebarMenu.jsx";
+import UpperNavigation from "./Base/Components/Navigation/UpperNavigation.jsx";
+import Users from "./AdminScreens/Users.jsx";
+import Groups from "./AdminScreens/Groups.jsx";
+import CourseVerif from "./AdminScreens/CourseVerif.jsx";
+import Button from "./Base/Components/Buttons/Button.jsx";
+import CreatorSidebar from "./Base/Creator/CreatorSidebar/CreatorSidebar.jsx";
 import CollapsedSidebar from "./Base/Creator/CreatorSidebar/CollapsedSidebar.jsx";
 import CreatorSidebar from "./Base/Creator/CreatorSidebar/CreatorSidebar.jsx";
 

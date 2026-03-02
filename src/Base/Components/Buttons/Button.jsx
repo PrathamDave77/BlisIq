@@ -11,7 +11,7 @@ const buttonVariants = cva(base, {
   variants: {
     variant: {
       primary: [
-        "outline-[2px] outline-[#FFF] border-solid text-white bg-bg-brand-solid hover:bg-(--bg-brand-solid-hover) shadow-xs-skeumorphic focus-visible:shadow-(--focus-ring-shadow-xs-skeumorphic) disabled:border disabled:border-(--border-disabled-subtle) disabled:bg-(--bg-disabled)"
+        "border-[2px] border-[#FFF] border-solid text-white bg-bg-brand-solid hover:bg-(--bg-brand-solid-hover) shadow-(--shadow-xs-skeumorphic) focus-visible:shadow-(--focus-ring-shadow-xs-skeumorphic) disabled:border disabled:border-(--border-disabled-subtle) disabled:bg-(--bg-disabled)"
       ],
       secondary: [
         "border border-border-primary bg-(--bg-primary) text-text-secondary shadow-(--shadow-xs-skeumorphic) hover:bg-bg-primary-hover focus-visible:shadow-(--focus-ring-shadow-xs-skeumorphic) disabled:border-(--border-disabled-subtle)",
@@ -20,7 +20,7 @@ const buttonVariants = cva(base, {
         "border-2 text-text-tertiary hover:bg-bg-primary-hover hover:text-text-tertiary-hover focus-visible:bg-white focus-visible:shadow-(--focus-ring) disabled:bg-bg-primary-hover",
       ],
       link: [
-        "text-text-brand-secondary hover:text-text-brand-secondary-hover hover:underline focus-visible:shadow-(--focus-ring)",
+        "text-(--color-text-brand-secondary) hover:text-text-brand-secondary-hover hover:underline focus-visible:shadow-(--focus-ring)",
       ],
       gray_link: [
         "text-text-tertiary hover:text-text-tertiary-hover hover:underline focus-visible:shadow-(--focus-ring)",
