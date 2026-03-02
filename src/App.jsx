@@ -2,10 +2,14 @@ import "./index.css";
 
 import React, { useState } from "react";
 import Users from "./AdminScreens/Users.jsx";
+import Modal from "./Base/Components/Modal/Modal.jsx";
+import { Inputfields } from "./Base/Components/Input/Inputfields.jsx";
+import CollapsedSidebar from "./Base/Creator/CreatorSidebar/CollapsedSidebar.jsx";
+import CreatorSidebar from "./Base/Creator/CreatorSidebar/CreatorSidebar.jsx";
 
 function App() {
   /* eslint-disable no-unused-vars -- Data for when Sidebar/Modal are enabled */
-  const _data = [
+  const data = [
     {
       username: "5 steps optimizing user experience",
       email: "Owned by Pratham Dave",
@@ -78,8 +82,8 @@ function App() {
       Tags: ["Design", "Research"],
     },
   ];
-  const [_value, _setValue] = useState("");
-  const _sidebarData = [
+  const [value, setValue] = useState("");
+  const sidebarData = [
     {
       items: [
         {
@@ -332,20 +336,20 @@ function App() {
       ],
     },
   ];
-  const _userData = {
+  const userData = {
     name: "Jacob Jones",
     email: "jacob@diacto.com",
     avatarUrl: "https://avatar.iran.liara.run/public/30",
   };
-  const _filterOptions = [
+  const filterOptions = [
     { label: "All Items", value: "all", count: 24 },
     { label: "Pending", value: "pending", count: 2 },
     { label: "In Progress", value: "in-progress", count: 5 },
     { label: "Completed", value: "completed", count: 17 },
   ];
-  const [_filter, _setFilter] = useState("all");
-  const [_showSiteModal, setShowSiteModal] = useState(false);
-  const _handleSaveSite = () => {
+  const [filter, setFilter] = useState("all");
+  const [showSiteModal, setShowSiteModal] = useState(false);
+  const handleSaveSite = () => {
     setShowSiteModal(false);
   };
   /* eslint-enable no-unused-vars */
@@ -421,12 +425,13 @@ function App() {
     /> */}
       {/* <Groups /> */}
       {/* <CourseVerif /> */}
-      <Users />
+      {/* <Users /> */}
       {/* <Tables /> */}
       {/* <CollapsedSidebar /> */}
-        {/* <button onClick={() => setShowSiteModal(true)}>Open Modal</button> */}
+      <CreatorSidebar />
+      {/* <button onClick={() => setShowSiteModal(true)}>Open Modal</button>
 
-      {/* <Modal
+      <Modal
         isOpen={showSiteModal}
         onClose={() => setShowSiteModal(false)}
         title="Add new site"
@@ -447,9 +452,8 @@ function App() {
             Email={true}
             isError={false}
           />
-          {/* Add your other selects/inputs here */}
-        {/* </div>
-      </Modal> */} 
+          </div>
+      </Modal>  */}
       
     </div>
   );

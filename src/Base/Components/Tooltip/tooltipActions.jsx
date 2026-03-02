@@ -2,7 +2,7 @@ import React, { forwardRef } from "react";
 import TooltipPagination from "./tooltipPagination.jsx";
 
 const TooltipPaginationWrapper = forwardRef(
-  ({ children: _children, variant, size: _size, disabled: _disabled, isError: _isError, ..._props }, _ref) => {
+  ({ children: children, variant, size: size, disabled: disabled, isError: isError, ...props }, ref) => {
     return (
       <div className="flex pt-0 pb-lg px-xl">
         {variant === "dot" && <TooltipPagination variant="dot" />}
