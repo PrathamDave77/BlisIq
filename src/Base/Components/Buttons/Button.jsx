@@ -20,7 +20,7 @@ const buttonVariants = cva(base, {
         "border-2 text-text-tertiary hover:bg-bg-primary-hover hover:text-text-tertiary-hover focus-visible:bg-white focus-visible:shadow-(--focus-ring) disabled:bg-bg-primary-hover",
       ],
       link: [
-        "text-text-brand-secondary hover:text-text-brand-secondary-hover hover:underline focus-visible:shadow-(--focus-ring)",
+        "text-(--color-text-brand-secondary) hover:text-text-brand-secondary-hover hover:underline focus-visible:shadow-(--focus-ring)",
       ],
       gray_link: [
         "text-text-tertiary hover:text-text-tertiary-hover hover:underline focus-visible:shadow-(--focus-ring)",

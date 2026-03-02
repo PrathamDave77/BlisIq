@@ -19,13 +19,12 @@ const cellstyles = cva(
     
 
 
-const TableHeaderCell = ({Text,isCheckbox,title}) => {
+const TableHeaderCell = ({Text,isCheckbox,title,isarrowSelectorVertical}) => {
 
     return (
         <div className={cellstyles({})}>
-        
-            {isCheckbox && <Checkbox variant="isCheckbox" size="md" indeterminate={true} text={false}/>}
-            {Text && <HeaderTable label={title} isarrowSelectorVertical={true}/>}
+            {isCheckbox && <Checkbox variant size="md" indeterminate={false} text={false}/>}
+            {Text && <HeaderTable label={title} isarrowSelectorVertical={isarrowSelectorVertical}/>}
         </div>
         
     );
