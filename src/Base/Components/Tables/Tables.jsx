@@ -123,12 +123,12 @@ export const SiteManagementTables = ({ title, isCheckbox, Text, isAvatar, size, 
         <table className="table-fixed w-full border-collapse">
           <thead className="">
             <tr className=" w-full">
-              <th className="w-[337px]  p-0 text-left">
+              <th className="w-[337px]  h-[44px]  p-0 text-left">
                 <TableHeaderCell title="Site Name" isCheckbox={true} Text isarrowSelectorVertical /></th>
-              <th className=" w-[168px] p-0 text-left"><TableHeaderCell title="Address" isCheckbox={false} Text isarrowSelectorVertical /></th>
-              <th className="w-[168px] p-0 text-left"><TableHeaderCell title="Location" isCheckbox={false} Text isarrowSelectorVertical /></th>
-              <th className=" w-[64px] p-0 text-left"> <TableHeaderCell title="Country" isCheckbox={false} Text isarrowSelectorVertical /></th>
-              <th className="py-lg px-xl bg-bg-secondary border-border-secondary border-b"></th>
+              <th className=" w-[168px] h-[44px] p-0 text-left"><TableHeaderCell title="Address" isCheckbox={false} Text isarrowSelectorVertical /></th>
+              <th className="w-[168px]  h-[44px] p-0 text-left"><TableHeaderCell title="Location" isCheckbox={false} Text isarrowSelectorVertical /></th>
+              <th className=" w-[64px]  h-[44px] p-0 text-left"> <TableHeaderCell title="Country" isCheckbox={false} Text isarrowSelectorVertical /></th>
+              <th className=" h-[44px] py-lg px-xl bg-bg-secondary border-border-secondary border-b"></th>
             </tr>
           </thead>
 
@@ -144,6 +144,121 @@ export const SiteManagementTables = ({ title, isCheckbox, Text, isAvatar, size, 
           </tbody>
         </table>
       </div>
+    </div>
+  )
+}
+
+export const UserManagementTables = ({ title, isCheckbox, Text, isAvatar, size, username, credentials, isBadge, children }) => {
+
+  return (
+    <div className="flex flex-1 flex-col h-full w-full items-start rounded-xl bg-white shadow-xs">
+      <Cardheader />
+      <div className="flex w-full flex-col items-center self-stretch">
+        <table className="table-fixed w-full border-collapse">
+          <thead className="">
+            <tr className=" w-full text-sm">
+              <th className="w-[220px] h-[20px] p-0 text-left">
+                <TableHeaderCell title="User Name" isCheckbox={true} Text isarrowSelectorVertical /></th>
+              <th className="w-[63px] h-[20px] p-0 text-left"><TableHeaderCell title="Status" isCheckbox={false} Text isarrowSelectorVertical /></th>
+              <th className="w-[83px] h-[20px] p-0 text-left"><TableHeaderCell title="Site" isCheckbox={false} Text /></th>
+              <th className="w-[51px] h-[20px] p-0 text-left"> <TableHeaderCell title="Role" isCheckbox={false} Text isarrowSelectorVertical /></th>
+              <th className="w-[49px] h-[20px] p-0 text-left"> <TableHeaderCell title="Class" isCheckbox={false} Text isarrowSelectorVertical /></th>
+              <th className="w-[83px] h-[20px] p-0 text-left text-sm"> <TableHeaderCell title="Added on" isCheckbox={false} Text isarrowSelectorVertical /></th>
+              <th className="w-[95px] h-[20px] p-0 text-left"> <TableHeaderCell title="Added by" isCheckbox={false} Text isarrowSelectorVertical /></th>
+              <th className="w-[100px] h-[20px] p-0 text-left"> <TableHeaderCell title="Group" isCheckbox={false} Text isarrowSelectorVertical /></th>
+              <th className="w-5 py-lg px-xl bg-bg-secondary border-border-secondary border-b"></th>
+            </tr>
+          </thead>
+
+          <tbody className="">
+            <tr className="w-full border-px border-b-border-secondary text-text-primary">
+              <td className="w-[220px] h-5 font-semibold p-0 text-left "><TableCell isAvatar={true} istableaction={true} isCheck={false} credentials={true} username="Jacob Jones" email="jacob@diacto.com"/></td>
+              <td className="w-full h-5 text-left p-0 "><TableCell isBadge={true} /></td>
+              <td className="w-[83px] h-5 text-left p-0 whitespace-nowrap"><TableCell children="ISC_mangaon" /></td>
+              <td className="w-[51px]  self-stretch p-0 text-left"><TableCell children="Admin" /></td>
+              <td className="w-[49px]  self-stretch p-0 text-left"><TableCell children="III" /></td>
+              <td className="w-[83px]  self-stretch p-0 text-left"><TableCell children="March 13, 2025" /></td>
+              <td className="w-[95px]  self-stretch p-0 text-left"><TableCell children="Pratham Dave" /></td>
+              <td className="w-[49px] p-0 text-left"><TableCell isAvatarGrp/></td>
+              <td className="w-[49px] p-0 text-left"><TableCell isdropdown/></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  )
+}
+
+export const RoleManagementTables = ({ title, isCheckbox, Text, isAvatar, size, username, credentials, isBadge, children }) => {
+
+  return (
+    <div className="flex flex-1 flex-col h-full w-full items-start rounded-xl bg-white shadow-xs">
+      <Cardheader />
+      <div className="w-full overflow-x-auto">
+  <table className="min-w-max border-collapse">
+    <thead>
+      <tr className="text-sm">
+        {/* Sticky Column 1 */}
+        <th className="w-[210px] h-[20px] p-0 text-left sticky left-0 bg-white z-20">
+          <TableHeaderCell title="Permission" Text />
+        </th>
+
+        {/* Sticky Column 2 */}
+        <th className="w-[198px] h-[20px] p-0 text-left sticky left-[210px] bg-white z-20">
+          <TableHeaderCell title="Category" Text />
+        </th>
+
+        {/* Scrollable Columns */}
+        <th className="w-[180px] h-[20px] p-0 text-left">
+          <TableHeaderCell title="Admin" Text />
+        </th>
+        <th className="w-[180px] h-[20px] p-0 text-left">
+          <TableHeaderCell title="Group Admin" Text />
+        </th>
+        <th className="w-[180px] h-[20px] p-0 text-left">
+          <TableHeaderCell title="Creator" Text />
+        </th>
+        <th className="w-[180px] h-[20px] p-0 text-left">
+          <TableHeaderCell title="Learner" Text />
+        </th>
+        <th className="w-[180px] h-[20px] p-0 text-left">
+          <TableHeaderCell title="Class Teacher" Text />
+        </th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr className="border-b border-border-secondary text-text-primary">
+        {/* Sticky Column 1 */}
+        <td className="w-[210px] h-5 font-semibold p-0 text-left sticky left-0 bg-white z-10">
+          <TableCell isdefault={true} username="Jacob Jones" />
+        </td>
+
+        {/* Sticky Column 2 */}
+        <td className="w-[198px] h-5 text-left p-0 sticky left-[210px] bg-white z-10">
+          <TableCell isdefault={true} email="Company administration" />
+        </td>
+
+        {/* Scrollable Columns */}
+        <td className="w-[180px] h-5 text-center p-0">
+          <TableCell isCheck />
+        </td>
+        <td className="w-[180px] h-5 text-center p-0">
+          <TableCell isCheck />
+        </td>
+        <td className="w-[180px] h-5 text-center p-0">
+          <TableCell isCheck />
+        </td>
+        <td className="w-[180px] h-5 text-center p-0">
+          <TableCell isCheck />
+        </td>
+        <td className="w-[180px] h-5 text-center p-0">
+          <TableCell isCheck />
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
     </div>
   )
 }

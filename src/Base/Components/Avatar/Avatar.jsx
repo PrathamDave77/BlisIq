@@ -32,11 +32,11 @@ const Avatar = ({ variant,size,isOnline }) => {
     )
 }
 
-const actions = cva("",
+const actions = cva("relative shrink-0 border-[var(--color-border-secondary-alt)] bg-[url('/pkd.jpg')] bg-[lightgray] bg-center bg-cover bg-no-repeat",
     {
         variants: {
             variant: {
-                default: "relative shrink-0 border-[var(--color-border-secondary-alt)] bg-[url('/pkd.jpg')] bg-[lightgray] bg-center bg-cover bg-no-repeat",
+                default: "",
             },
             size:{
                 xs:"w-full h-full border-[0.5px] rounded-full ",

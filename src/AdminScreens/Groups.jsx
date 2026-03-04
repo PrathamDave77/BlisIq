@@ -5,6 +5,7 @@ import { Select } from "../Base/Components/Input/Select.jsx";
 import {Cardheader} from "../Base/Components/Navigation/Cardheader.jsx";
 import TableHeaderCell from '../Base/Components/Tables/TableHeaderCell.jsx';
 import {SiteManagementTables} from '../Base/Components/Tables/Tables.jsx';
+import {RoleManagementTables} from '../Base/Components/Tables/Tables.jsx';
 
 
 function DashboardIcon() {
@@ -117,7 +118,7 @@ function Groups() {
           <div className="border border-border-secondary rounded-xl overflow-hidden bg-white min-h-[400px]">
             <div className=" text-center text-text-tertiary flex ">
               {/* You can now drop a Table component here */}
-              <SiteManagementTables />
+              <RoleManagementTables />
             </div>
           </div>
         </section>
