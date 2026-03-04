@@ -240,19 +240,19 @@ export const RoleManagementTables = ({ title, isCheckbox, Text, isAvatar, size, 
         </td>
 
         {/* Scrollable Columns */}
-        <td className="w-[180px] h-5 text-center p-0">
+        <td className="w-[180px] h-5 text-left p-0 ">
           <TableCell isCheck />
         </td>
-        <td className="w-[180px] h-5 text-center p-0">
+        <td className="w-[180px] h-5 text-left p-0">
           <TableCell isCheck />
         </td>
-        <td className="w-[180px] h-5 text-center p-0">
+        <td className="w-[180px] h-5 text-left p-0">
           <TableCell isCheck />
         </td>
-        <td className="w-[180px] h-5 text-center p-0">
+        <td className="w-[180px] h-5 text-left p-0">
           <TableCell isCheck />
         </td>
-        <td className="w-[180px] h-5 text-center p-0">
+        <td className="w-[180px] h-5 text-left p-0">
           <TableCell isCheck />
         </td>
       </tr>
