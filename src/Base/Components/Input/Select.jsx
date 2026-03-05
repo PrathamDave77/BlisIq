@@ -62,7 +62,7 @@ export function Select({
   dotColor = "bg-success-500",
 
   options = [],
-  value: _value,
+  value: value,
 
   placeholder = "Select option",
 

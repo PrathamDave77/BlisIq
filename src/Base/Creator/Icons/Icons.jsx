@@ -168,3 +168,43 @@ export function Moon_01({ size: _size }) {
     </svg>
   );
 }
+
+export function SidebarClose() {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="10"
+      height="9"
+      viewBox="0 0 10 9"
+      fill="none"
+    >
+      <path
+        d="M8.75 7.41667L5.41667 4.08333L8.75 0.75M4.08333 7.41667L0.75 4.08333L4.08333 0.75"
+        stroke="#A4A7AE"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+}
+
+export function Plus() {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="14"
+      height="14"
+      viewBox="0 0 14 14"
+      fill="none"
+    >
+      <path
+        d="M6.66927 0.834961V12.5016M0.835938 6.66829H12.5026"
+        stroke="#84CAFF"
+        stroke-width="1.67"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  );
+}

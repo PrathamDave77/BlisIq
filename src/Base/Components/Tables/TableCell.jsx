@@ -1,4 +1,12 @@
-<<<<<<< HEAD
+<<<<<<<<< Temporary merge branch 1
+import React from "react";
+import { cva } from "class-variance-authority";
+import { cn } from "../../../lib/utils.js";
+import File_icons from "../../../../public/File_icons.png";
+import Badges from "../Badges/Badges.jsx";
+import TableCellActions from "./TableCellActions.jsx";
+import CheckboxImg from "../../../../public/Checkbox.png";
+=========
 import React from 'react'
 import { cva } from "class-variance-authority";
 import { cn } from '../../../lib/utils.js';
@@ -31,8 +39,7 @@ const actions = cva(
                 md: "",
             },
         }
-<<<<<<< HEAD
-=======
+<<<<<<<<< Temporary merge branch 1
 
     )
 
@@ -77,7 +84,8 @@ const actions = cva(
                 {isAvatarGrp && <div></div>}
             </div>
         )
->>>>>>> b9025fea184a9a18e2a7baf63393c4e864645098
+=========
+>>>>>>>>> Temporary merge branch 2
     }
 
 )

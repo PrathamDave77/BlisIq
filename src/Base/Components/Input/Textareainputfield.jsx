@@ -20,9 +20,9 @@ export function Textareainputfield({
   label,
   hint,
   isError = false,
-  children: _children,
+  children: children,
   size,
-  state: _state = "default",
+  state: state = "default",
   ...props
 }) {
 

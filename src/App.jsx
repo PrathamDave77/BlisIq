@@ -1,22 +1,26 @@
 import "./index.css";
 import React, { useState } from "react";
-<<<<<<< HEAD
+import Modal from "./Base/Components/Modal/Modal.jsx";
 import { Inputfields } from "./Base/Components/Input/Inputfields.jsx";
 import Badges from "./Base/Components/Badges/Badges.jsx";
 import { AvatarOnlineIndicator } from "./Base/Components/Avatar/AvatarOnlineIndicator.jsx";
 import Avatar from "./Base/Components/Avatar/Avatar.jsx";
 import { CompanyIcon } from "./Base/Components/Avatar/AvatarOnlineIndicator.jsx";
-import SidebarMenu from "./Base/Components/sidebar/SidebarMenu.jsx";
+import SidebarMenu from "./Base/Components/Sidebar/SidebarMenu.jsx";
 import UpperNavigation from "./Base/Components/Navigation/UpperNavigation.jsx";
-=======
->>>>>>> b9025fea184a9a18e2a7baf63393c4e864645098
+>>>>>>>>> Temporary merge branch 2
 import Users from "./AdminScreens/Users.jsx";
-
-
+import Groups from "./AdminScreens/Groups.jsx";
+import CourseVerif from "./AdminScreens/CourseVerif.jsx";
+import Button from "./Base/Components/Buttons/Button.jsx";
+import CreatorSidebar from "./Base/Creator/CreatorSidebar/CreatorSidebar.jsx";
+import CollapsedSidebar from "./Base/Creator/CreatorSidebar/CollapsedSidebar.jsx";
+import Roles from "./AdminScreens/Roles.jsx";
+import { Cardheader } from "./Base/Components/Navigation/Cardheader.jsx";
 
 function App() {
   /* eslint-disable no-unused-vars -- Data for when Sidebar/Modal are enabled */
-  const _data = [
+  const data = [
     {
       username: "5 steps optimizing user experience",
       email: "Owned by Pratham Dave",
@@ -89,8 +93,8 @@ function App() {
       Tags: ["Design", "Research"],
     },
   ];
-  const [_value, _setValue] = useState("");
-  const _sidebarData = [
+  const [value, setValue] = useState("");
+  const sidebarData = [
     {
       items: [
         {
@@ -343,20 +347,20 @@ function App() {
       ],
     },
   ];
-  const _userData = {
+  const userData = {
     name: "Jacob Jones",
     email: "jacob@diacto.com",
     avatarUrl: "https://avatar.iran.liara.run/public/30",
   };
-  const _filterOptions = [
+  const filterOptions = [
     { label: "All Items", value: "all", count: 24 },
     { label: "Pending", value: "pending", count: 2 },
     { label: "In Progress", value: "in-progress", count: 5 },
     { label: "Completed", value: "completed", count: 17 },
   ];
-  const [_filter, _setFilter] = useState("all");
-  const [_showSiteModal, setShowSiteModal] = useState(false);
-  const _handleSaveSite = () => {
+  const [filter, setFilter] = useState("all");
+  const [showSiteModal, setShowSiteModal] = useState(false);
+  const handleSaveSite = () => {
     setShowSiteModal(false);
   };
   /* eslint-enable no-unused-vars */
@@ -420,7 +424,7 @@ function App() {
     //   className="mb-4" // You can pass extra tailwind classes
     // />
     <div className="flex ">
-      {/* <Cardheader
+      <Cardheader
       title="Team members"
       subtitle="Manage your team members and their account permission here."
       actions={
@@ -430,23 +434,25 @@ function App() {
         </>
       }
     /> */}
-<<<<<<< HEAD
+<<<<<<<<< Temporary merge branch 1
+      {/* <Groups /> */}
+      {/* <CourseVerif /> */}
+      {/* <Users /> */}
+      {/* <Roles /> */}
+
+      {/* <Tables /> */}
+      {/* <CollapsedSidebar /> */}
+        {/* <button onClick={() => setShowSiteModal(true)}>Open Modal</button> */}
+=========
     <Groups />
       {/* <CourseVerif /> */}
    
     
     {/* <CollapsedSidebar /> */}
     </div>
-=======
-      {/* <Groups /> */}
-      {/* <CourseVerif /> */}
-      <Users />
-      {/* <Tables /> */}
-      {/* <CollapsedSidebar /> */}
-        {/* <button onClick={() => setShowSiteModal(true)}>Open Modal</button> */}
->>>>>>> b9025fea184a9a18e2a7baf63393c4e864645098
+>>>>>>>>> Temporary merge branch 2
 
-      {/* <Modal
+      <Modal
         isOpen={showSiteModal}
         onClose={() => setShowSiteModal(false)}
         title="Add new site"
@@ -467,9 +473,8 @@ function App() {
             Email={true}
             isError={false}
           />
-          {/* Add your other selects/inputs here */}
-        {/* </div>
-      </Modal> */} 
+          </div>
+      </Modal>  */}
       
     </div>
   );
