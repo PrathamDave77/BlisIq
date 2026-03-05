@@ -1,7 +1,7 @@
 import React from "react";
 import SidebarMenu from "../Base/Components/Sidebar/SidebarMenu.jsx";
 import Button from "../Base/Components/Buttons/Button.jsx";
-import { Select } from "../Base/Components/Input/Select.jsx";
+import Select  from "../Base/Components/Input/Select.jsx";
 import {Cardheader} from "../Base/Components/Navigation/Cardheader.jsx";
 import TableHeaderCell from '../Base/Components/Tables/TableHeaderCell.jsx';
 import {SiteManagementTables} from '../Base/Components/Tables/Tables.jsx';

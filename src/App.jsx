@@ -8,7 +8,7 @@ import Avatar from "./Base/Components/Avatar/Avatar.jsx";
 import { CompanyIcon } from "./Base/Components/Avatar/AvatarOnlineIndicator.jsx";
 import SidebarMenu from "./Base/Components/Sidebar/SidebarMenu.jsx";
 import UpperNavigation from "./Base/Components/Navigation/UpperNavigation.jsx";
->>>>>>>>> Temporary merge branch 2
+
 import Users from "./AdminScreens/Users.jsx";
 import Groups from "./AdminScreens/Groups.jsx";
 import CourseVerif from "./AdminScreens/CourseVerif.jsx";
@@ -423,60 +423,58 @@ function App() {
     //   onChange={setFilter}
     //   className="mb-4" // You can pass extra tailwind classes
     // />
-    <div className="flex ">
-      <Cardheader
-      title="Team members"
-      subtitle="Manage your team members and their account permission here."
-      actions={
-        <>
-          <Button variant="secondary">Import</Button>
-          <Button>+ Add user</Button>
-        </>
-      }
-    /> */}
-<<<<<<<<< Temporary merge branch 1
-      {/* <Groups /> */}
-      {/* <CourseVerif /> */}
-      {/* <Users /> */}
-      {/* <Roles /> */}
+    //<div className="flex ">
+    //  <Cardheader
+    //  title="Team members"
+    //  subtitle="Manage your team members and their account permission here."
+    //  actions={
+    //    <>
+    //      <Button variant="secondary">Import</Button>
+    //      <Button>+ Add user</Button>
+    //    </>
+    //  }
+    ///> */}
 
-      {/* <Tables /> */}
-      {/* <CollapsedSidebar /> */}
-        {/* <button onClick={() => setShowSiteModal(true)}>Open Modal</button> */}
-=========
-    <Groups />
-      {/* <CourseVerif /> */}
-   
-    
-    {/* <CollapsedSidebar /> */}
-    </div>
->>>>>>>>> Temporary merge branch 2
+//      {/* <Groups /> */}
+//      {/* <CourseVerif /> */}
+//      {/* <Users /> */}
+//      {/* <Roles /> */}
+//
+//      {/* <Tables /> */}
+//      {/* <CollapsedSidebar /> */}
+//        {/* <button onClick={() => setShowSiteModal(true)}>Open Modal</button> */}
+//    <Groups />
+//      {/* <CourseVerif /> */}
+//   
+//    
+//    {/* <CollapsedSidebar /> */}
+//    </div>
 
-      <Modal
-        isOpen={showSiteModal}
-        onClose={() => setShowSiteModal(false)}
-        title="Add new site"
-        subtitle="Enter the details below to add a new site."
-        buttonText="Save"
-        width="640px"
-      >
-        <div className="flex flex-col gap-4">
-          <Inputfields
-            label="Site name"
-            placeholder="Enter your site name"
-            required
-          />
-          <Inputfields
-            label="Email Address"
-            text="olivia@untitledui.com"
-            placeholder="Enter your email"
-            Email={true}
-            isError={false}
-          />
-          </div>
-      </Modal>  */}
+      //<Modal
+      //  isOpen={showSiteModal}
+      //  onClose={() => setShowSiteModal(false)}
+      //  title="Add new site"
+      //  subtitle="Enter the details below to add a new site."
+      //  buttonText="Save"
+      //  width="640px"
+      //>
+      //  <div className="flex flex-col gap-4">
+      //    <Inputfields
+      //      label="Site name"
+      //      placeholder="Enter your site name"
+      //      required
+      //    />
+      //    <Inputfields
+      //      label="Email Address"
+      //      text="olivia@untitledui.com"
+      //      placeholder="Enter your email"
+      //      Email={true}
+      //      isError={false}
+      //    />
+      //    </div>
+      //</Modal>  */}
       
-    </div>
+    <div><Roles/></div>
   );
 }
 

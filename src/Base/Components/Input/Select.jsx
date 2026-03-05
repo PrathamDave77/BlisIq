@@ -45,7 +45,7 @@ const selectStyles = cva(
   },
 );
 
-export function Select({
+export default function Select({
   label,
   hint,
   error,

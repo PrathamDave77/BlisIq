@@ -2,10 +2,8 @@ import React, { useState } from "react";
 import SidebarMenu from "../Base/Components/Sidebar/SidebarMenu.jsx";
 import UpperNavigation from "../Base/Components/Navigation/UpperNavigation.jsx";
 import Button from "../Base/Components/Buttons/Button.jsx";
-import { Select } from "../Base/Components/Input/Select.jsx";
+import Select  from "../Base/Components/Input/Select.jsx";
 import {SiteManagementTables, GroupManagementTables} from "../Base/Components/Tables/Tables.jsx";
-
->>>>>>>>> Temporary merge branch 2
 import {
   Cardheader,
   Sectionheader,
