@@ -1,4 +1,5 @@
 import React from "react";
+<<<<<<< HEAD
 import { cva } from "class-variance-authority";
 import { cn } from "../../../lib/utils.js";
 
@@ -102,4 +103,21 @@ const TableCellActions = ({ variant, isToggle }) => {
   );
 };
 
+=======
+import { cn } from "../../../lib/utils.js";
+
+const TableCellActions = ({ checkbox, variant, isToggle: _isToggle, Radio, Toggle }) => {
+  return (
+    <div className={cn("flex items-center gap-md")} data-variant={variant}>
+      {checkbox && (
+        <input type="checkbox" className="rounded border-border-secondary" aria-label="Select row" />
+      )}
+      {Radio && <span className="sr-only">{Toggle}</span>}
+    </div>
+  );
+};
+
+TableCellActions.displayName = "TableCellActions";
+
+>>>>>>> b9025fea184a9a18e2a7baf63393c4e864645098
 export default TableCellActions;

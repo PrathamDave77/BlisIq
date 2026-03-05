@@ -89,7 +89,7 @@ const Button = forwardRef(({
     ref={ref}
     disabled={disabled || isLoading}
     aria-busy={isLoading}
-    className={cn(buttonVariants({ variant, size, isError }))}
+    className={cn(buttonVariants({ variant, size, isError }), className)}
     {...props}
   >
     {isLoading ? (

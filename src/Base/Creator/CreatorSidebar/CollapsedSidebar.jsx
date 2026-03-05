@@ -1,5 +1,4 @@
 import React from "react";
-import { initialSidebarData } from "./data";
 import {
   Chevron_left,
   Edit_01,

@@ -1,13 +1,17 @@
-import React from 'react'
-import { cva } from "class-variance-authority";
-import { cn } from "../../../lib/utils.js";
+import React from "react";
 
 import TableCell from './TableCell.jsx';
 import TableHeaderCell from './TableHeaderCell.jsx';
+<<<<<<< HEAD
 import Badges from '../Badges/Badges.jsx';
 import Avatar from '../Avatar/Avatar.jsx';
 import { Cardheader } from '../Navigation/Cardheader.jsx';
 import Dropdownmenu from '../Dropdown/Dropdownmenu.jsx';
+=======
+import Avatar from "../Avatar/Avatar.jsx";
+import { Cardheader } from "../Navigation/Cardheader.jsx";
+
+>>>>>>> b9025fea184a9a18e2a7baf63393c4e864645098
 
 const data = [
   {
@@ -85,6 +89,7 @@ export const GroupManagementTables = ({ title, isCheckbox, Text, isAvatar, size,
   return (
     <div className="flex flex-1 flex-col h-full w-full items-start rounded-xl bg-white shadow-xs">
       <Cardheader />
+<<<<<<< HEAD
       <div className="flex flex-1 flex-col items-start self-stretch">
         <th className="flex items-start self-stretch">
           <TableHeaderCell title="Group Name" isCheckbox={true} Text />
@@ -109,6 +114,48 @@ export const GroupManagementTables = ({ title, isCheckbox, Text, isAvatar, size,
             </div>
           </td>
         </tr>
+=======
+      <div className="flex items-start self-stretch">
+        <div className="flex flex-col items-start flex-1 w-full rounded-tl-md rounded-bl-md">
+          <TableHeaderCell title="User name" Text={true} Checkbox={true}/>
+          {data.map((item) => (
+            <TableCell key={item.username + item.email} isAvatar={true} credentials={true} isdefault={false} username={item.username} email={item.email} />
+          ))}
+          
+        </div>
+        <div className="flex flex-col items-start flex-1 w-full ">
+            <TableHeaderCell title="Status" Text={true} Checkbox={false}/>
+            {data.map((item) => item.Tags && (
+            <div key={item.username} className="flex flex-row">
+              <TableCell isBadge={true}>Design</TableCell>
+              <TableCell isBadge={true}>Research</TableCell>
+            </div>
+          ))}
+        </div>
+        <div className="flex flex-col items-start flex-1 w-full ">
+            <TableHeaderCell title="Content" Text={true} Checkbox={false}/>
+            {data.map((item) => (
+            <TableHeaderCell key={item.username} Text={true} title={item.Requested} />
+          ))}
+        </div>
+        <div className="flex flex-col items-start flex-1 w-full ">
+            <TableHeaderCell title="Type" Text={true} Checkbox={false}/>
+            {data.map((item) => (
+            <TableHeaderCell key={item.username} Text={true} title={item.Type} />
+          ))}
+        </div>
+        <div className="flex flex-col items-start flex-1 w-full">
+            <TableHeaderCell title="Collaborators" Text={true} Checkbox={false}/>
+            {data.map((item) => (
+            <div key={item.username} className="flex">
+              <Avatar variant="default" size="md" isOnline={false} />
+              <Avatar variant="default" size="md" isOnline={false} />
+              <Avatar variant="default" size="md" isOnline={false} />
+              <Avatar variant="default" size="md" isOnline={false} />
+            </div>
+          ))}
+        </div>
+>>>>>>> b9025fea184a9a18e2a7baf63393c4e864645098
       </div>
     </div>
   )

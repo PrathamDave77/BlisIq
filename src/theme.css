@@ -324,42 +324,9 @@
   --color-fg-success-primary: var(--fg-success-primary);
   --color-fg-success-secondary: var(--fg-success-secondary);
 
-  --color-gray-50: var(--color-utility-gray-50);
-  --color-gray-100: var(--color-utility-gray-100);
-  --color-gray-200: var(--color-utility-gray-200);
-  --color-gray-300: var(--color-utility-gray-300);
-  --color-gray-400: var(--color-utility-gray-400);
-  --color-gray-500: var(--color-utility-gray-500);
-  --color-gray-600: var(--color-utility-gray-600);
-  --color-gray-700: var(--color-utility-gray-700);
-  --color-gray-800: var(--color-utility-gray-800);
-  --color-gray-900: var(--color-utility-gray-900);
-
-  /* ================================
-     PRIMARY BORDERS
-     ================================ */
-
-  --color-border-primary: var(--border-primary);
-  --color-border-secondary: var(--border-secondary);
-  --color-border-tertiary: var(--border-tertiary);
-
-  --color-border-error: var(--border-error);
-
-  /* ================================
-     ALT / TRANSLUCENT
-     ================================ */
-
-  --color-border-secondary-alt: var(--border-secondary-alt);
-  /* Secondary surfaces */
-  --color-bg-secondary: var(--bg-secondary);
-
-  --color-bg-primary: var(--bg-primary);
-
-  --color-bg-brand-primary: var(--bg-brand-primary);
-
   /* =====================================================
      FOCUS RINGS - BASE
-  ===================================================== */
+     ===================================================== */
 
   --color-focus-ring-01: var(--focus-ring-01);
   --color-focus-ring-02: var(--focus-ring-02);
@@ -467,10 +434,6 @@
     2px 21px 6px 0 rgba(0, 0, 0, 0), 1px 8px 5px 0 rgba(0, 0, 0, 0.05),
     0 3px 3px 0 rgba(0, 0, 0, 0.09), 0 1px 2px 0 rgba(0, 0, 0, 0.1);
 
-  --color-bg-primary-hover: var(--bg-primary-hover);
-
-  --color-bg-brand-solid: var(--bg-brand-solid);
-
   /*Skeumorphic Focus Rings*/
 
   --focus-ring: 0 0 0 2px var(--focus-ring-01), 0 0 0 4px var(--focus-ring-02);
@@ -507,62 +470,6 @@
     0 1px 2px 0 var(--focus-ring-error-shadow-xs-skeumorphic-03),
     0 0 0 2px var(--focus-ring-error-shadow-xs-skeumorphic-04),
     0 0 0 4px var(--focus-ring-error-shadow-xs-skeumorphic-05);
-
-  /* ============================================
-     NEUTRAL FOREGROUNDS
-  ============================================ */
-
-  --color-fg-primary: var(--fg-primary);
-  --color-fg-secondary: var(--fg-secondary);
-  --color-fg-secondary-hover: var(--fg-secondary-hover);
-  --color-fg-tertiary: var(--fg-tertiary);
-  --color-fg-tertiary-hover: var(--fg-tertiary-hover);
-  --color-fg-quaternary: var(--fg-quaternary);
-  --color-fg-quaternary-hover: var(--fg-quaternary-hover);
-
-  /* ============================================
-     FIXED
-  ============================================ */
-
-  --color-fg-white: var(--fg-white);
-
-  /* ============================================
-     DISABLED
-  ============================================ */
-
-  --color-fg-disabled: var(--fg-disabled);
-  --color-fg-disabled-subtle: var(--fg-disabled-subtle);
-
-  /* ============================================
-     BRAND
-  ============================================ */
-
-  --color-fg-brand-primary: var(--fg-brand-primary);
-  --color-fg-brand-primary-alt: var(--fg-brand-primary-alt);
-  --color-fg-brand-secondary: var(--fg-brand-secondary);
-  --color-fg-brand-secondary-hover: var(--fg-brand-secondary-hover);
-  --color-fg-brand-secondary-alt: var(--fg-brand-secondary-alt);
-
-  /* ============================================
-     ERROR
-  ============================================ */
-
-  --color-fg-error-primary: var(--fg-error-primary);
-  --color-fg-error-secondary: var(--fg-error-secondary);
-
-  /* ============================================
-     WARNING
-  ============================================ */
-
-  --color-fg-warning-primary: var(--fg-warning-primary);
-  --color-fg-warning-secondary: var(--fg-warning-secondary);
-
-  /* ============================================
-     SUCCESS
-  ============================================ */
-
-  --color-fg-success-primary: var(--fg-success-primary);
-  --color-fg-success-secondary: var(--fg-success-secondary);
 
   /* Base hierarchy */
   --color-text-primary: var(--color-text-primary);

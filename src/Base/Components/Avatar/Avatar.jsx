@@ -1,5 +1,4 @@
-import React from 'react'
-import pkd from '../../../../public/pkd.jpg';
+import React from "react";
 import { cva } from "class-variance-authority";
 import { cn } from "../../../lib/utils.js";
 import {AvatarOnlineIndicator} from './AvatarOnlineIndicator.jsx';

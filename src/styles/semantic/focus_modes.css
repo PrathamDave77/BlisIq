@@ -179,16 +179,16 @@
     --focus-ring-error-shadow-xs-skeumorphic-05: var(--color-error-500);
 
     /* Neutral focus outline on dark surfaces */
-    --focus-ring-01: var(--color-gray-950);
+    --focus-ring-01: var(--color-dark-gray-950);
 
     /* Neutral error focus outline on dark surfaces */
-    --focus-ring-error-01: var(--color-gray-950);
+    --focus-ring-error-01: var(--color-dark-gray-950);
 
     /* Extra-small light glow for dark backgrounds */
     --focus-ring-shadow-xs-01: rgba(249, 249, 249, 0.05);
 
     /* Dark surface reinforcement layer */
-    --focus-ring-shadow-xs-02: var(--color-gray-950);
+    --focus-ring-shadow-xs-02: var(--color-dark-gray-950);
 
     /* Brand-colored glow layer */
     --focus-ring-shadow-xs-03: var(--color-brand-blue-500);
@@ -198,7 +198,7 @@
     --focus-ring-shadow-sm-02: rgba(249, 249, 249, 0.1);
 
     /* Dark surface stabilization layer */
-    --focus-ring-shadow-sm-03: var(--color-gray-950);
+    --focus-ring-shadow-sm-03: var(--color-dark-gray-950);
 
     /* Brand emphasis glow */
     --focus-ring-shadow-sm-04: var(--color-brand-blue-500);
@@ -207,7 +207,7 @@
     --focus-ring-error-shadow-01: rgba(249, 249, 249, 0);
 
     /* Dark surface error layer */
-    --focus-ring-error-shadow-02: var(--color-gray-950);
+    --focus-ring-error-shadow-02: var(--color-dark-gray-950);
 
     /* Error emphasis glow */
     --focus-ring-error-shadow-03: var(--color-error-500);
@@ -222,7 +222,7 @@
     --focus-ring-shadow-xs-stack-03: rgba(249, 249, 249, 0.05);
 
     /* Dark surface stabilization layer */
-    --focus-ring-shadow-xs-stack-04: var(--color-gray-950);
+    --focus-ring-shadow-xs-stack-04: var(--color-dark-gray-950);
 
     /* Brand-colored focus glow */
     --focus-ring-shadow-xs-stack-05: var(--color-brand-blue-500);
@@ -237,7 +237,7 @@
     --focus-ring-error-shadow-xs-stack-03: rgba(249, 249, 249, 0.05);
 
     /* Dark surface stabilization layer */
-    --focus-ring-error-shadow-xs-stack-04: var(--color-gray-950);
+    --focus-ring-error-shadow-xs-stack-04: var(--color-dark-gray-950);
 
     /* Error emphasis glow */
     --focus-ring-error-shadow-xs-stack-05: var(--color-error-500);

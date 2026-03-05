@@ -14,17 +14,24 @@ const styles = cva("flex flex-col py-[1px] px-sm items-start gap-md rounded-md b
 
 });
 
-const Dropdownlistitem = ({ Iconleading, Checkboxleading,Isdivider,children }) => {
-    return (
-        <>
-        {Isdivider ? <div className={cn(styles({variant:Isdivider}))}>
-            <div className="w-[256px] h-px border-border-secondary"></div>
-        </div> : <div className={cn(styles({ variant }))}>
+const resolvedVariant = (Iconleading, Checkboxleading, Isdivider) =>
+  Isdivider ? "Isdivider" : Iconleading ? "Iconleading" : Checkboxleading ? "Checkboxleading" : "default";
+
+const Dropdownlistitem = ({ Iconleading, Checkboxleading, Isdivider, children }) => {
+  const variant = resolvedVariant(Iconleading, Checkboxleading, Isdivider);
+  return (
+    <>
+      {Isdivider ? (
+        <div className={cn(styles({ variant: "Isdivider" }))}>
+          <div className="w-[256px] h-px border-border-secondary" />
+        </div>
+      ) : (
+        <div className={cn(styles({ variant }))}>
 
             <div className="flex items-center gap-md p-[10px] rounded-sm   text-sm font-semibold leading-sm">
                 {Iconleading && <div className="flex items-center gap-[8px] flex-1">
                     <div><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                        <path d="M13.3332 14V12.6667C13.3332 11.9594 13.0522 11.2811 12.5521 10.781C12.052 10.281 11.3737 10 10.6665 10H5.33317C4.62593 10 3.94765 10.281 3.44755 10.781C2.94746 11.2811 2.6665 11.9594 2.6665 12.6667V14M10.6665 4.66667C10.6665 6.13943 9.4726 7.33333 7.99984 7.33333C6.52708 7.33333 5.33317 6.13943 5.33317 4.66667C5.33317 3.19391 6.52708 2 7.99984 2C9.4726 2 10.6665 3.19391 10.6665 4.66667Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M13.3332 14V12.6667C13.3332 11.9594 13.0522 11.2811 12.5521 10.781C12.052 10.281 11.3737 10 10.6665 10H5.33317C4.62593 10 3.94765 10.281 3.44755 10.781C2.94746 11.2811 2.6665 11.9594 2.6665 12.6667V14M10.6665 4.66667C10.6665 6.13943 9.4726 7.33333 7.99984 7.33333C6.52708 7.33333 5.33317 6.13943 5.33317 4.66667C5.33317 3.19391 6.52708 2 7.99984 2C9.4726 2 10.6665 3.19391 10.6665 4.66667Z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                     </svg></div>
                     {children}
                 </div>}
@@ -39,10 +46,11 @@ const Dropdownlistitem = ({ Iconleading, Checkboxleading,Isdivider,children }) =
                     ⌘C
                 </div>
             </div>
-        </div>}
-        </>
-    )
-}
+        </div>
+      )}
+    </>
+  );
+};
 
 
 

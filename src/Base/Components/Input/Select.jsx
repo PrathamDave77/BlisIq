@@ -62,7 +62,7 @@ export function Select({
   dotColor = "bg-success-500",
 
   options = [],
-  value,
+  value: _value,
 
   placeholder = "Select option",
 
@@ -131,9 +131,9 @@ export function Select({
             <path
               d="M15.8334 15.8333L12.9168 12.9167M15 7.91668C15 11.8287 11.8287 15 7.91671 15C4.00469 15 0.833374 11.8287 0.833374 7.91668C0.833374 4.00466 4.00469 0.833344 7.91671 0.833344C11.8287 0.833344 15 4.00466 15 7.91668Z"
               stroke="#A4A7AE"
-              stroke-width="1.66667"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeWidth="1.66667"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             />
           </svg>
         )}
@@ -179,9 +179,11 @@ export function Select({
           )}
 
           {filtered.map((opt) => (
-            <div className="px-sm py-[1px]  self-stretch  hover:bg-bg-secondary cursor-pointer text-sm shadow-shadow-lg">
             <div
               key={opt.value}
+              className="px-sm py-[1px]  self-stretch  hover:bg-bg-secondary cursor-pointer text-sm shadow-shadow-lg"
+            >
+            <div
               onMouseDown={() => {
                 setSelected(opt);
                 setQuery("");
