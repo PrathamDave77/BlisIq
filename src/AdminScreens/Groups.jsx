@@ -5,6 +5,7 @@ import { Select } from "../Base/Components/Input/Select.jsx";
 import {Cardheader} from "../Base/Components/Navigation/Cardheader.jsx";
 import TableHeaderCell from '../Base/Components/Tables/TableHeaderCell.jsx';
 import {SiteManagementTables} from '../Base/Components/Tables/Tables.jsx';
+import { SIDEBAR_SECTIONS } from "./SidebarData.jsx";
 
 
 function DashboardIcon() {
@@ -38,27 +39,6 @@ function FilterIcon() {
     </svg>
   );
 }
-
-
-const SIDEBAR_SECTIONS = [
-  {
-    label: "Main",
-    items: [
-      { id: "dashboard", label: "Dashboard", icon: <DashboardIcon /> },
-      { id: "publish", label: "Publish course", icon: <DashboardIcon /> },
-      { id: "assigned", label: "Assigned", icon: <DashboardIcon /> },
-    ],
-  },
-  {
-    label: "Manage",
-    items: [
-      { id: "users", label: "Users", icon: <DashboardIcon /> },
-      { id: "groups", label: "Groups", icon: <GroupsIcon /> }, 
-      { id: "roles", label: "Roles", icon: <DashboardIcon /> },
-    ],
-  },
-];
-
 
 
 function Groups() {
