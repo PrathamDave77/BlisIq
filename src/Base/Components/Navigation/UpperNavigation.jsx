@@ -40,7 +40,7 @@ function UpperNavigation({
   items = [],
   value,
   onChange,
-  variant = "underline",
+  variant,
   className,
 }) {
   return (

@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import { home_line, chevron_right, Slash_divider } from "../Creator/Icons/Icons.jsx";
+import { Home_line, Chevron_right, Slash_divider } from "../Creator/Icons/Icons.jsx";
 import { cva } from "class-variance-authority";
 import { cn } from "../../lib/utils.js";
 
@@ -55,7 +55,7 @@ const BreadcrumbItem = ({ label, icon: Icon }) => {
    Breadcrumbs Component
 ========================= */
 
-const Breadcrumbs = ({
+ const Breadcrumbs = ({
     items = [],
     divider = "Slash",
     variant = "text",
@@ -83,4 +83,4 @@ const Breadcrumbs = ({
     );
 };
 
-export default Breadcrumbs;
+export default Breadcrumbs

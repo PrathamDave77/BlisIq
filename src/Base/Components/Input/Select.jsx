@@ -55,7 +55,7 @@ export default function Select({
 
   variant = "default", // default | icon | avatar | dot
 
-  searchable = false,
+  searchable,
 
   leadingIcon,
   avatarSrc,

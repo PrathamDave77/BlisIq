@@ -56,21 +56,7 @@ function Roles() {
         
         <div></div>
       </main>
-      <div id="Section" className="flex px-4xl flex-col items-start gap-3xl self-stretch">
-          <div id="Section-header" className="flex items-center gap-2xl self-stretch">
-            <div className="flex items-center gap-md flex-1">
-              <div className="text-text-primary font-family-body text-lg font-semibold leading-lg">All Roles</div>
-              <div className="text-text-quaternary font-family-body text-lg font-semibold leading-lg">43</div>
-            </div>
-            <div className="flex justify-end items-center gap-xl flex-1">
-              <div className="flex items-center gap-lg">
-                <Select label="Search group" size="sm" searchable/>
-                <Button/>
-              </div>
-            </div>
-            <div></div>
-          </div>
-      </div>
+      
     </div>
   );
 }

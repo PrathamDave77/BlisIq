@@ -1,7 +1,7 @@
 import { forwardRef } from "react";
 import { cva } from "class-variance-authority";
 import { cn } from "../../../lib/utils.js";
-
+import {Info_circle} from '../../Creator/Icons/Icons.jsx';
 
 const base = [
   "inline-flex items-center justify-center gap-xs rounded-md font-semibold font-family-body leading-sm transition-all duration-200 cursor-pointer disabled:cursor-not-allowed disabled:text-fg-disabled focus-visible:outline-none",
@@ -106,3 +106,4 @@ const Button = forwardRef(({
 
 Button.displayName = "Button";
 export default Button;
+

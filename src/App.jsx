@@ -16,6 +16,7 @@ import Button from "./Base/Components/Buttons/Button.jsx";
 import CreatorSidebar from "./Base/Creator/CreatorSidebar/CreatorSidebar.jsx";
 import CollapsedSidebar from "./Base/Creator/CreatorSidebar/CollapsedSidebar.jsx";
 import Roles from "./AdminScreens/Roles.jsx";
+import ExploreCourses from "./AdminScreens/ExploreCourses.jsx";
 import { Cardheader } from "./Base/Components/Navigation/Cardheader.jsx";
 
 function App() {
@@ -474,7 +475,7 @@ function App() {
       //    </div>
       //</Modal>  */}
       
-    <div><Roles/></div>
+    <div className="w-full"><ExploreCourses/></div>
   );
 }
 

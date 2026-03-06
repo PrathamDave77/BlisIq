@@ -1,5 +1,13 @@
 import React from "react";
 
+export const Chevron_right = ({ size }) => {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+      <path d="M6 12L10 8L6 4" stroke="#A4A7AE" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round" />
+    </svg>
+  );
+}
+
 export function Chevron_left({ size: _size }) {
   return (
     <svg
@@ -53,7 +61,7 @@ export function Info_circle({ size: _size }) {
       <g clipPath="url(#clip0_33802_23969)">
         <path
           d="M10.0013 13.3334V10.0001M10.0013 6.66675H10.0096M18.3346 10.0001C18.3346 14.6025 14.6037 18.3334 10.0013 18.3334C5.39893 18.3334 1.66797 14.6025 1.66797 10.0001C1.66797 5.39771 5.39893 1.66675 10.0013 1.66675C14.6037 1.66675 18.3346 5.39771 18.3346 10.0001Z"
-          stroke="#A4A7AE"
+          stroke="currentColor"
           strokeWidth="1.67"
           strokeLinecap="round"
           strokeLinejoin="round"
@@ -207,4 +215,37 @@ export function Plus() {
       />
     </svg>
   );
+}
+
+
+export const Slash_divider = ({ }) => {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+      <path d="M4.66669 14.6667L11.3334 1.33334" stroke="#A4A7AE" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round" />
+    </svg>
+  );
+}
+
+export const Home_line = ({ size }) => {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+      <path d="M6.66667 14.1667H13.3333M9.18141 2.30334L3.52949 6.69928C3.15168 6.99313 2.96278 7.14006 2.82669 7.32406C2.70614 7.48705 2.61633 7.67066 2.56169 7.86589C2.5 8.08628 2.5 8.32559 2.5 8.80422V14.8333C2.5 15.7668 2.5 16.2335 2.68166 16.59C2.84144 16.9036 3.09641 17.1586 3.41002 17.3183C3.76654 17.5 4.23325 17.5 5.16667 17.5H14.8333C15.7668 17.5 16.2335 17.5 16.59 17.3183C16.9036 17.1586 17.1586 16.9036 17.3183 16.59C17.5 16.2335 17.5 15.7668 17.5 14.8333V8.80422C17.5 8.32559 17.5 8.08628 17.4383 7.86589C17.3837 7.67066 17.2939 7.48705 17.1733 7.32406C17.0372 7.14006 16.8483 6.99313 16.4705 6.69928L10.8186 2.30334C10.5258 2.07563 10.3794 1.96178 10.2178 1.91801C10.0752 1.8794 9.92484 1.8794 9.78221 1.91801C9.62057 1.96178 9.47418 2.07563 9.18141 2.30334Z" stroke="#A4A7AE" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+    </svg>
+  );
+}
+
+export const Heart = () => {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M9.99364 4.27985C8.32752 2.332 5.54914 1.80804 3.46159 3.59168C1.37405 5.37532 1.08016 8.35748 2.71951 10.467C4.08253 12.2209 8.20749 15.9201 9.55943 17.1174C9.71069 17.2513 9.78631 17.3183 9.87453 17.3446C9.95152 17.3676 10.0358 17.3676 10.1128 17.3446C10.201 17.3183 10.2766 17.2513 10.4279 17.1174C11.7798 15.9201 15.9048 12.2209 17.2678 10.467C18.9071 8.35748 18.6491 5.35656 16.5257 3.59168C14.4023 1.8268 11.6598 2.332 9.99364 4.27985Z" stroke="currentColor" stroke-width="1.39167" stroke-linecap="round" stroke-linejoin="round" />
+    </svg>
+  )
+}
+
+export const Share = () => {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+      <path d="M7.15833 11.2582L12.85 14.5748M12.8417 5.42484L7.15833 8.7415M17.5 4.1665C17.5 5.54722 16.3807 6.6665 15 6.6665C13.6193 6.6665 12.5 5.54722 12.5 4.1665C12.5 2.78579 13.6193 1.6665 15 1.6665C16.3807 1.6665 17.5 2.78579 17.5 4.1665ZM7.5 9.99984C7.5 11.3805 6.38071 12.4998 5 12.4998C3.61929 12.4998 2.5 11.3805 2.5 9.99984C2.5 8.61913 3.61929 7.49984 5 7.49984C6.38071 7.49984 7.5 8.61913 7.5 9.99984ZM17.5 15.8332C17.5 17.2139 16.3807 18.3332 15 18.3332C13.6193 18.3332 12.5 17.2139 12.5 15.8332C12.5 14.4525 13.6193 13.3332 15 13.3332C16.3807 13.3332 17.5 14.4525 17.5 15.8332Z" stroke="#A4A7AE" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round" />
+    </svg>
+  )
 }
