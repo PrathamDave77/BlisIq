@@ -53,7 +53,7 @@ const TableCell = ({
       )}
 
       {/* Checkbox */}
-      {isCheck && <Checkbox size="md" variant="isCheckbox" />}
+      {isCheck && <Checkbox size="md" ischeck variant="isCheckbox" />}
 
       {/* Table Actions */}
       {istableaction ? (

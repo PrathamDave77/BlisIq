@@ -6,7 +6,7 @@ import Breadcrumbs from '../Base/Components/Breadcrumbs.jsx';
 import Avatar from '../Base/Components/Avatar/Avatar.jsx';
 import Avataradd from '../Base/Components/Avatar/Avataradd.jsx';
 import Button from '../Base/Components/Buttons/Button.jsx';
-import SidebarMenu from '../Base/Components/sidebar/SidebarMenu.jsx';
+import SidebarMenu from '../Base/Components/Sidebar/SidebarMenu.jsx';
 import Checkbox from '../Base/Components/Checkbox/Checkbox.jsx';
 import { Edit_01, Plus, Trash } from '../Base/Creator/Icons/Icons.jsx';
 

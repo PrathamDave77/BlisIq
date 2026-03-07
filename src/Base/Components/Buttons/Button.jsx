@@ -79,8 +79,8 @@ const Button = forwardRef(({
   isError = false,
   isLoading = false,
   disabled = false,
-  iconLeft: IconLeft,
-  iconRight: IconRight,
+  Iconleft,
+  Iconright,
   loadingText = "Submitting...",
   className,
   ...props
@@ -96,9 +96,9 @@ const Button = forwardRef(({
       <><Spinner /><span>{loadingText}</span></>
     ) : (
       <>
-        {IconLeft && <IconLeft className="w-5 h-5" aria-hidden="true" />}
+        {Iconleft && <Iconleft className="w-5 h-5" aria-hidden="true" />}
         {children}
-        {IconRight && <IconRight className="w-5 h-5" aria-hidden="true" />}
+        {Iconright && <Iconright className="w-5 h-5" aria-hidden="true" />}
       </>
     )}
   </button>

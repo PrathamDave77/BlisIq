@@ -1,12 +1,13 @@
 import "./index.css";
 import React, { useState } from "react";
 import Modal from "./Base/Components/Modal/Modal.jsx";
-import { Inputfields } from "./Base/Components/Input/Inputfields.jsx";
+import Inputfields  from "./Base/Components/Input/Inputfields.jsx";
 import Badges from "./Base/Components/Badges/Badges.jsx";
 import { AvatarOnlineIndicator } from "./Base/Components/Avatar/AvatarOnlineIndicator.jsx";
 import Avatar from "./Base/Components/Avatar/Avatar.jsx";
 import { CompanyIcon } from "./Base/Components/Avatar/AvatarOnlineIndicator.jsx";
-import SidebarMenu from "./Base/Components/Sidebar/SidebarMenu.jsx";
+import { SIDEBAR_SECTIONS } from "./AdminScreens/SidebarData.jsx";
+import SidebarMenu from "./Base/Components/sidebar/SidebarMenu.jsx";
 import UpperNavigation from "./Base/Components/Navigation/UpperNavigation.jsx";
 
 import Users from "./AdminScreens/Users.jsx";
@@ -16,6 +17,8 @@ import Button from "./Base/Components/Buttons/Button.jsx";
 import CreatorSidebar from "./Base/Creator/CreatorSidebar/CreatorSidebar.jsx";
 import CollapsedSidebar from "./Base/Creator/CreatorSidebar/CollapsedSidebar.jsx";
 import Roles from "./AdminScreens/Roles.jsx";
+import Permissions from './AdminScreens/Permissions.jsx';
+import AddNewRole from './AdminScreens/AddNewRole.jsx';
 import ExploreCourses from "./AdminScreens/ExploreCourses.jsx";
 import { Cardheader } from "./Base/Components/Navigation/Cardheader.jsx";
 
@@ -436,46 +439,58 @@ function App() {
     //  }
     ///> */}
 
-//      {/* <Groups /> */}
-//      {/* <CourseVerif /> */}
-//      {/* <Users /> */}
-//      {/* <Roles /> */}
-//
-//      {/* <Tables /> */}
-//      {/* <CollapsedSidebar /> */}
-//        {/* <button onClick={() => setShowSiteModal(true)}>Open Modal</button> */}
-//    <Groups />
-//      {/* <CourseVerif /> */}
-//   
-//    
-//    {/* <CollapsedSidebar /> */}
-//    </div>
+    //      {/* <Groups /> */}
+    //      {/* <CourseVerif /> */}
+    //      {/* <Users /> */}
+    //      {/* <Roles /> */}
+    //
+    //      {/* <Tables /> */}
+    //      {/* <CollapsedSidebar /> */}
+    //        {/* <button onClick={() => setShowSiteModal(true)}>Open Modal</button> */}
+    //    <Groups />
+    //      {/* <CourseVerif /> */}
+    //   
+    //    
+    //    {/* <CollapsedSidebar /> */}
+    //    </div>
 
-      //<Modal
-      //  isOpen={showSiteModal}
-      //  onClose={() => setShowSiteModal(false)}
-      //  title="Add new site"
-      //  subtitle="Enter the details below to add a new site."
-      //  buttonText="Save"
-      //  width="640px"
-      //>
-      //  <div className="flex flex-col gap-4">
-      //    <Inputfields
-      //      label="Site name"
-      //      placeholder="Enter your site name"
-      //      required
-      //    />
-      //    <Inputfields
-      //      label="Email Address"
-      //      text="olivia@untitledui.com"
-      //      placeholder="Enter your email"
-      //      Email={true}
-      //      isError={false}
-      //    />
-      //    </div>
-      //</Modal>  */}
-      
-    <div className="w-full"><ExploreCourses/></div>
+    //<Modal
+    //  isOpen={showSiteModal}
+    //  onClose={() => setShowSiteModal(false)}
+    //  title="Add new site"
+    //  subtitle="Enter the details below to add a new site."
+    //  buttonText="Save"
+    //  width="640px"
+    //>
+    //  <div className="flex flex-col gap-4">
+    //    <Inputfields
+    //      label="Site name"
+    //      placeholder="Enter your site name"
+    //      required
+    //    />
+    //    <Inputfields
+    //      label="Email Address"
+    //      text="olivia@untitledui.com"
+    //      placeholder="Enter your email"
+    //      Email={true}
+    //      isError={false}
+    //    />
+    //    </div>
+    //</Modal>  */}
+
+    <div className="w-full flex">
+      {/*<SidebarMenu />*/}
+      <SidebarMenu
+        sections={SIDEBAR_SECTIONS}
+        user={{
+          name: "Jacob Jones",
+          email: "jacob@diacto.com",
+          avatarUrl: "https://i.pravatar.cc/150?u=jacob",
+        }}
+      />
+      <AddNewRole />
+
+    </div>
   );
 }
 

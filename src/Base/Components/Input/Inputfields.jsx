@@ -19,7 +19,7 @@ const inputfieldsStyles = cva(
   }
 );
 
-export function Inputfields({
+export default function Inputfields({
   label,
   placeholder,
   required,
