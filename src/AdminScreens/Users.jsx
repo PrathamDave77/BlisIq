@@ -2,14 +2,20 @@ import React, { useState } from "react";
 import SidebarMenu from "../Base/Components/Sidebar/SidebarMenu.jsx";
 import UpperNavigation from "../Base/Components/Navigation/UpperNavigation.jsx";
 import Button from "../Base/Components/Buttons/Button.jsx";
-import Select  from "../Base/Components/Input/Select.jsx";
-import {SiteManagementTables, GroupManagementTables} from "../Base/Components/Tables/Tables.jsx";
+import Select from "../Base/Components/Input/Select.jsx";
+import {
+  SiteManagementTables,
+  GroupManagementTables,
+} from "../Base/Components/Tables/Tables.jsx";
 import {
   Cardheader,
   Sectionheader,
 } from "../Base/Components/Navigation/Cardheader.jsx";
 import { SIDEBAR_SECTIONS } from "./SidebarData.jsx";
-import { ImportIcon, PlusIcon } from "../Base/Components/ComponentIcons/CompIcons.jsx";
+import {
+  ImportIcon,
+  PlusIcon,
+} from "../Base/Components/ComponentIcons/CompIcons.jsx";
 
 const FilterIcon = () => (
   <svg
@@ -102,8 +108,7 @@ function Users() {
 
         <section className="px-8 flex-1 overflow-auto">
           <div className=" rounded-xl overflow-hidden">
-             <SiteManagementTables  />
-           
+            <SiteManagementTables />
           </div>
         </section>
       </main>
