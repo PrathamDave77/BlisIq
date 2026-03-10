@@ -87,7 +87,7 @@ export default function Inputfields({
         />
 
         <div className="flex items-center gap-2 shrink-0">
-          {isError ? <ErrorIcon /> : <HelpIcon />}
+          {isError ? <ErrorIcon /> : ""}
           {WebsiteCopy && (
             <button type="button" className="pl-2 border-l border-border-primary text-sm font-semibold text-text-secondary hover:text-text-primary">
               Copy

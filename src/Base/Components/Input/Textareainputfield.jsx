@@ -26,7 +26,7 @@ export default function Textareainputfield({
 }) {
 
   return (
-    <div className="flex flex-col gap-sm w-full items-start ">
+    <div className="flex flex-col gap-sm w-full items-start h-[128px]">
 
       {/* Label */}
       {label && (
@@ -42,7 +42,7 @@ export default function Textareainputfield({
       <textarea defaultValue="You can describe about role..."
         className={cn(
           inputStyles({ size }),
-          isError && "border-border-error-subtle focus-visible:border-border-error py-lg px-[14px]"
+          isError && "border-border-error-subtle focus-visible:border-border-error py-lg px-[14px] w-full h-full "
         )}
         {...props}
       />

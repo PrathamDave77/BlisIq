@@ -478,7 +478,7 @@ function App() {
     //    </div>
     //</Modal>  */}
 
-    <div className="w-full flex">
+    <div className="w-full flex h-full">
       {/*<SidebarMenu />*/}
       <SidebarMenu
         sections={SIDEBAR_SECTIONS}

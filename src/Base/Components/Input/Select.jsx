@@ -64,7 +64,7 @@ export default function Select({
   options = [],
   value: value,
 
-  placeholder = "Select option",
+  placeholder,
 
   className,
 }) {
@@ -97,7 +97,7 @@ export default function Select({
   }, []);
 
   return (
-    <div className="flex flex-col gap-sm relative" ref={wrapperRef}>
+    <div className="flex flex-col gap-sm relative w-full h-full" ref={wrapperRef}>
       {label && (
         <label className="text-text-secondary text-sm leading-sm font-semibold">
           {label}
@@ -151,7 +151,7 @@ export default function Select({
         )}
 
         {searchable ? (
-          <input
+          <input 
             disabled={disabled}
             value={open ? query : selected?.label || ""}
             placeholder={placeholder}
@@ -164,7 +164,7 @@ export default function Select({
             className="bg-transparent outline-none w-full"
           />
         ) : (
-          <span className="flex-1 text-left">
+          <span className="flex-1 text-left ">
             {selected?.label || placeholder}
           </span>
         )}
