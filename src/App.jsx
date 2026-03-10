@@ -19,6 +19,7 @@ import CollapsedSidebar from "./Base/Creator/CreatorSidebar/CollapsedSidebar.jsx
 import Roles from "./AdminScreens/Roles.jsx";
 import Permissions from './AdminScreens/Permissions.jsx';
 import AddNewRole from './AdminScreens/AddNewRole.jsx';
+import AddNewSite from './AdminScreens/AddNewSite.jsx';
 import ExploreCourses from "./AdminScreens/ExploreCourses.jsx";
 import { Cardheader } from "./Base/Components/Navigation/Cardheader.jsx";
 
@@ -488,7 +489,7 @@ function App() {
           avatarUrl: "https://i.pravatar.cc/150?u=jacob",
         }}
       />
-      <AddNewRole />
+      <AddNewSite />
 
     </div>
   );

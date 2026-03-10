@@ -65,6 +65,7 @@ export default function Select({
   value: value,
 
   placeholder,
+  required,
 
   className,
 }) {
@@ -99,9 +100,11 @@ export default function Select({
   return (
     <div className="flex flex-col gap-sm relative w-full h-full" ref={wrapperRef}>
       {label && (
-        <label className="text-text-secondary text-sm leading-sm font-semibold">
+        <label className="flex text-text-secondary text-sm leading-sm font-semibold">
           {label}
+          {required && <div className="text-brand-tertiary">*</div>}
         </label>
+        
       )}
 
       <div
@@ -189,7 +192,7 @@ export default function Select({
                 setQuery("");
                 setOpen(false);
               }}
-              className="p-md gap-md rounded-sm self-stretch flex items-center flex-1 text-text-primary font-family-body text-md leading-md  "
+              className="p-md gap-md rounded-sm self-stretch flex items-center flex-1 text-text-primary font-family-body text-md leading-md "
             >
               {opt.label}
             </div></div>
