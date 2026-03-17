@@ -1,14 +1,14 @@
 import React from 'react';
 import { useState } from 'react';
-import UpperNavigation from '../Base/Components/Navigation/UpperNavigation.jsx';
-import Select from '../Base/Components/Input/Select.jsx';
-import Breadcrumbs from '../Base/Components/Breadcrumbs.jsx';
-import Avatar from '../Base/Components/Avatar/Avatar.jsx';
-import Avataradd from '../Base/Components/Avatar/Avataradd.jsx';
-import Button from '../Base/Components/Buttons/Button.jsx';
-import SidebarMenu from '../Base/Components/Sidebar/SidebarMenu.jsx';
-import Checkbox from '../Base/Components/Checkbox/Checkbox.jsx';
-import { Edit_01, Plus, Trash } from '../Base/Creator/Icons/Icons.jsx';
+import UpperNavigation from '../../Base/Components/Navigation/UpperNavigation.jsx';
+import Select from '../../Base/Components/Input/Select.jsx';
+import Breadcrumbs from '../../Base/Components/Breadcrumbs.jsx';
+import Avatar from '../../Base/Components/Avatar/Avatar.jsx';
+import Avataradd from '../../Base/Components/Avatar/Avataradd.jsx';
+import Button from '../../Base/Components/Buttons/Button.jsx';
+import SidebarMenu from '../../Base/Components/Sidebar/SidebarMenu.jsx';
+import Checkbox from '../../Base/Components/Checkbox/Checkbox.jsx';
+import { Edit_01, Plus, Trash } from '../../Base/Creator/Icons/Icons.jsx';
 
 const NAV_ITEMS = [
     { label: "Permissions", value: "all", count: 9 },

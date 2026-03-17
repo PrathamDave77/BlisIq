@@ -2,12 +2,12 @@
 
 import React, { useState, useRef, useEffect } from "react";
 import { cva } from "class-variance-authority";
-import {cn} from '../../../lib/utils.js';
+import { cn } from '../../../lib/utils.js';
 
 const selectStyles = cva(
   `
   flex items-center gap-md
-  w-full
+  min-w-[320px]
 
   px-lg py-md
   rounded-md
@@ -66,7 +66,7 @@ export default function Select({
 
   placeholder,
   required,
-
+  onChange,
   className,
 }) {
   const [focused, setFocused] = useState(false);
@@ -104,7 +104,6 @@ export default function Select({
           {label}
           {required && <div className="text-brand-tertiary">*</div>}
         </label>
-        
       )}
 
       <div
@@ -154,16 +153,20 @@ export default function Select({
         )}
 
         {searchable ? (
-          <input 
+          <input
             disabled={disabled}
-            value={open ? query : selected?.label || ""}
+            value={query || selected?.label || ""}
             placeholder={placeholder}
             onFocus={() => {
               setFocused(true);
               setOpen(true);
             }}
             onBlur={() => setFocused(false)}
-            onChange={(e) => setQuery(e.target.value)}
+            onChange={(e) => {
+              setQuery(e.target.value);
+              setSelected(null);
+              setOpen(true);
+            }}
             className="bg-transparent outline-none w-full"
           />
         ) : (
@@ -186,25 +189,27 @@ export default function Select({
               key={opt.value}
               className="px-sm py-[1px]  self-stretch  hover:bg-bg-secondary cursor-pointer text-sm shadow-shadow-lg"
             >
-            <div
-              onMouseDown={() => {
-                setSelected(opt);
-                setQuery("");
-                setOpen(false);
-              }}
-              className="p-md gap-md rounded-sm self-stretch flex items-center flex-1 text-text-primary font-family-body text-md leading-md "
-            >
-              {opt.label}
-            </div></div>
+              <div
+                // 1. When user picks from dropdown
+                onMouseDown={() => {
+                  setSelected(opt);
+                  setQuery("");
+                  setOpen(false);
+                  onChange?.(opt.label);      // ← ADD THIS
+                }}
+                
+                className="p-md gap-md rounded-sm self-stretch flex items-center flex-1 text-text-primary font-family-body text-md leading-md "
+              >
+                {opt.label}
+              </div></div>
           ))}
         </div>
       )}
 
       {(hint || error) && (
         <p
-          className={`text-xs ${
-            error ? "text-text-error" : "text-text-tertiary"
-          }`}
+          className={`text-xs ${error ? "text-text-error" : "text-text-tertiary"
+            }`}
         >
           {error || hint}
         </p>

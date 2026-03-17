@@ -7,7 +7,7 @@ import Checkbox from '../Checkbox/Checkbox.jsx';
 
 
 const cellstyles = cva(
-    `flex py-lg px-xl w-full h-full items-center gap-lg border-b-[1px] border-b-border-secondary bg-bg-secondary self-stretch `, 
+    `flex py-lg px-xl w-full h-full gap-lg bg-bg-secondary self-stretch rounded-md items-center`, 
     {
         variants:{
             variant:{
@@ -20,13 +20,13 @@ const cellstyles = cva(
 
 
 
-const TableHeaderCell = ({Text,isCheckbox,title,isarrowSelectorVertical}) => {
+const TableHeaderCell = ({Text,isCheckbox,title,isarrowSelectorVertical,indeterminate,isCheck}) => {
 
 
     return (
         <div className={cellstyles({})}>
-            {isCheckbox && <Checkbox variant size="md" indeterminate={false} text={false}/>}
-            {Text && <HeaderTable label={title} isarrowSelectorVertical={isarrowSelectorVertical}/>}
+            {isCheckbox && <Checkbox variant size="md" indeterminate={indeterminate} ischeck={isCheck} isarrowSelectorVertical={isarrowSelectorVertical}/>}
+            {Text && <HeaderTable label={title} isarrowSelectorVertical/>}
         </div>
         
     );

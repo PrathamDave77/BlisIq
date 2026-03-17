@@ -4,7 +4,7 @@ import Inputfields from "../Base/Components/Input/Inputfields.jsx";
 import Textareainputfield from "../Base/Components/Input/Textareainputfield.jsx";
 import Modal from "../Base/Components/Modal/Modal.jsx";
 
-const AddNewRole = () => {
+const Addprojects = () => {
     const [showSiteModal, setShowSiteModal] = useState(true);
 
     return (

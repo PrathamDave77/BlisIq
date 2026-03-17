@@ -7,9 +7,10 @@ import TableCellActions from "./TableCellActions.jsx";
 import Checkbox from '../Checkbox/Checkbox.jsx';
 import Button from '../Buttons/Button.jsx';
 import Avatar from '../Avatar/Avatar.jsx';
+import {Ellipse} from '../ComponentIcons/CompIcons.jsx';
 
 const actions = cva(
-  `inline-flex flex-1 items-center gap-lg py-lg px-xl bg-bg-primary text-text-tertiary text-center font-family-body text-sm leading-sm h-[48px]`,
+  `inline-flex flex-1 items-center gap-lg py-lg px-xl bg-bg-primary text-text-tertiary text-left font-family-body text-sm leading-sm h-full hover:bg-bg-primary-hover`,
   {
     variants: {
       variant: {},
@@ -35,13 +36,21 @@ const TableCell = ({
   isAction,
   isCheck,
   isdropdown,
+  isIcon,
+  color,
+  pillcolor,
+  badgecolor,
+  badgeModern,
+  badgeVariant,
+  islabel,
   children,
 }) => {
+
   return (
     <div className={cn(actions({}))}>
       {/* Default User Info */}
       {isdefault && (
-        <div className="w-full flex flex-col items-start">
+        <div className="w-full flex flex-col items-start h-full">
           <div className="line-clamp-1 text-text-primary font-semibold">{username}</div>
           <div className="line-clamp-1 overflow-ellipsis text-text-tertiary font-normal text-left">{email}</div>
         </div>
@@ -49,7 +58,7 @@ const TableCell = ({
 
       {/* Badge */}
       {isBadge && (
-        <Badges isIcon="dot" color="success" badgeModern={true} Icondot={true} label="Active" />
+        <Badges isIcon={isIcon} color={color} badgeModern={badgeModern} variant={badgeVariant} label={islabel} />
       )}
 
       {/* Checkbox */}
@@ -68,9 +77,11 @@ const TableCell = ({
       {/* Avatar Section */}
       {isAvatar && (
         <div id="Avatar-Label-Group" className="flex items-center gap-lg font-family-body self-stretch leading-sm text-sm">
-          {isCheck && <Checkbox size="md" variant="isCheckbox" />}
           <div id="Avatar" className="flex justify-center items-center">
-            <div className="shrink-0 rounded-full border border-border-secondary-alt bg-[url('/pkd.jpg')] bg-lightgray bg-center bg-cover h-10 w-10"></div>
+            <div className="shrink-0 rounded-full border border-border-secondary-alt bg-lightgray bg-center bg-cover h-10 w-10 ">
+              <Ellipse text="C2"/>
+              
+            </div>
           </div>
 
           {isFile && (
@@ -118,8 +129,8 @@ const TableCell = ({
       {/* Action Buttons */}
       {isAction && (
         <div className="flex gap-lg">
-          <Button variant="gray_link" size="sm">Delete</Button>
-          <Button variant="link" size="sm">Edit</Button>
+          <Button variant="gray_link" size="md">Delete</Button>
+          <Button variant="link" size="md">Edit</Button>
         </div>
       )}
 

@@ -1,29 +1,35 @@
 import "./index.css";
 import React, { useState } from "react";
-import Modal from "./Base/Components/Modal/Modal.jsx";
-import Inputfields  from "./Base/Components/Input/Inputfields.jsx";
-import Badges from "./Base/Components/Badges/Badges.jsx";
-import { AvatarOnlineIndicator } from "./Base/Components/Avatar/AvatarOnlineIndicator.jsx";
-import Avatar from "./Base/Components/Avatar/Avatar.jsx";
-import { CompanyIcon } from "./Base/Components/Avatar/AvatarOnlineIndicator.jsx";
+import axios from 'axios';
+//import Modal from "./Base/Components/Modal/Modal.jsx";
+//import Inputfields from "./Base/Components/Input/Inputfields.jsx";
+//import Badges from "./Base/Components/Badges/Badges.jsx";
+//import { AvatarOnlineIndicator } from "./Base/Components/Avatar/AvatarOnlineIndicator.jsx";
+//import Avatar from "./Base/Components/Avatar/Avatar.jsx";
+//import { CompanyIcon } from "./Base/Components/Avatar/AvatarOnlineIndicator.jsx";
 import { SIDEBAR_SECTIONS } from "./AdminScreens/SidebarData.jsx";
 import SidebarMenu from "./Base/Components/sidebar/SidebarMenu.jsx";
-import UpperNavigation from "./Base/Components/Navigation/UpperNavigation.jsx";
+//import UpperNavigation from "./Base/Components/Navigation/UpperNavigation.jsx";
+//
+//import Users from "./AdminScreens/Users.jsx";
+//import Groups from "./AdminScreens/Groups.jsx";
+//import CourseVerif from "./AdminScreens/CourseVerif.jsx";
+//import Button from "./Base/Components/Buttons/Button.jsx";
+//import CreatorSidebar from "./Base/Creator/CreatorSidebar/CreatorSidebar.jsx";
+//import CollapsedSidebar from "./Base/Creator/CreatorSidebar/CollapsedSidebar.jsx";
+//import Roles from "./AdminScreens/Roles.jsx";
+import Permissions from './AdminScreens/Rolemanagement/Permissions.jsx';
+//import AddNewRole from './AdminScreens/AddNewRole.jsx';
+//import AddNewSite from './AdminScreens/AddNewSite.jsx';
+import SiteManagement from './AdminScreens/SiteManagement/SiteManagement.jsx';
+import Groups from './AdminScreens/Groupmanagement/Groups.jsx';
+import Group_users from './AdminScreens/Groupmanagement/Group_users.jsx';
+import Users from './AdminScreens/Users.jsx';
+import Roles from './AdminScreens/Rolemanagement/Roles.jsx';
+//import ExploreCourses from "./AdminScreens/ExploreCourses.jsx";
+//import { Cardheader } from "./Base/Components/Navigation/Cardheader.jsx";
 
-import Users from "./AdminScreens/Users.jsx";
-import Groups from "./AdminScreens/Groups.jsx";
-import CourseVerif from "./AdminScreens/CourseVerif.jsx";
-import Button from "./Base/Components/Buttons/Button.jsx";
-import CreatorSidebar from "./Base/Creator/CreatorSidebar/CreatorSidebar.jsx";
-import CollapsedSidebar from "./Base/Creator/CreatorSidebar/CollapsedSidebar.jsx";
-import Roles from "./AdminScreens/Roles.jsx";
-import Permissions from './AdminScreens/Permissions.jsx';
-import AddNewRole from './AdminScreens/AddNewRole.jsx';
-import AddNewSite from './AdminScreens/AddNewSite.jsx';
-import ExploreCourses from "./AdminScreens/ExploreCourses.jsx";
-import { Cardheader } from "./Base/Components/Navigation/Cardheader.jsx";
-
-function App() {
+const App = () => {
   /* eslint-disable no-unused-vars -- Data for when Sidebar/Modal are enabled */
   const data = [
     {
@@ -368,6 +374,19 @@ function App() {
   const handleSaveSite = () => {
     setShowSiteModal(false);
   };
+
+  axios.interceptors.request.use(
+    (config) => {
+      const token = localStorage.getItem("auth");
+      if (token) {
+        config.headers.Authorization = token;
+      }
+      return config;
+    },
+    (error) => {
+      return Promise.reject(error);
+    }
+  );
   /* eslint-enable no-unused-vars */
   return (
     // <div className="flex flex-row h-screen w-full bg-bg-primary">
@@ -480,17 +499,15 @@ function App() {
     //</Modal>  */}
 
     <div className="w-full flex h-full">
-      {/*<SidebarMenu />*/}
       <SidebarMenu
-        sections={SIDEBAR_SECTIONS}
-        user={{
-          name: "Jacob Jones",
-          email: "jacob@diacto.com",
-          avatarUrl: "https://i.pravatar.cc/150?u=jacob",
-        }}
-      />
-      <AddNewSite />
-
+              sections={SIDEBAR_SECTIONS}
+              user={{
+                name: "Jacob Jones",
+                email: "jacob@diacto.com",
+                avatarUrl: "https://i.pravatar.cc/150?u=jacob",
+              }}
+            />
+      <Group_users />
     </div>
   );
 }

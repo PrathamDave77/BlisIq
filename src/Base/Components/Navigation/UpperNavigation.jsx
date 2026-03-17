@@ -7,7 +7,7 @@ const tabVariants = cva(
   {
     variants: {
       variant: {
-        underline: "px-xs pb-lg border-b-2 border-transparent text-text-quaternary",
+        underline: "px-xs pb-lg border-b-2 border-transparent text-text-quaternary hover:border-fg-brand-primary-alt hover:text-(--color-brand-secondary)",
         pill: "h-[36px] py-[10px] px-[14px] rounded-md text-text-quaternary ",
       },
       isActive: {
@@ -20,8 +20,7 @@ const tabVariants = cva(
       {
         variant: "underline",
         isActive: true,
-        
-        className: "border-fg-brand-primary text-brand-secondary",
+        className: "border-[var(--color-fg-brand-primary)] text-brand-secondary",
       },
       {
         variant: "pill",
@@ -49,7 +48,7 @@ function UpperNavigation({
         "flex items-center w-full",
 
         variant === "underline"
-          ? "border-b border-border-secondary gap-md"
+          ? "border-b border-border-secondary gap-md "
           : "bg-bg-secondary-alt rounded-lg gap-xxs border-2 border-border-secondary",
         className
       )}

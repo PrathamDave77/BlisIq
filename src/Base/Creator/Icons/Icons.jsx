@@ -59,6 +59,39 @@ export function Edit_01({ size: _size, ...props }) {
   );
 }
 
+export const Loading = ({ size, Spin }) => {
+  return (
+    <svg className={Spin && "animate-spin"} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+      <path d="M12 2.25V4.75M12 18V22M5.75 12H2.25M21.25 12H19.75M18.4571 18.4571L17.75 17.75M18.6642 5.41579L17.25 6.83M4.92157 19.0784L7.75 16.25M5.12868 5.20868L7.25 7.33" stroke="#181D27" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    </svg>
+  );
+}
+
+export const FilterIcon = () => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="20"
+    height="20"
+    viewBox="0 0 20 20"
+    fill="none"
+  >
+    <path
+      d="M5 10H15M2.5 5H17.5M7.5 15H12.5"
+      stroke="#A4A7AE"
+      strokeWidth="1.67"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  </svg>
+);
+
+export const Spinner = ({ className }) => (
+  <svg className={cn("animate-spin w-4 h-4", className)} viewBox="0 0 24 24" fill="none" aria-hidden="true">
+    <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" />
+    <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z" />
+  </svg>
+);
+
 export function Info_circle({ size: _size }) {
   return (
     <svg
@@ -85,6 +118,22 @@ export function Info_circle({ size: _size }) {
     </svg>
   );
 }
+
+export const Filters = ({ size }) => {
+  return (
+    <svg className="w-[20px] h-[20px] text-fg-quaternary" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M6 12H18M3 6H21M9 18H15"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+
+  );
+}
+
 
 export function File_check_02({ size: _size }) {
   return (
@@ -249,6 +298,16 @@ export const Home_line = ({ size }) => {
       <path d="M6.66667 14.1667H13.3333M9.18141 2.30334L3.52949 6.69928C3.15168 6.99313 2.96278 7.14006 2.82669 7.32406C2.70614 7.48705 2.61633 7.67066 2.56169 7.86589C2.5 8.08628 2.5 8.32559 2.5 8.80422V14.8333C2.5 15.7668 2.5 16.2335 2.68166 16.59C2.84144 16.9036 3.09641 17.1586 3.41002 17.3183C3.76654 17.5 4.23325 17.5 5.16667 17.5H14.8333C15.7668 17.5 16.2335 17.5 16.59 17.3183C16.9036 17.1586 17.1586 16.9036 17.3183 16.59C17.5 16.2335 17.5 15.7668 17.5 14.8333V8.80422C17.5 8.32559 17.5 8.08628 17.4383 7.86589C17.3837 7.67066 17.2939 7.48705 17.1733 7.32406C17.0372 7.14006 16.8483 6.99313 16.4705 6.69928L10.8186 2.30334C10.5258 2.07563 10.3794 1.96178 10.2178 1.91801C10.0752 1.8794 9.92484 1.8794 9.78221 1.91801C9.62057 1.96178 9.47418 2.07563 9.18141 2.30334Z" stroke="#A4A7AE" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
     </svg>
   );
+}
+
+export const VerticalDots = ({ size, className }) => {
+  return (
+    <svg className={className} xmlns="http://www.w3.org/2000/svg" width="20" height="22" viewBox="0 0 20 22" fill="none">
+      <path d="M10 11.6683C10.4602 11.6683 10.8333 11.2952 10.8333 10.835C10.8333 10.3748 10.4602 10.0017 10 10.0017C9.53977 10.0017 9.16667 10.3748 9.16667 10.835C9.16667 11.2952 9.53977 11.6683 10 11.6683Z" stroke="#A4A7AE" strokeWidth="1.67" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M10 5.835C10.4602 5.835 10.8333 5.46191 10.8333 5.00167C10.8333 4.54143 10.4602 4.16833 10 4.16833C9.53977 4.16833 9.16667 4.54143 9.16667 5.00167C9.16667 5.46191 9.53977 5.835 10 5.835Z" stroke="#A4A7AE" strokeWidth="1.67" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M10 17.5017C10.4602 17.5017 10.8333 17.1286 10.8333 16.6683C10.8333 16.2081 10.4602 15.835 10 15.835C9.53977 15.835 9.16667 16.2081 9.16667 16.6683C9.16667 17.1286 9.53977 17.5017 10 17.5017Z" stroke="#A4A7AE" strokeWidth="1.67" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+  )
 }
 
 export const Heart = () => {

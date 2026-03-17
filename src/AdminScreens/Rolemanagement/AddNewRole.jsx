@@ -1,16 +1,16 @@
 import React, { useState } from "react";
-import Select from "../Base/Components/Input/Select.jsx";
-import Inputfields from "../Base/Components/Input/Inputfields.jsx";
-import Textareainputfield from "../Base/Components/Input/Textareainputfield.jsx";
-import Modal from "../Base/Components/Modal/Modal.jsx";
+import Select from "../../Base/Components/Input/Select.jsx";
+import Inputfields from "../../Base/Components/Input/Inputfields.jsx";
+import Textareainputfield from "../../Base/Components/Input/Textareainputfield.jsx";
+import Modal from "../../Base/Components/Modal/Modal.jsx";
 
-const AddNewRole = () => {
+const AddNewRole = ({newRole,setNewRole}) => {
   const [showSiteModal, setShowSiteModal] = useState(true);
 
   return (
     <Modal
       isOpen={showSiteModal}
-      onClose={() => setShowSiteModal(false)}
+      onClose={() => setNewRole(prev => false)}
       title="New role"
       subtitle="Create a custom role by defining its name and permissions."
       buttonText="Continue"

@@ -6,7 +6,7 @@ import { cn } from "../../../lib/utils.js";
 const category =
   "px-2xl pb-xs font-semibold text-text-quaternary text-xs leading-xs uppercase";
 
-const sidebarMenu = cva("flex flex-col w-full pb-2xl px-xl", {
+const sidebarMenuactions = cva("flex flex-col w-full pb-2xl px-xl", {
   variants: {
     variant: { default: "", compact: "gap-1" },
   },
@@ -200,7 +200,7 @@ function SidebarMenu(
                 <div className={cn(category)}>{section.label}</div>
               )}
 
-              <div className={cn(sidebarMenu({ variant }))}>
+              <div className={cn(sidebarMenuactions({ variant }))}>
                 {section.items.map((item) => {
                   const hasSubmenu =
                     item.subMenuItems && item.subMenuItems.length > 0;

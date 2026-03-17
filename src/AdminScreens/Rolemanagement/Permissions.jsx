@@ -1,16 +1,16 @@
 import React from 'react';
 import { useState } from 'react';
-import UpperNavigation from '../Base/Components/Navigation/UpperNavigation.jsx';
-import Select from '../Base/Components/Input/Select.jsx';
-import Breadcrumbs from '../Base/Components/Breadcrumbs.jsx';
-import Avatar from '../Base/Components/Avatar/Avatar.jsx';
-import Avataradd from '../Base/Components/Avatar/Avataradd.jsx';
-import Button from '../Base/Components/Buttons/Button.jsx';
-import Checkbox from '../Base/Components/Checkbox/Checkbox.jsx';
-import { Edit_01, Plus, Trash } from '../Base/Creator/Icons/Icons.jsx';
-import { Sectionheader } from '../Base/Components/Navigation/Cardheader.jsx';
-import TableHeaderCell from '../Base/Components/Tables/TableHeaderCell.jsx';
-import TableCell from '../Base/Components/Tables/TableCell.jsx';
+import UpperNavigation from '../../Base/Components/Navigation/UpperNavigation.jsx';
+import Select from '../../Base/Components/Input/Select.jsx';
+import Breadcrumbs from '../../Base/Components/Breadcrumbs.jsx';
+import Avatar from '../../Base/Components/Avatar/Avatar.jsx';
+import Avataradd from '../../Base/Components/Avatar/Avataradd.jsx';
+import Button from '../../Base/Components/Buttons/Button.jsx';
+import Checkbox from '../../Base/Components/Checkbox/Checkbox.jsx';
+import { Edit_01, Plus, Trash } from '../../Base/Creator/Icons/Icons.jsx';
+import { Sectionheader } from '../../Base/Components/Navigation/Cardheader.jsx';
+import TableHeaderCell from '../../Base/Components/Tables/TableHeaderCell.jsx';
+import TableCell from '../../Base/Components/Tables/TableCell.jsx';
 
 const Permissionlist = [
     {

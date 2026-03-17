@@ -3,31 +3,15 @@ import SidebarMenu from "../Base/Components/Sidebar/SidebarMenu.jsx";
 import UpperNavigation from "../Base/Components/Navigation/UpperNavigation.jsx";
 import Button from "../Base/Components/Buttons/Button.jsx";
 import Select  from "../Base/Components/Input/Select.jsx";
-import {SiteManagementTables, GroupManagementTables} from "../Base/Components/Tables/Tables.jsx";
+import {UserManagementTables} from "../Base/Components/Tables/Tables.jsx";
 import {
   Cardheader,
   Sectionheader,
 } from "../Base/Components/Navigation/Cardheader.jsx";
 import { SIDEBAR_SECTIONS } from "./SidebarData.jsx";
 import { ImportIcon, PlusIcon } from "../Base/Components/ComponentIcons/CompIcons.jsx";
+import {FilterIcon} from '../Base/Creator/Icons/Icons.jsx';
 
-const FilterIcon = () => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="20"
-    height="20"
-    viewBox="0 0 20 20"
-    fill="none"
-  >
-    <path
-      d="M5 10H15M2.5 5H17.5M7.5 15H12.5"
-      stroke="#A4A7AE"
-      strokeWidth="1.67"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    />
-  </svg>
-);
 
 const NAV_ITEMS = [
   { label: "View all", value: "all", count: 214 },
@@ -102,7 +86,7 @@ function Users() {
 
         <section className="px-8 flex-1 overflow-auto">
           <div className=" rounded-xl overflow-hidden">
-             <SiteManagementTables  />
+             <UserManagementTables  />
            
           </div>
         </section>

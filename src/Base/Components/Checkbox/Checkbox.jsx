@@ -3,7 +3,7 @@ import { cva } from "class-variance-authority";
 import { cn } from "../../../lib/utils.js";
 
 const Actions = cva(
-    "border border-border-primary flex justify-center items-center",
+    "border border-border-primary flex justify-center items-center ",
     {
         variants: {
             variant: {
@@ -20,9 +20,9 @@ const Actions = cva(
     }
 );
 
-const Checkbox = ({ ischeck, indeterminate, size = "sm", variant = "isCheckbox", text, SupportingText }) => {
+const Checkbox = ({ ischeck, indeterminate, size, variant = "isCheckbox", text, SupportingText }) => {
     return (
-        <div className="flex items-start gap-md">
+        <div className="flex ">
 
             {/* Checkbox */}
             <div
@@ -32,8 +32,12 @@ const Checkbox = ({ ischeck, indeterminate, size = "sm", variant = "isCheckbox",
                     ischeck ? "bg-bg-brand-solid border-bg-brand-solid" : "bg-white"
                 )}
             >
-                {ischeck && (
-                    <svg xmlns="http://www.w3.org/2000/svg" className="w-3 h-3" viewBox="0 0 12 12" fill="none">
+                {ischeck && indeterminate ? (
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                        <path d="M2.91699 7H11.0837" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                ) : ischeck && (
+                    <svg xmlns="http://www.w3.org/2000/svg" className="w-3 h-3" viewBox="0 0 12 10" fill="none">
                         <path
                             d="M10 3L4.5 8.5L2 6"
                             stroke="white"
@@ -42,12 +46,12 @@ const Checkbox = ({ ischeck, indeterminate, size = "sm", variant = "isCheckbox",
                             strokeLinejoin="round"
                         />
                     </svg>
-                )}
+                )  }
             </div>
 
             {/* Text */}
-            <div className="flex flex-col gap-xxs">
-                <div className="text-text-secondary font-family-body text-sm font-semibold leading-sm">
+            <div className="flex flex-col items-start justify-center ">
+                <div className="text-text-secondary font-family-body text-sm font-semibold leading-sm flex items-center gap-xs">
                     {text}
                 </div>
 

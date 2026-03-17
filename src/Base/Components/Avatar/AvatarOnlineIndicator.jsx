@@ -29,8 +29,8 @@ const styles = cva("absolute bottom-0 right-0 translate-x-1/4 translate-y-1/4 as
 
 export const AvatarOnlineIndicator = ({variant,size,isOnline}) => {
     return (
-        <div className={cn(styles({variant,size,isOnline}))}>
-            
+        <div className={cn(styles({variant:"default",size,isOnline}))}>
+            <companyicon />
         </div>
     )
 }

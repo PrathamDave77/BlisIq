@@ -78,7 +78,7 @@ const ExploreCourses = () => {
         <div id="main" className="flex pt-4xl pb-6xl flex-col items-stretch gap-8 bg-bg-primary w-full">
             <div id="header-section" className="flex px-4xl flex-col items-stretch gap-3xl self-stretch w-full">
                 <Pageheader title="Explore courses" isSupportingText="Discover thousands of courses to start learning something new today" />
-                <Select placeholder="Search for course, quiz, assignment, learning path and more..." size="sm" searchable />
+                <Select placeholder="Search for course, quiz, assignment, learning path and more..." size="md" searchable />
             </div>
             <div id="section" className="flex px-4xl flex-col items-start gap-3xl self-stretch">
                 <Sectionheader title="Showing results" badge="596" />

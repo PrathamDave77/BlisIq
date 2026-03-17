@@ -1,21 +1,21 @@
 import { forwardRef } from "react";
 import { cva } from "class-variance-authority";
 import { cn } from "../../../lib/utils.js";
-import {Info_circle} from '../../Creator/Icons/Icons.jsx';
+import { Info_circle, Spinner } from '../../Creator/Icons/Icons.jsx';
 
 const base = [
-  "inline-flex items-center justify-center gap-xs rounded-md font-semibold font-family-body leading-sm transition-all duration-200 cursor-pointer disabled:cursor-not-allowed disabled:text-fg-disabled focus-visible:outline-none",
+  "inline-flex items-center justify-center gap-sm rounded-md font-semibold font-family-body leading-sm transition-all duration-200 cursor-pointer disabled:cursor-not-allowed disabled:text-fg-disabled focus-visible:outline-none ",
 ].join(" ");
 
 const buttonVariants = cva(base, {
   variants: {
     variant: {
       primary: [
-        "border-[2px] border-border-primary border-solid text-white bg-bg-brand-solid hover:bg-(--bg-brand-solid-hover) shadow-(--shadow-xs-skeumorphic) focus-visible:shadow-(--focus-ring-shadow-xs-skeumorphic) disabled:border disabled:border-(--border-disabled-subtle) disabled:bg-(--bg-disabled)"
+        "shadow-xs-skeumorphic text-white bg-[var(--bg-brand-solid)] hover:bg-[var(--bg-brand-solid-hover)] focus-visible:shadow-(--focus-ring-shadow-xs-skeumorphic) disabled:border disabled:border-(--border-disabled-subtle) disabled:bg-(--bg-disabled)"
       ],
       secondary: [
-        "border border-border-primary bg-(--bg-primary) text-text-secondary shadow-(--shadow-xs-skeumorphic) hover:bg-bg-primary-hover focus-visible:shadow-(--focus-ring-shadow-xs-skeumorphic) disabled:border-(--border-disabled-subtle)",
-      ],  
+        "border border-border-primary bg-(--bg-primary) text-text-secondary shadow-(--shadow-xs-skeumorphic) hover:bg-bg-primary-hover focus-visible:shadow-(--focus-ring-shadow-xs-skeumorphic) disabled:border-(--border-disabled-subtle) font-medium",
+      ],
       tertiary: [
         "border-2 text-text-tertiary hover:bg-bg-primary-hover hover:text-text-tertiary-hover focus-visible:bg-white focus-visible:shadow-(--focus-ring) disabled:bg-bg-primary-hover",
       ],
@@ -27,8 +27,8 @@ const buttonVariants = cva(base, {
       ],
     },
     size: {
-      sm: "py-md px-lg text-sm",
-      md: "py-[10px] px-[14px] text-sm",
+      sm: "py-md px-lg text-sm leading-sm",
+      md: "py-[10px] px-[14px] text-sm leading-sm",
       lg: "py-[10px] px-xl text-md leading-md",
       xl: "py-lg px-[18px] text-md leading-md",
       icon: "p-[10px]",
@@ -65,12 +65,7 @@ const buttonVariants = cva(base, {
   },
 });
 
-const Spinner = ({ className }) => (
-  <svg className={cn("animate-spin w-4 h-4", className)} viewBox="0 0 24 24" fill="none" aria-hidden="true">
-    <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" />
-    <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z" />
-  </svg>
-);
+
 
 const Button = forwardRef(({
   children,
@@ -82,6 +77,7 @@ const Button = forwardRef(({
   Iconleft,
   Iconright,
   loadingText = "Submitting...",
+  handleClick,
   className,
   ...props
 }, ref) => (
@@ -96,9 +92,10 @@ const Button = forwardRef(({
       <><Spinner /><span>{loadingText}</span></>
     ) : (
       <>
-        {Iconleft && <Iconleft className="w-5 h-5" aria-hidden="true" />}
-        {children}
+        {Iconleft && <Iconleft className="w-5 h-5 aspect-square" aria-hidden="true" />}
+        <div className="flex px-xxs justify-center items-center gap-2">{children}</div>
         {Iconright && <Iconright className="w-5 h-5" aria-hidden="true" />}
+        
       </>
     )}
   </button>

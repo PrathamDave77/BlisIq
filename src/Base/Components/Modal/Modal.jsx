@@ -2,6 +2,7 @@ import React from "react";
 import { Cross } from "../ComponentIcons/CompIcons";
 import Button from "../Buttons/Button";
 
+
 const Modal = ({
   isOpen,
   onClose,
@@ -9,9 +10,12 @@ const Modal = ({
   subtitle,
   buttonText,
   width,
+  Eventhandler,
   children,
 }) => {
   if (!isOpen) return null;
+
+  
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur p-4 h-full w-full">
@@ -52,7 +56,7 @@ const Modal = ({
             Cancel
           </Button>
 
-          <Button variant="primary">
+          <Button variant="primary" onClick={() => Eventhandler()}>
             {buttonText}
           </Button>
         </div>
